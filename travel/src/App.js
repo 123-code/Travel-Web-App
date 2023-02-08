@@ -3,6 +3,12 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import MainPage from './Pages/Main';
 import AboutPage from './Pages/About';
 import Navbar from './Components/Navbar';
+import PeruPage from './Pages/PeruPage';
+import GalapagosPage from './Pages/GalapagosPage'; 
+import HighlandsPage from './Pages/HighlandsPage';
+import AmazonPage from './Pages/AmazonPage';
+import CoastPage from './Pages/CoastPage';
+
 
 import './App.css';
 
@@ -16,6 +22,11 @@ export default class App extends React.Component {
          <Routes>
         <Route exact path="/" element={<MainPage/>} />
         <Route path="/about" element={<AboutPage/>} />
+        <Route path="/peru" element={<PeruPage/>} />
+        <Route path="/galapagos" element={<GalapagosPage/>} />
+        <Route path="/highlands" element={<HighlandsPage/>} />
+        <Route path="/amazon" element={<AmazonPage/>} />
+        <Route path="/coast" element={<CoastPage/>} />
         </Routes>
         </div>
       <div>

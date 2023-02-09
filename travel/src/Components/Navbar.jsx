@@ -23,28 +23,38 @@ const Navbar = () => {
     }}>
       <ul style={{ display: 'flex', listStyle: 'none' }}>
         <li style={{ marginRight: '20px' }}>
-          <Link to="/" style={{ color: 'white' }}>Home</Link>
+          <Link to="/" style={{ color: 'white' }}>INICIO</Link>
         </li>
         <li style={{ marginRight: '20px' }}>
-          <Link to="/about" style={{ color: 'white' }}>About</Link>
+          <Link to="/about" style={{ color: 'white' }}>NOSOTROS</Link>
+        </li>
+       
+        <li style={{ marginRight: '20px' }}>
+          <Link to="/galapagos " style={{ color: 'white' }}>GALAPAGOS</Link>
         </li>
         <li style={{ marginRight: '20px' }}>
-          <Link to="/contact" style={{ color: 'white' }}>Contact</Link>
+          <Link to="/amazon" style={{ color: 'white' }}>ECUADOR</Link>
         </li>
         <li style={{ marginRight: '20px' }}>
-          <Link to="/coast" style={{ color: 'white' }}>Coast</Link>
+          <Link to="/peru" style={{ color: 'white' }}>PERU</Link>
         </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/highlands" style={{ color: 'white' }}>Highlands</Link>
+        <li>
+        <button> Log In </button>
         </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/amazon" style={{ color: 'white' }}>Amazon</Link>
-        </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/peru" style={{ color: 'white' }}>Peru</Link>
+
+        <li>
+        <button> Register </button>
         </li>
       </ul>
     </nav>
   );
 };
 export default Navbar;
+/*
+ <li style={{ marginRight: '20px' }}>
+          <Link to="/contact" style={{ color: 'white' }}>Contact</Link>
+        </li>
+        <li style={{ marginRight: '20px' }}>
+          <Link to="/coast" style={{ color: 'white' }}>Coast</Link>
+        </li>
+*/

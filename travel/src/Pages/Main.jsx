@@ -1,4 +1,8 @@
 import React from 'react';
+import MainImage from '../Components/MainImage';    
+import Form from '../Components/Form';
+import TopDestinations from '../Components/TopDestinations';
+import Testimonials from '../Components/Testimonials';
 import '../App.css';
 
 
@@ -7,8 +11,19 @@ return(
     <>
     <body className='main'>
     <div>
+        
     </div>
-    <img  height = "255" width="450" src = "https://i.ibb.co/Zdp6nH7/afb509d1-0135-4731-8edc-3a098824f8b2-1.png"></img>
+    <MainImage></MainImage>
+    <div style={{ width: "33,33%", float: "left" }}>
+<body  className="text">
+<Form/>
+<TopDestinations></TopDestinations>
+<Testimonials></Testimonials>
+</body>
+
+
+</div>
+    
     
     </body>
    

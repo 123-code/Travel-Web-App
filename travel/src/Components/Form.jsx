@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
-
+import './Form.css';
 // create form component
 const Form = () => {
     const [formData, setFormData] = useState({

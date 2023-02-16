@@ -1,13 +1,18 @@
 package main
 
 import (
+	"deps/Server/DB"
 	"net/http"
-
 	"github.com/gin-gonic/gin"
+	"deps/Server/API_Routes"
 	//"errors"
-	//"fmt" 
+	//"fmt"
 )
 
+func init(){
+	DB.DBconnect()
+}
+ 
 type reserve struct {
 	ID    string `json:"id"`
 	Name  string `json:"name"`
@@ -32,7 +37,9 @@ func GetReserves(c *gin.Context) {
 func main() {
 	router := gin.Default()
 	router.GET("/reserves", GetReserves)
+	router.POST("/reservar",APIS.CreateReserves)
 	router.Run("localhost:5000")
+
 	//fmt.println("Server Running port 5000");
+	
 }
-   

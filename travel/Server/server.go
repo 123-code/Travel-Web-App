@@ -35,10 +35,11 @@ func GetReserves(c *gin.Context) {
 } 
 
 func main() {
-	router := gin.Default()
-	router.GET("/reserves", GetReserves)
-	router.POST("/reservar",APIS.CreateReserves)
-	router.Run("localhost:5000")
+	router := gin.Default();
+	router.GET("/reserves", GetReserves);
+	router.POST("/reservar",APIS.CreateReserves);
+	router.GET("/reservas",APIS.GetReservas);
+	router.Run("localhost:5000");
 
 	//fmt.println("Server Running port 5000");
 	

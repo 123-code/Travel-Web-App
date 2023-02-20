@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import './Form.css';
+import axios from 'axios';
 // create form component
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -9,7 +10,14 @@ const Form = () => {
         age: "",
         nationality: ""
       });
+      
 const handlesubmit = ()=>{
+  axios.post('http://localhost:5000/api/v1/reservations', formData)
+  .then((response)=>{
+console.log(response)
+  }).catch((error)=>{
+    console.error(error)
+  })
 window.alert("Thank you for your submission");
 }
 
@@ -21,7 +29,7 @@ const handleChange = event => {
   };
 
 return(
-    <>
+    <> 
 <form onSubmit={handlesubmit}>
 <div>
 <label  className="textstyle" htmlFor="name">Name</label>

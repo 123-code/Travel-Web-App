@@ -22,6 +22,7 @@ const Navbar = () => {
       zIndex: '1' 
     }}>
       <ul style={{ display: 'flex', listStyle: 'none' }}>
+      <h1 style={{ marginRight: '20px' }}> MABVBACA </h1>
         <li style={{ marginRight: '20px' }}>
           <Link to="/" style={{ color: 'white' }}>INICIO</Link>
         </li>
@@ -33,7 +34,7 @@ const Navbar = () => {
           <Link to="/galapagos " style={{ color: 'white' }}>GALAPAGOS</Link>
         </li>
         <li style={{ marginRight: '20px' }}>
-          <Link to="/amazon" style={{ color: 'white' }}>ECUADOR</Link>
+          <Link to="/ecuador" style={{ color: 'white' }}>ECUADOR</Link>
         </li>
         <li style={{ marginRight: '20px' }}>
           <Link to="/peru" style={{ color: 'white' }}>PERU</Link>

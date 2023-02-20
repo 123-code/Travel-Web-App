@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar';
 import PeruPage from './Pages/PeruPage';
 import GalapagosPage from './Pages/GalapagosPage'; 
 import HighlandsPage from './Pages/HighlandsPage';
-import AmazonPage from './Pages/AmazonPage';
+import EcuadorPage from './Pages/Ecuador';
 import CoastPage from './Pages/CoastPage';
 
 
@@ -25,7 +25,7 @@ export default class App extends React.Component {
         <Route path="/peru" element={<PeruPage/>} />
         <Route path="/galapagos" element={<GalapagosPage/>} />
         <Route path="/highlands" element={<HighlandsPage/>} />
-        <Route path="/amazon" element={<AmazonPage/>} />
+        <Route path="/ecuador" element={<EcuadorPage/>} />
         <Route path="/coast" element={<CoastPage/>} />
         </Routes>
         </div>

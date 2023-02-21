@@ -8,7 +8,7 @@ import GalapagosPage from './Pages/GalapagosPage';
 import HighlandsPage from './Pages/HighlandsPage';
 import EcuadorPage from './Pages/Ecuador';
 import CoastPage from './Pages/CoastPage';
-
+import  Login from './Components/AuthForm';
 
 import './App.css';
 
@@ -27,6 +27,7 @@ export default class App extends React.Component {
         <Route path="/highlands" element={<HighlandsPage/>} />
         <Route path="/ecuador" element={<EcuadorPage/>} />
         <Route path="/coast" element={<CoastPage/>} />
+        <Route path="/auth" element={<Login/>} />
         </Routes>
         </div>
       <div>

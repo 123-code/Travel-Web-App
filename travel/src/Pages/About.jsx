@@ -6,9 +6,6 @@ import '../App.css'
 
 const AboutPage = () => {
     return (
-
-
-
 <>
 <div style={{ width: "50%", float: "left" }}>
 <body className="text">

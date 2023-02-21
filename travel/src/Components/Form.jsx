@@ -7,19 +7,18 @@ const Form = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        age: "",
+        age: "", 
         nationality: ""
       });
       
 const handlesubmit = ()=>{
-  axios.post('http://localhost:5000/api/v1/reservations', formData)
+  axios.post('https://123-code-bug-free-doodle-rpjvpg7rwvg25vq6-5000.preview.app.github.dev/api/sendform', formData)
   .then((response)=>{
 console.log(response)
   }).catch((error)=>{
     console.error(error)
   })
-window.alert("Thank you for your submission");
-}
+} 
 
 const handleChange = event => {
     setFormData({
@@ -27,10 +26,10 @@ const handleChange = event => {
       [event.target.name]: event.target.value
     });
   };
-
+// onSubmit={handlesubmit}
 return(
     <> 
-<form onSubmit={handlesubmit}>
+<form>
 <div>
 <label  className="textstyle" htmlFor="name">Name</label>
 <input className="inputfields"

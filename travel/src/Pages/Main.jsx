@@ -4,6 +4,8 @@ import Form from '../Components/Form';
 import TopDestinations from '../Components/TopDestinations';
 import Testimonials from '../Components/Testimonials';
 import '../App.css';
+import img from '../Components/imagenprincipal.jpeg'
+import BackgroundImageOverlay from '../Components/BackgroundImageOverlay';
 
 
 
@@ -14,7 +16,7 @@ return(
     <div>
         
     </div>
-    <MainImage></MainImage>
+    <BackgroundImageOverlay imageUrl={(img)}></BackgroundImageOverlay>
     <div style={{ width: "33,33%", float: "left" }}>
 <body  className="text">
 <Form></Form>

@@ -17,7 +17,7 @@ return(
     <MainImage></MainImage>
     <div style={{ width: "33,33%", float: "left" }}>
 <body  className="text">
-<Form/>
+<Form></Form>
 <TopDestinations></TopDestinations>
 <Testimonials></Testimonials>
 </body>

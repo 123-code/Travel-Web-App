@@ -1,14 +1,5 @@
-import React from 'react';
+import React from "react";
 import { Link } from 'react-router-dom';
-/*
- <Route exact path="/" element={<MainPage/>} />
-        <Route path="/about" element={<AboutPage/>} />
-        <Route path="/peru" element={<PeruPage/>} />
-        <Route path="/galapagos" element={<GalapagosPage/>} />
-        <Route path="/highlands" element={<HighlandsPage/>} />
-        <Route path="/amazon" element={<AmazonPage/>} />
-        <Route path="/coast" element={<CoastPage/>} />
-*/
 
 const Navbar = () => {
   return (
@@ -50,11 +41,3 @@ const Navbar = () => {
   );
 };
 export default Navbar;
-/*
- <li style={{ marginRight: '20px' }}>
-          <Link to="/contact" style={{ color: 'white' }}>Contact</Link>
-        </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/coast" style={{ color: 'white' }}>Coast</Link>
-        </li>
-*/

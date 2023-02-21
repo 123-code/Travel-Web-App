@@ -6,6 +6,7 @@ import Testimonials from '../Components/Testimonials';
 import '../App.css';
 
 
+
 const MainPage = ()=>{
 return(
     <>
@@ -27,7 +28,7 @@ return(
     
     </body>
    
- 
+
     </>
 ) 
 }

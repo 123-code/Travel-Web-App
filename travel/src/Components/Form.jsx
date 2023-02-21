@@ -1,77 +1,32 @@
-import React, { useState } from "react";
-import "../App.css";
-import './Form.css';
-// create form component
-const Form = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        age: "",
-        nationality: ""
-      });
-const handlesubmit = ()=>{
-window.alert("Thank you for your submission");
-}
+import React from "react";
+import '../Styling/Form.css'
+export default function SignUpForm() {
+  return (
+    <div className="container">
+      <div className="card">
+        <a className="singup">Si requieres mayor información, llena el siguiente formulario</a>
+        <div className="inputBox1">
+          <input type="text" required />
+          <span className="user">Nombre</span>
+        </div>
 
-const handleChange = event => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value
-    });
-  };
+        <div className="inputBox1">
+          <input type="email" required />
+          <span className="user">Email</span>
+        </div>
 
-return(
-    <>
-<form onSubmit={handlesubmit}>
-<div>
-<label  className="textstyle" htmlFor="name">Name</label>
-<input className="inputfields"
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-/>
-</div>
+        <div className="inputBox">
+          <input type="text" required />
+          <span>País</span>
+        </div>
 
-<div>
-<label className="textstyle" htmlFor="email">Email</label>
-          <input
-          className="inputfields"
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}/>
-</div>
+        <div className="inputBox">
+          <input type="text" required />
+          <span>Mensaje</span>
+        </div>
 
-<div>
-        <label className="textstyle" htmlFor="age">Age:</label>
-        <input
-        className="inputfields"
-          type="number"
-          id="age"
-          name="age"
-          value={formData.age}
-          onChange={handleChange}
-        />
+        <button className="enter">Enviar</button>
       </div>
-      <div>
-        <label className="textstyle" htmlFor="nationality">Nationality:</label>
-        <input
-         className="inputfields"
-          type="text"
-          id="nationality"
-          name="nationality"
-          value={formData.nationality}
-          onChange={handleChange}
-        />
-      </div>
-      <button className = "submitbtn" type="submit" onClick={handlesubmit}>Submit</button>
-</form>
-    </>
-)
-
-
+    </div>
+  );
 }
- export default Form;

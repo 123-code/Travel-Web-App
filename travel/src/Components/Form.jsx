@@ -30,6 +30,8 @@ const handleChange = event => {
 return(
     <> 
 <form>
+<div className="container">
+<div className="card">
 <a className="singup">Si requieres mayor información, llena el siguiente formulario</a>
         <div className="inputBox1">
           <input type="text" required 
@@ -69,8 +71,10 @@ return(
         </div>
 
         <button className="enter" type="submit" onClick={handlesubmit}>Enviar</button>
-
+        </div>
+        </div>
 </form>
+
     </>
 )
 

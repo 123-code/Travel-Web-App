@@ -45,6 +45,8 @@ func main() {
 	router.POST("/reservar",APIS.CreateReserves);
 	router.GET("/reservas",APIS.GetReservas);
 	router.POST("api/sendform",APIS.CreateMainReserves);
+	router.POST("/register",APIS.RegisterUser);
+	router.POST("/login",APIS.LoginPost);
 	router.Run("localhost:5000");
 
 	//fmt.println("Server Running port 5000");

@@ -9,6 +9,7 @@ import HighlandsPage from './Pages/HighlandsPage';
 import EcuadorPage from './Pages/AmazonPage';
 import CoastPage from './Pages/CoastPage';
 import  Login from './Components/AuthForm';
+import Payments from './Pages/Payments';
 
 import './App.css';
 
@@ -28,6 +29,8 @@ export default class App extends React.Component {
         <Route path="/ecuador" element={<EcuadorPage/>} />
         <Route path="/coast" element={<CoastPage/>} />
         <Route path="/auth" element={<Login/>} />
+        <Route path="/checkout" element={<Payments/>} />
+
         </Routes>
         </div>
       <div>

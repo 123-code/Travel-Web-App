@@ -9,7 +9,7 @@ function BackgroundImageOverlay(props) {
       >
         <div className="overlay">
           <div className="overlay-content">
-            <h1>La aventura está a un solo click</h1>
+            <h1 style={{color: 'white'}}>La aventura está a un solo click</h1>
           </div>
         </div>
       </div>

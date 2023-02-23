@@ -20,6 +20,7 @@
   
   .inputBox input,
   .inputBox1 input {
+    margin-top: 30px;
     width: 100%;
     padding: 10px;
     outline: none;
@@ -36,7 +37,7 @@
   
   .inputBox span,
   .inputBox1 span {
-    margin-top: 200px;
+    margin-top: 400px;
     position: left;
 
     transform: translateY(-4px);

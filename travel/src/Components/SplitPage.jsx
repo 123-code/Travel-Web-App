@@ -6,7 +6,7 @@ const SplitPage = () => {
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
       <div style={{ flex: 1.5}}>
-        <h1 style={{ margin: '2rem 1rem', textAlign: 'justify' }}>Nosotros</h1>
+        <h1 className='h1S' style={{ margin: '2rem 1rem', textAlign: 'justify' }}>Nosotros</h1>
         <img src='https://i.ibb.co/DrSJWVr/thumbnail-de7286cd-129b-47f0-8e03-5c89cf93e493-1-1.png' alt="Imagen" style={{ width: '100%', height: 'auto' ,  margin: '2rem 1rem',}} />
         <p style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
         Mabvaca Expeditions es una compañía dedicada a crear experiencias en cada destino desde el año 2017. Con mas de 6 años de experiencias, hemos creado recuerdos inolvidables para diferentes familias.

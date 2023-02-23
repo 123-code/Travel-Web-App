@@ -1,6 +1,4 @@
 import React from "react";
-import data from '../Data/About.json';
-import Form from '../Components/Form';
 import '../App.css'
 import SplitPage from "../Components/SplitPage";
 

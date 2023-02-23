@@ -1,3 +1,14 @@
+.h1TD{
+  color: black;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.containerCards{
+  background-color: #E5E5E5;
+  height: 1300px;
+}
 .card {
     width: calc(50% - 20px);
     background-color: white;
@@ -6,6 +17,7 @@
     text-align: center;
     margin: 10px;
     display: inline-block;
+    background-color: #E5E5E5;
   }
   
   img {
@@ -17,6 +29,7 @@
   h2 {
     padding: 10px;
     margin: 0;
+    padding-top: 50px;
   }
   
   button {
@@ -33,4 +46,11 @@
     width: 100%;
     text-align: center;
   }
-  
+   .btnTD{
+    background-color: #00BFFF;
+  border: 2px solid #00BFFF; /* color celeste en hexadecimal */
+  color: white; /* color celeste en hexadecimal */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 110px;
+   }

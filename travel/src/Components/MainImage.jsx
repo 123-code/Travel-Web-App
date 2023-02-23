@@ -1,12 +1,12 @@
 import React from 'react';
 import './MainImage.css';
-import img from './imagenprincipal.jpeg';
+import foto from './imagenprincipal.jpeg';
 
 const MainImage = () => {
   return (
     <div className="main-image">
       <div className="overlay"></div>
-      <img src={(img)}alt="Image" />
+      <img src={(foto)}alt="Image" />
 
     </div>
   );

@@ -1,0 +1,23 @@
+
+.loginBtn{
+    background-color: transparent;
+  border: 2px solid #00BFFF; /* color celeste en hexadecimal */
+  color: #00BFFF; /* color celeste en hexadecimal */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 110px;
+}
+
+.btnRegistrar {
+    background-color: #00BFFF;
+  border: 2px solid #00BFFF; /* color celeste en hexadecimal */
+  color: white; /* color celeste en hexadecimal */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 110px;
+}
+
+
+.navbar{
+    box-sizing: border-box;
+}

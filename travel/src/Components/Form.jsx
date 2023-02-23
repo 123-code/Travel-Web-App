@@ -31,7 +31,7 @@ return(
     <> 
 <form>
 <div className="container">
-<div className="card">
+<div className="card" style={{backgroundColor: 'transparent'}}>
 <a className="singup">Si requieres mayor información, llena el siguiente formulario</a>
         <div className="inputBox1">
           <input type="text" required 

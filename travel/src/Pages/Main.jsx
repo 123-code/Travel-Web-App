@@ -1,5 +1,4 @@
-import React from 'react';
-import MainImage from '../Components/MainImage';    
+import React from 'react';  
 import Form from '../Components/Form';
 import TopDestinations from '../Components/TopDestinations';
 import Testimonials from '../Components/Testimonials';

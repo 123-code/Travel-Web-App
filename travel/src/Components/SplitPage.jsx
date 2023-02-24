@@ -4,7 +4,7 @@ import '../Styling/SplitPage.css'
 
 const SplitPage = () => {
   return (
-    <div style={{ display: 'flex', height: '100vh' }}>
+    <div className='wrapperAbout' style={{ display: 'flex', height: '100vh', backgroundColor: '#f7f7f7' }}>
       <div style={{ flex: 1.5}}>
         <h1 className='h1S' style={{ margin: '2rem 1rem', textAlign: 'justify' }}>Nosotros</h1>
         <img src='https://i.ibb.co/DrSJWVr/thumbnail-de7286cd-129b-47f0-8e03-5c89cf93e493-1-1.png' alt="Imagen" style={{ width: '100%', height: 'auto' ,  margin: '2rem 1rem',}} />

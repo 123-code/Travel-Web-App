@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainImage.css';
+import '../Styling/MainImage.css';
 import foto from './imagenprincipal.jpeg';
 
 const MainImage = () => {

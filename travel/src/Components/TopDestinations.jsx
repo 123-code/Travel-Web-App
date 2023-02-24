@@ -1,5 +1,5 @@
 import React from 'react';
-import './TopDestinations.css';
+import '../Styling/TopDestinations.css';
 
 const TopDestinations = () => {
   return (

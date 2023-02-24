@@ -14,6 +14,7 @@ import Payments from './Pages/Payments';
 import './App.css';
 
 
+
 export default class App extends React.Component {
   render(){
     return (
@@ -28,6 +29,7 @@ export default class App extends React.Component {
         <Route path="/highlands" element={<HighlandsPage/>} />
         <Route path="/ecuador" element={<EcuadorPage/>} />
         <Route path="/coast" element={<CoastPage/>} />
+        <Route path="/amazon" element={<EcuadorPage/>} />
         <Route path="/auth" element={<Login/>} />
         <Route path="/checkout" element={<Payments/>} />
 

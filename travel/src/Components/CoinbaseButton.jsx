@@ -1,5 +1,5 @@
 import React from 'react';
-import './CoinbaseButton.css';
+import '../Styling/CoinbaseButton.css';
 
 const CoinbaseButton = () => {
 

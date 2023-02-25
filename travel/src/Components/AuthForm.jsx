@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import bcrypt from 'bcryptjs';
 import axios from 'axios';
 
 function Login() {
@@ -13,9 +14,32 @@ function Login() {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(`Username: ${username}, Password: ${password}`);
+  const verifyapi = async()=>{
+    
+  }
+
+
+  const handleSubmit = () => {
+    const saltrounds = 10;
+    const encpassword = password;
+
+    bcrypt.hash(encpassword,saltrounds,()=>{
+      if(err){
+        console.error(err)
+      }
+      else{
+        // cambiar el URL
+        axios.post('/api/login', {
+          username: username,
+          password: encpassword
+        })
+        .then((response) => {
+          console.log(response);
+        }, (error) => {
+          console.log(error);
+        });
+      }
+    })
   };
 
   return (

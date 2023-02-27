@@ -44,7 +44,7 @@ func main() {
 	router.GET("/reserves", GetReserves);
 	router.POST("/reservar",APIS.CreateReserves);
 	router.GET("/reservas",APIS.GetReservas);
-	router.POST("api/sendform",APIS.CreateMainReserves);
+	router.POST("/api/sendform",APIS.CreateMainReserves);
 	router.POST("/register",APIS.RegisterUser);
 	router.POST("/login",APIS.LoginPost);
 	router.Run("localhost:5000");

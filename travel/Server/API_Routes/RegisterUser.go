@@ -18,6 +18,6 @@ func RegisterUser(c*gin.Context){
 	c.Bind(&reqbody);
 
 
-reserve := Models.User{	UserName:reqbody.UserName,Email:reqbody.Email,Password:reqbody.Password};
-DB.DBconn.Create(&reserve);
+user := Models.User{	UserName:reqbody.UserName,Email:reqbody.Email,Password:reqbody.Password};
+DB.DBconn.Create(&user);
 }

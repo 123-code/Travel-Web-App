@@ -20,32 +20,31 @@ function Login() {
 
 
   const handleSubmit = () => {
-    const saltrounds = 10;
-    const encpassword = password;
+    const saltRounds = 10;
 
-    bcrypt.hash(encpassword,saltrounds,()=>{
-      if(err){
-        console.error(err)
-      }
-      else{
-        // cambiar el URL
-        axios.post('/api/login', {
-          username: username,
-          password: encpassword
-        })
-        .then((response) => {
-          console.log(response);
-        }, (error) => {
-          console.log(error);
-        });
-      }
-    })
-  };
-
+    // Hashing the password
+    bcrypt.genSalt(saltRounds, function(err, salt) {
+      bcrypt.hash(password, salt, function(err, hash) {
+        if (err) {
+          console.error(err);
+        } else {
+          // Sending the username and hash to the server
+          axios.post("https://123-code-bug-free-doodle-rpjvpg7rwvg25vq6-5000.preview.app.github.dev/api/sendform", {
+            username: username,
+            password: hash
+          }).then((response) => {
+            console.log(response);
+          }).catch((err) => {
+            console.error(err);
+          });
+        }
+      });
+    }); 
+  }
   return (
     <div>
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form>
         <label>
           Username:
           <input type="text" value={username} onChange={handleUsernameChange} />
@@ -56,10 +55,9 @@ function Login() {
           <input type="password" value={password} onChange={handlePasswordChange} />
         </label>
         <br />
-        <button type="submit">Submit</button>
+        <button onClick={handleSubmit} type="submit">Ingresar</button>
       </form>
     </div>
   );
 }
-
 export default Login;

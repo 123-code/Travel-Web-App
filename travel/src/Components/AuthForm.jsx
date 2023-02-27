@@ -14,10 +14,6 @@ function Login() {
     setPassword(event.target.value);
   };
 
-  const verifyapi = async()=>{
-    
-  }
-
 
   const handleSubmit = () => {
     const saltRounds = 10;
@@ -29,7 +25,7 @@ function Login() {
           console.error(err);
         } else {
           // Sending the username and hash to the server
-          axios.post("https://123-code-bug-free-doodle-rpjvpg7rwvg25vq6-5000.preview.app.github.dev/api/sendform", {
+          axios.post("https://123-code-bug-free-doodle-rpjvpg7rwvg25vq6-5000.preview.app.github.dev/register", {
             username: username,
             password: hash
           }).then((response) => {

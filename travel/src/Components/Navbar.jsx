@@ -30,13 +30,13 @@ const Navbar = () => {
             <Link to="/about" style={{ color: 'black' }}>NOSOTROS</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/galapagos " style={{ color: 'black' }}>GALAPAGOS</Link>
+            <Link to="/galapagos " style={{ color: 'black' }}>GALÁPAGOS</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
             <Link to="/amazon" style={{ color: 'black' }}>ECUADOR</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/peru" style={{ color: 'black' }}>PERU</Link>
+            <Link to="/peru" style={{ color: 'black' }}>PERÚ</Link>
           </li>
         </ul>
       </div>

@@ -18,7 +18,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="containerTesti">
       <h1 className="title">Estás en buenas manos</h1>
       <h2 className="subtitle">Testimonios</h2>
       <div className="testimonials-container">

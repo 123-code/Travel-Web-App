@@ -14,7 +14,7 @@ const SplitPage = () => {
         <p style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
         Nuestra visión como empresa es dar una experiencia inolvidable a cada uno de nuestros pasajeros. La amabilidad de nuestra gente y la magia de cada destino. Crearan recuerdos inolvidables que marcaran sus vidas para su siempre.
         </p>
-        <p style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
+        <p classname='parrafoF' style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
         Actualmente Mabvaca Expeditions cuenta con Adamas House Hotel
 Boutique, ubicado en el Centro Hístico de Quito. De igual manera cuenta con convenios con diferentes hoteles y cruceros a lo largo del Ecuador. Cada establecimiento y personal está preparado al más alto nivel para darle una experiencia inolvidable.
         </p>

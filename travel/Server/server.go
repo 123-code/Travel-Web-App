@@ -13,7 +13,7 @@ import (
 func init(){
 	DB.DBconnect()
 }
- 
+  
 type reserve struct {
 	ID    string `json:"id"`
 	Name  string `json:"name"`

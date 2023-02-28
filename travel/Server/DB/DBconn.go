@@ -20,6 +20,7 @@ func DBconnect(){
 	DBconn.AutoMigrate(&Models.Postmain{});
 	DBconn.AutoMigrate(&Models.User{});
 	DBconn.AutoMigrate(&Models.Login{});
+	DBconn.AutoMigrate(&Models.MainForm{});
  
 if err != nil{ 
 	log.Fatal("Failded to connect to database")

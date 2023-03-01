@@ -18,6 +18,7 @@ return(
     <BackgroundImageOverlay imageUrl={(img)}></BackgroundImageOverlay>
     <div style={{ width: "33,33%", float: "left" }}>
 <body  className="text">
+<a className="singup">Si requieres mayor información, llena el siguiente formulario</a>
 <Form></Form>
 <TopDestinations></TopDestinations>
 <Testimonials></Testimonials>

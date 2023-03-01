@@ -1,13 +1,15 @@
 .singup {
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: block;
-    font-weight: bold;
-    font-size: x-large;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-  }
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
   
  
   

@@ -10,6 +10,7 @@ import EcuadorPage from './Pages/AmazonPage';
 import CoastPage from './Pages/CoastPage';
 import  Login from './Components/AuthForm';
 import Payments from './Pages/Payments';
+import Footer from './Components/Footer';
 
 import './App.css';
 
@@ -37,9 +38,11 @@ export default class App extends React.Component {
         </div>
       <div>
        <Navbar/>
+       <Footer></Footer>
       </div>
       </div>
      </Router>
+     
    );
   }
 }

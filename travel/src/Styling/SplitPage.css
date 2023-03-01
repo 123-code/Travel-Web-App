@@ -25,10 +25,14 @@
   .wrapperAbout {
     background-color: #f7f7f7;
     margin-top: 100px;
-    margin-bottom: 0%;
+    margin-bottom: 100px;
   }
   .parrafoF{
     margin-bottom: 200px;
+  }
+
+  .cont{
+    margin-bottom: 100px;
   }
   
   

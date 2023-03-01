@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import ConnectButton from "./ConnectWalletButton";
 import '../Styling/Navbar.css'
 
 const Navbar = () => {
@@ -49,6 +50,10 @@ const Navbar = () => {
         <li>
           <button className="btnRegistrar" onClick={()=>{navigate("/auth")}}> Register </button>
         </li>
+        <div>
+        <li> <ConnectButton/> </li>
+        </div>
+        
       </ul>
       </div>
     </nav>

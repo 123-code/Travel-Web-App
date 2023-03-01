@@ -5,6 +5,7 @@ import Testimonials from '../Components/Testimonials';
 import '../App.css';
 import img from '../Components/imagenprincipal.jpeg'
 import BackgroundImageOverlay from '../Components/BackgroundImageOverlay';
+import FloatingButton from '../Components/FloatingCard';
 
 
 
@@ -16,6 +17,7 @@ return(
         
     </div>
     <BackgroundImageOverlay imageUrl={(img)}></BackgroundImageOverlay>
+
     <div style={{ width: "33,33%", float: "left" }}>
 <body  className="text">
 <a className="singup">Si requieres mayor información, llena el siguiente formulario</a>

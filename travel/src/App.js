@@ -11,6 +11,7 @@ import CoastPage from './Pages/CoastPage';
 import  Login from './Components/AuthForm';
 import Payments from './Pages/Payments';
 import Footer from './Components/Footer';
+import FloatingButton from './Components/FloatingCard';
 
 import './App.css';
 
@@ -38,6 +39,7 @@ export default class App extends React.Component {
         </div>
       <div>
        <Navbar/>
+      <FloatingButton></FloatingButton>
        <Footer></Footer>
       </div>
       </div>

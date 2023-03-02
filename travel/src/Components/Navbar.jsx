@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import ConnectButton from "./ConnectWalletButton";
+
 import '../Styling/Navbar.css'
 
 const Navbar = () => {

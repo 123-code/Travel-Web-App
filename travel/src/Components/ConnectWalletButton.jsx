@@ -39,7 +39,7 @@ export default function ConnectButton() {
   useEffect(() => {
     if (!walletConnected) {
       Web3ModalRef.current = new Web3Modal({
-        network: "rinkeby",
+        network: "mainnet",
         cacheProvider: true,
         providerOptions: {},
         disableInjectedProvider: false,
@@ -55,7 +55,7 @@ export default function ConnectButton() {
         {!walletConnected ? (
           <button onClick={connectWallet}>Connect Wallet</button>
         ) : (
-          <button>Connected</button>
+          <button>Connected </button>
         )}
       </div>
     </div>

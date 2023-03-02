@@ -23,7 +23,9 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4",
-    "web3modal": "^1.9.12"
+    "web3modal": "^1.9.12",
+    "wagmi": "0.5.9",
+    "@rainbow-me/rainbowkit": "0.4.2"
   },
   "scripts": {
     "start": "react-scripts start",

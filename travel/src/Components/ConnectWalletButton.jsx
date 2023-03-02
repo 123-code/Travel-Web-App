@@ -8,6 +8,7 @@ import { Web3Provider } from "@ethersproject/providers";
 export default function ConnectButton() {
   const Web3ModalRef = useRef();
   const [walletConnected, setWalletConnected] = useState(false);
+  const [address, setAddress] = useState("");
 
   const connectWallet = async () => {
     try {
@@ -21,15 +22,17 @@ export default function ConnectButton() {
   const getProviderOrSigner = async (needSigner = false) => {
     const provider = await Web3ModalRef.current.connect();
     const web3Provider = new Web3Provider(provider);
+  
 
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 1) {
+    if (chainId !== 5) {
       window.alert("Change the network to mainnet");
       throw new Error("Change network to mainnet");
     }
 
     if (needSigner) {
       const signer = web3Provider.getSigner();
+     
       return signer;
     }
 
@@ -46,7 +49,7 @@ export default function ConnectButton() {
       });
       connectWallet();
     }
-  }, []);
+  }, [walletConnected]);
 
   return (
     <div>
@@ -55,7 +58,7 @@ export default function ConnectButton() {
         {!walletConnected ? (
           <button onClick={connectWallet}>Connect Wallet</button>
         ) : (
-          <button>Connected </button>
+          <button>Connected</button>
         )}
       </div>
     </div>

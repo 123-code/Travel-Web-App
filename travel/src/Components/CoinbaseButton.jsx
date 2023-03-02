@@ -7,7 +7,7 @@ const CoinbaseButton = () => {
         <>
      <div class="crypto-donate">
   <a class="donate-with-crypto" href="https://commerce.coinbase.com/checkout/239bbf84-4627-4c0c-8d3a-521089215b35">
-    <i class="fab fa-bitcoin"></i> Pay with Crypto
+    <i class="fab fa-bitcoin"></i> Pay with Coinbase
   </a>
   <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807"></script>
 </div>

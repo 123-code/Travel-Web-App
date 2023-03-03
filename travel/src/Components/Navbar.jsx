@@ -2,28 +2,31 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import ConnectButton from "./ConnectWalletButton";
-
+import Select from 'react-select';
+import PageDropdown from './NavDropDown';
 import '../Styling/Navbar.css'
 
 const Navbar = () => {
   const navigate = useNavigate();
+
+
   return (
-    <nav className="navbar" style={{ 
+    <nav className="navbar" style={{  
       display: 'flex', 
       justifyContent: 'space-between', 
-      alignItems: 'center', // Agrega alineación vertical al contenedor
+      alignItems: 'center',
       backgroundColor: 'white', 
       color: 'black',
       position: 'fixed', 
       top: '0', 
       width: '100%', 
-      height: 'auto', // Ajusta la altura de la navbar
+      height: 'auto',
       zIndex: '1',
-      fontSize: '1.5vw', // Establece el tamaño de letra en porcentaje
+      fontSize: '1.5vw', 
       padding: '1vw' 
     }}>
       <div className="navbar__left" style={{ display: 'flex', alignItems: 'center' }}>
-        <h3 style={{ marginLeft: '20px' }}>MAExpeditions</h3>
+        <h3 style={{ marginLeft: '20px' }}>MBVACA Expeditions</h3>
         <ul style={{ display: 'flex', listStyle: 'none', marginLeft: '20px' }}>
           <li style={{ marginRight: '20px' }}>
             <Link to="/" style={{ color: 'black' }}>INICIO</Link>
@@ -32,13 +35,16 @@ const Navbar = () => {
             <Link to="/about" style={{ color: 'black' }}>NOSOTROS</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/galapagos " style={{ color: 'black' }}>GALÁPAGOS</Link>
+            <Link to="/galapagos" style={{ color: 'black' }}>GALÁPAGOS</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
             <Link to="/amazon" style={{ color: 'black' }}>ECUADOR</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/peru" style={{ color: 'black' }}>PERÚ</Link>
+            <Link to="/peru" style={{ color: 'black' }}>PERÚ </Link>
+          </li>
+          <li style={{ marginRight: '20px' }}>
+      
           </li>
         </ul>
       </div>
@@ -61,4 +67,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar

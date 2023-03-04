@@ -1,27 +1,17 @@
 import React from 'react';
-import Papallacta from './Data.json';
+import TourPage,{TourHeader,Incluye,NoIncluye} from '../../Components/TourPage';
+import Data from './Data.json';
 
 const PapallactaMain = () => {
+    const createMarkup = (text) => {
+        return { __html: text };
+      };
     return (
         <div style={{ paddingTop: '70px' }}>
-            <h2 style={{Color:"black"}}>
-                {Papallacta.Papallacta.main}
-            </h2>
-            <ul>
-                <li>
-                {Papallacta.Papallacta.Itinerario}
-                </li>
-           <li>
-           {Papallacta.Papallacta.Incluye}
-           </li>
-           <li>
-              {Papallacta.Papallacta.NoIncluye}
-           </li>
-           <li>
-            {Papallacta.Papallacta.EQUIPONECESARIO}
-           </li>
-
-            </ul>
+           <TourHeader htext={Data.Papallacta.main}/>
+           e tex<TourPagt={<div dangerouslySetInnerHTML={createMarkup(Data.Papallacta.Itinerario)} />} image={"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}/>
+           <Incluye text={<div dangerouslySetInnerHTML={createMarkup(Data.Papallacta.Incluye)}/>}/>
+           <NoIncluye text={<div dangerouslySetInnerHTML={createMarkup(Data.Papallacta.NoIncluye)}/>}/>
         </div>
     );
 }

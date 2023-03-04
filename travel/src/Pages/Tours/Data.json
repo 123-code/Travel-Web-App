@@ -2,17 +2,12 @@
 {
     
     
-"Papallacta":{
-"main":"Descubre uno de los miradores naturales, donde podrás disfrutar de una vista a la ciudad a 4000m, en elTeleférico, luego nos vamos a uno de los iconos de Ecuador, la famosa Mitad del Mundo, Museo delIntiñan y ciudad mitad del mundo, que mejor luego visitar las termas de Papallacta conocidas por altogrado medicinal y de relajación.",
-
-"Itinerario":"ITINERARIO \n Recogemos Tribuna de los Shirys 8:00 a.m  \n Plaza Foch 8:15 a.m  \n Plaza San Blas 8:30 a.m.  \n Llegada al Teleférico, Gongola hasta Cruz Loma, 3947msnm.Caminata 45min Columpio. \n Retorno al Parqueadero. \n Viaje a la Mitad del Mundo \n Almuerzo. \n  Visita IntiñanVisita  \n Ciudad Mitad del Mundo.  \n Retorno a Quito. (Dejar y recoger turistas). \n  Salida a PapallactaTermas 3 horas. \n  Retorno a Quito.",
-
-"Incluye":"Incluye \n Guía Certificado Bilingüe \n Transporte \n Almuerzo.",
-
-"NoIncluye":"Entradas \n Teleférico Mitad del Mundo \n Papallacta",
-
-"EQUIPONECESARIO":"Ropa cómoda y zapatos cómodos.\n Cámara fotográfica \n  Gorras de sol.\n Protector solar\n Traje de Baño"
-}
-
+    "Papallacta": {
+        "main": "Descubre uno de los miradores naturales, donde podrás disfrutar de una vista a la ciudad a 4000m, en elTeleférico, luego nos vamos a uno de los iconos de Ecuador, la famosa Mitad del Mundo, Museo delIntiñan y ciudad mitad del mundo, que mejor luego visitar las termas de Papallacta conocidas por altogrado medicinal y de relajación.",
+        "Itinerario": "ITINERARIO <br> Recogemos Tribuna de los Shirys 8:00 a.m <br> Plaza Foch 8:15 a.m <br> Plaza San Blas 8:30 a.m. <br> Llegada al Teleférico, Gongola hasta Cruz Loma, 3947msnm.Caminata 45min Columpio. <br> Retorno al Parqueadero. <br> Viaje a la Mitad del Mundo <br> Almuerzo. <br>  Visita IntiñanVisita  <br> Ciudad Mitad del Mundo.  <br> Retorno a Quito. (Dejar y recoger turistas). <br>  Salida a PapallactaTermas 3 horas. <br>  Retorno a Quito.",
+        "Incluye": "Incluye <br> Guía Certificado Bilingüe <br> Transporte <br> Almuerzo.",
+        "NoIncluye": "Entradas <br> Teleférico Mitad del Mundo <br> Papallacta",
+        "EQUIPONECESARIO": "Ropa cómoda y zapatos cómodos.<br> Cámara fotográfica <br>  Gorras de sol.<br> Protector solar<br> Traje de Baño"
+    }
 
 }

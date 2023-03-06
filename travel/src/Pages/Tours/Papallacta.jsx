@@ -9,11 +9,11 @@ const PapallactaMain = () => {
     return (
         <div style={{ paddingTop: '70px' }}>
            <TourHeader htext={Data.Papallacta.main}/>
-           e tex<TourPagt={<div dangerouslySetInnerHTML={createMarkup(Data.Papallacta.Itinerario)} />} image={"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}/>
+           <TourPage text={<div dangerouslySetInnerHTML={createMarkup(Data.Papallacta.Itinerario)} />} image={"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}/>
            <Incluye text={<div dangerouslySetInnerHTML={createMarkup(Data.Papallacta.Incluye)}/>}/>
            <NoIncluye text={<div dangerouslySetInnerHTML={createMarkup(Data.Papallacta.NoIncluye)}/>}/>
-        </div>
+        </div> 
     );
 }
-
-export default PapallactaMain;
+ 
+export default PapallactaMain; 

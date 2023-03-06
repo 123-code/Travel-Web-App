@@ -14,7 +14,7 @@ const AmazonPage = () => {
     </div>
 
     <div style={{ display: "flex" }}>
-    <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "OTAVALO CULTURAL AND SHOPING"  button="true"/>
+    <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "OTAVALO CULTURAL AND SHOPING"  button="true"  link="/otavalo"/>
     <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = " MINDO ADVENTURE AND SWEET (FRIDAY)"  button="true"/>
     <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title =  "CUYABENO DOLPHIN LODGE"  button="true"/>
     </div>

@@ -1,0 +1,13 @@
+.tour-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tour-container > * {
+    flex: 1 1 70%;
+  }
+  
+  .form-container {
+    flex: 1 1 30%;
+    padding: 0 20px;
+  }

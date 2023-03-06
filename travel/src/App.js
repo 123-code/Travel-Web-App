@@ -12,7 +12,12 @@ import  Login from './Components/AuthForm';
 import Footer from './Components/Footer';
 import FloatingButton from './Components/FloatingCard';
 import PapallactaMain from './Pages/Tours/Papallacta';
-
+import OtavaloS from './Pages/Tours/OtavaloS';
+import CotopaxiS from './Pages/Tours/CotopaxiS';
+import Mindo from './Pages/Tours/Mindo';
+import Quilotoa from './Pages/Tours/Quilotoa';
+import CotopaxiH from './Pages/Tours/CotopaxiH';
+import Cuyabeno from './Pages/Tours/Cuyabeno';
 import './App.css';
 
 
@@ -33,18 +38,22 @@ export default class App extends React.Component {
         <Route path="/coast" element={<CoastPage/>} />
         <Route path="/amazon" element={<EcuadorPage/>} />
         <Route path="/auth" element={<Login/>} />
-
         <Route path="/papallacta" element={<PapallactaMain/>}/>
+        <Route path="/otavalo" element={<OtavaloS/>}/>
+        <Route path="/cotopaxis" element={<CotopaxiS/>}/>
+        <Route path="/mindo" element={<Mindo/>}/>
+        <Route path="/quilotoa" element={<Quilotoa/>}/>
+        <Route path="/cotopaxih" element={<CotopaxiH/>}/>
+        <Route path="/cuyabeno" element={<Cuyabeno/>}/>
         </Routes>
         </div>
-      <div>
+        <div>
        <Navbar/>
-      <FloatingButton></FloatingButton>
+       <FloatingButton></FloatingButton>
        <Footer></Footer>
-      </div>
-      </div>
-     </Router>
-     
+       </div>
+       </div>
+       </Router>
    );
   }
 }

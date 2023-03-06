@@ -1,13 +1,256 @@
 
 {
-    
-    
     "Papallacta": {
         "main": "Descubre uno de los miradores naturales, donde podrás disfrutar de una vista a la ciudad a 4000m, en elTeleférico, luego nos vamos a uno de los iconos de Ecuador, la famosa Mitad del Mundo, Museo delIntiñan y ciudad mitad del mundo, que mejor luego visitar las termas de Papallacta conocidas por altogrado medicinal y de relajación.",
         "Itinerario": "ITINERARIO <br> Recogemos Tribuna de los Shirys 8:00 a.m <br> Plaza Foch 8:15 a.m <br> Plaza San Blas 8:30 a.m. <br> Llegada al Teleférico, Gongola hasta Cruz Loma, 3947msnm.Caminata 45min Columpio. <br> Retorno al Parqueadero. <br> Viaje a la Mitad del Mundo <br> Almuerzo. <br>  Visita IntiñanVisita  <br> Ciudad Mitad del Mundo.  <br> Retorno a Quito. (Dejar y recoger turistas). <br>  Salida a PapallactaTermas 3 horas. <br>  Retorno a Quito.",
         "Incluye": "Incluye <br> Guía Certificado Bilingüe <br> Transporte <br> Almuerzo.",
         "NoIncluye": "Entradas <br> Teleférico Mitad del Mundo <br> Papallacta",
         "EQUIPONECESARIO": "Ropa cómoda y zapatos cómodos.<br> Cámara fotográfica <br>  Gorras de sol.<br> Protector solar<br> Traje de Baño"
-    }
+    },
 
-}
+    "OtavaloS":{
+        "ITINERARY": [
+        "ITINERARY <br>",
+        "Departure from La Mariscal 7:15 AM (Reina Victoria and Foch streets corner) <br>",
+        "SAN BLAS SQUARE 7:00 AM <br>",
+        "Quitsato Solar clock. <br>",
+        "Cayambe bizcochos factory (optional Breakfast). <br>",
+        "Visit to the San Pablo Lake viewpoint <br>",
+        "Ponchos Square. <br>",
+        "Lunch. <br>",
+        "Visit to the Cuicocha lagoon. <br>",
+        "Visit to Cotacachi town (Leather Market). <br>",
+        "Return to Quito. <br>"
+        ],
+        "INCLUDES": [
+         "INCLUDES <br>",
+        "Bilingual guide Spanish / English. <br>",
+        "Authorized tourist transport. <br>",
+        "Menu-type meals (lunch). <br>",
+        "Permits to enter protected areas <br>"
+        ],
+        "NOT_INCLUDED": [
+            "NOT INCLUDED <br>",
+        "Extra food and drinks. <br>",
+        "Tips. <br>",
+        "Snacks. <br>"
+        ],
+        "NECESSARY_EQUIPMENT": [
+        "Comfortable clothes. <br>",
+        "Camera. <br>",
+        "Sunscreen. <br>",
+        "Comfortable shoes. <br>",
+        "Sunglasses. <br>"
+        ]
+        },
+
+    "Quilotoa":{
+        "ITINERARY": {
+            "1": "Departure from la Mariscal 7:15 am (Juan Leon Mera and Foch streets corner) / SAN BLAS SQUARE 7:30 am.",
+            "2": "Visit to a traditional market.",
+            "3": "Visit to the Tigua gallery",
+            "4": "Visit Toachi Canyon",
+            "5": "Entrance to the Quilotoa Lagoon.",
+            "6": "Walking to the Quilotoa crater and return.",
+            "7": "Lunch.",
+            "8": "Returning to Quito."
+            },
+            "INCLUDES": {
+            "1": "Bilingual guide Spanish / English.",
+            "2": "Authorized tourist transport.",
+            "3": "Menu-type meals (lunch).",
+            "4": "Permits to enter protected areas"
+            },
+            "NOT INCLUDED": {
+            "1": "Extra food and drinks.",
+            "2": "Entrance fee $2 per person",
+            "3": "Kayacks $4",
+            "4": "Horses $10",
+            "5": "Tips.",
+            "6": "Snacks."
+            },
+            "NECESSARY EQUIPMENT": {
+            "1": "COMFORTABLE AND WARM CLOTHES, WINDYPROOF JACKET (OPTIONAL), GLOVES, NECK AND EAR PROTECTION.",
+            "2": "CAMERA.",
+            "3": "SUNSCREEN.",
+            "4": "COMFORTABLE SHOES FOR WALKING IN MOUNTAINOUS AND SANDY TERRAIN."
+            }
+    }, "Mindo":{
+        "ITINERARY": {
+        "1": "Departure from Mariscal 7:15 AM (Reina Victoria and Foch Streets corner, PLAZA FOCH Sector) / SAN BLAS SQUARE 7:00 AM",
+        "2": "Butterfly farm, orchids and waterfalls.",
+        "3": "Zip line.",
+        "4": "Lunch.",
+        "5": "Chocolate factory.",
+        "6": "Returning to Quito"
+        },
+        "INCLUDES": {
+        "1": "Bilingual guide Spanish/English.",
+        "2": "Authorized tourist transport.",
+        "3": "Menu type meals (lunch)."
+        },
+        "NOT INCLUDED": {
+        "1": "Extra food and drinks.",
+        "2": "Entrance fees to the activities.",
+        "3": "Tips.",
+        "4": "Snacks."
+        },
+        "NECESSARY EQUIPMENT": {
+        "1": "CLOTHING.",
+        "2": "SWIMMING CLOTHES",
+        "3": "CAMERA.",
+        "4": "SUN CAPS.",
+        "5": "SUNGLASSES.",
+        "6": "SUNSCREEN",
+        "7": "COMFORTABLE SHOES."
+        }
+        },
+        "Cuyabeno":{
+            
+                "TourName": "Amazon Jungle Adventure Tour",
+                "Duration": "5 days",
+                "Starting Point": "Quito",
+                "Ending Point": "Quito",
+                "Day1": {
+                "Activity": "Public or private bus to Puente Cuyabeno. Canoe trip down the Cuyabeno River to Dolphin Lodge. Visit Laguna Grande, swim and enjoy sunset. Dinner. Night walk.",
+                "MealsIncluded": "Lunch, Dinner"
+                },
+                "Day2": {
+                "Activity": "Three-hour hike in the primary forest to learn about flora and fauna, visit Lagoons to enjoy flooded forest, swim and enjoy sunset. If possible, see pink dolphins. Return to lodge. Dinner.",
+                "MealsIncluded": "Breakfast, Lunch, Dinner"
+                },
+                "Day3": {
+                "Activity": "Visit Siona Tarabeaya community, help prepare typical food Casabe, visit shaman who explains about jungle ceremonies. Return to lodge. Dinner. Night canoe expedition in search of caimans.",
+                "MealsIncluded": "Breakfast, Lunch, Dinner"
+                },
+                "Day4": {
+                "Activity": "Relaxing morning paddle in traditional canoe on rivers, searching for monkeys and birds. Visit Laguna Grande, swim and enjoy sunset. Dinner. Night canoe expedition in search of caimans.",
+                "MealsIncluded": "Breakfast, Lunch, Dinner"
+                },
+                "Day5": {
+                "Activity": "Early morning bird watching. Navigating the Cuyabeno River back to El Puente. Box Lunch. Transfer to El Puente Cuyabeno. Return to Quito by Public or shuttle bus.",
+                "MealsIncluded": "Breakfast, Lunch"
+                },
+                "Included": [
+                "Private Fluvial transportation El Puente - Dolphin Lodge – El Puente (by canoe) <br> Bilingual naturalist guide",
+                "Accommodation in double and / or triple room with mosquito nets and a private bathroom",
+                "All meals (breakfast-lunch-dinner); pure water, coffee, tea",
+                "Excursion gear (raincoat, rubber boots, camping tents, life jackets)",
+                "Excursions"
+                ],
+                "Excluded": [
+                "Transportation Quito – El Puente - Quito (bus or plane)",
+                "$5. community fee",
+                "$5. shaman fee",
+                "Meals before and after the tour",
+                "Tips",
+                "All other expenses not specified in the tour"
+                ],
+                "RecommendedPackingList": [
+            
+                "Long sleeves, 2 or more",
+                "Comfortable pants, 2 or more (no jeans)",
+                "Shorts, 2 or more",
+                "T-shirts, 2 or more",
+                "Socks, one pair per day",
+                "Tennis shoes and / or sandals",
+                "Thick jacket and sweater",
+                "Biodegradable or natural Soap and shampoo",
+                "Swimsuit",
+                "Cotton Underwear (optional)",
+                "Glasses",
+                "Camera",
+                "Small backpack (waterproof)",
+                "Mosquito repellent",
+                "Bags for equipment, clothes, papers, etc.",
+                "Binoculars (optional)",
+                "Flashlight with extra batteries",
+                "Sunscreen",
+                "First Aid Box",
+                "Hat or cap",
+                "Plastic bottle",
+                "Notebook and / or book",
+                "Towel",
+                "Original Passport and / or identity card"
+                ]
+                },
+                "CotopaxiS":{
+                    "itinerary": [
+                    {
+                    "day": "Day 1",
+                    "activities": [
+                    "Check equipment with guide in Quito",
+                    "Drive south to Machachi for lunch",
+                    "Drive to parking lot at 4,600m",
+                    "Hike 45min to José Rivas Refuge at 4,800m",
+                    "Attend glacier equipment school",
+                    "Have dinner and rest"
+                    ],
+                    "time": "10:30am"
+                    },
+                    {
+                    "day": "Day 2",
+                    "activities": [
+                    "Have a cup of tea at 12:30am",
+                    "Pack necessary things and begin summit attempt",
+                    "Reach summit at sunrise (6-7am)",
+                    "Return to refuge for breakfast",
+                    "Return to Quito by 2pm"
+                    ],
+                    "time": "Varies"
+                    }
+                    ],
+                    "includes": [
+                    "Private transportation 4x4",
+                    "Certified ASEGUIM guide in Spanish/English",
+                    "Meals (lunch and dinner on Day 1, breakfast on Day 2)",
+                    "Refuge, bed, mattress, thermal blanket",
+                    "Glacier equipment school (weather dependent)",
+                    "Technical mountain equipment: plastic boots, crampons, harness, carabineer, helmet, flashlight without batteries, external gloves of 2 fingers, gaiters, ice axe, windproof pants, windproof jacket, rope"
+                    ],
+                    "not_included": [
+                    "Extra food and drinks, 2 liters of water per day",
+                    "Personal equipment: Lycra type shirt and pants, polar jacket and pants, internal gloves, 2 to 3 pairs of socks, 2 backpacks (1 of 40 liters and 1 of 15 liters), buff",
+                    "Sun block",
+                    "Sleeping bag",
+                    "Sunglasses",
+                    "Camera",
+                    "Batteries for the flashlight (2 pairs AAA)"
+                    ]
+                    },
+                    "CotopaxiH":{
+                        "itinerary": [
+                        "Salida desde la Mariscal 7:15 AM (Reina Victoria y Foch esquina, Sector PLAZA Foch) / PLAZA DE SAN BLA 7:30 AM.",
+                        "Ingreso al Parque Nacional Cotopaxi 3200 m (10498.69 pies)",
+                        "Explicación parte baja del Parque Nacional flora y fauna endémica.",
+                        "Depende el clima fotos parte baja a 3600m (11811.02 pies). (Las personas que tienen la actividad de Caballos, su guía estará esperando por ustedes en este sector 3 horas).",
+                        "Arribo Parqueadero 4600m (15091.86 pies).",
+                        "Explicación sobre la caminata hasta el Refugio José Rivas 4.864m (15748.03 pies).",
+                        "Retorno Parqueadero.",
+                        "Explicación para las personas que tomaran la opción de descenso en bicicleta 45 m aprox.",
+                        "Fotografías laguna de Limpiopungo hasta cargar las bicicletas.",
+                        "Salida del Parque Nacional hasta el mismo restaurante de la mañana para el almuerzo.",
+                        "Retorno a Quito (Si tiene el programa 2 días con Quilotoa transfer a la hostería Machachi)"
+                        ],
+                        "includes": {
+                        "guide": "Guía bilingüe español inglés.",
+                        "transportation": "Transporte turístico autorizado.",
+                        "meals": "Comidas tipo menú (Almuerzo).",
+                        "bicycle": "Bicicleta y casco",
+                        "permits": "Permisos para ingresar en las áreas protegidas"
+                        },
+                        "not_included": {
+                        "extra_food_drinks": "Comidas y bebidas extras.",
+                        "tips": "Propinas.",
+                        "snacks": "Snacks.",
+                        "tax": "IVA"
+                        },
+                        "necessary_equipment": [
+                        "Ropa cómoda y de abrigo, rompevientos (opcional), guantes, protector de cuello y orejas.",
+                        "Cámara fotográfica.",
+                        "Protector solar",
+                        "Zapatos cómodos para caminar en terreno montañoso y arena."
+                        ]
+                        }
+        }
+

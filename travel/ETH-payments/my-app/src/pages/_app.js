@@ -15,7 +15,7 @@ import { infuraProvider } from 'wagmi/providers/infura'
 const { chains, provider } = configureChains(
   [mainnet, polygon, optimism, arbitrum,goerli],
   [
-    infuraProvider({ apiKey: 'https://mainnet.infura.io/v3/682c39bac1294baeb74ae767786db1ca' })
+    infuraProvider({ apiKey:'https://goerli.infura.io/v3/682c39bac1294baeb74ae767786db1ca'})
   ]
 );
 

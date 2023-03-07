@@ -9,7 +9,14 @@ export function App() {
  return (
  <div>
  <ETHPayment />
- </div>
+ </div> 
  )
+ }
+ else{
+    return(
+        <>
+        <ConnectButton/>  
+        </>
+    )
  }
 }

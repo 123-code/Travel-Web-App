@@ -5,7 +5,7 @@ import { ETHPayment } from './MakePayment'
 export function App() {
  const { isConnected } = useAccount()
 
- if (isConnected) {
+ if (isConnected) { 
  return (
  <div>
  <ETHPayment />

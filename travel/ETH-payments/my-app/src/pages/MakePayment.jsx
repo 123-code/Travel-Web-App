@@ -1,15 +1,77 @@
-import * as React from 'react'
-import { useDebounce } from 'use-debounce'
-import { usePrepareContractWrite,useContractWrite, useWaitForTransaction } from 'wagmi'
-import { utils } from 'ethers'
-import { PAYMENT_CONTRACT_ADDRESS,PAYMENT_CONTRACT_ABI } from '@/Constants'
+import { BigNumber } from 'ethers';
+import { Component } from 'react';
+import { usePrepareSendTransaction, useSendTransaction } from 'wagmi';
 
 
-//{data.toString()}
+export function SendEther() {
+  const { config } = usePrepareSendTransaction({
+    request: { to: '0xA6ee1E5EA0332c0B4A258808505EEd60C688C931', value: BigNumber.from('10000000000000000') },
+  }) 
+
+  const { data, isLoading, isSuccess, sendTransaction, isError } =
+    useSendTransaction(config)
+
+  return (
+    <>
+      <h1 style={{ fontFamily: 'Futura, sans-serif' }}> Pay With ETH: </h1>
+      <div style={{ 
+        backgroundColor: '#fff9e6', 
+        fontFamily: 'Futura', 
+        minHeight: '100vh', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        fontSize: '20px', 
+        fontWeight: 'bold', 
+        margin: '0 0 20px', 
+        color: '#00773e', 
+      }}>
+        <div style={{
+  
+        }}>
+          <h3> To pay using ETH </h3>
+          <ol style={{ textAlign: 'left', paddingLeft: '30px' }}>
+            <li>Select the reserve you are making</li>
+            <li>Click the "Send Transaction" button</li>
+            <li>Confirm the amount you are paying in your wallet</li>
+            <li>Confirm the transaction in your wallet</li>
+          </ol>
+          <button style={{ 
+            backgroundColor: 'black', 
+            color: 'white', 
+            padding: '10px 20px', 
+            borderRadius: '5px',
+            border: 'none',
+            boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.2)',
+            fontWeight: 'bold',
+            fontSize: '18px',
+            fontFamily: 'Futura',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s ease-in-out',
+            marginTop: '20px'
+          }} 
+          onClick={() => sendTransaction?.()}
+          onMouseEnter={(e) => e.target.style.backgroundColor = 'gray'}
+          onMouseLeave={(e) => e.target.style.backgroundColor = 'black'}
+          >
+            Send Transaction
+          </button>
+          {isLoading && <div style={{ marginTop: '20px' }}>Check Wallet</div>}
+          {isSuccess && <div style={{ marginTop: '20px' }}>Transaction: {JSON.stringify(data)}</div>}
+          {isError && <div style={{ marginTop: '20px' }}>Check Wallet</div>}
+        </div>
+      </div>
+    </>
+  );
+}
+
+
 
 export function SendETHForm (){
   const [amount, setAmount] = React.useState('')
   const debouncedAmount = useDebounce(amount, 500)
+  const value = utils.parseEther('0.01');
   const {
     config,
     error: prepareError,
@@ -18,7 +80,7 @@ export function SendETHForm (){
     address: PAYMENT_CONTRACT_ADDRESS,
     abi: PAYMENT_CONTRACT_ABI,
     functionName: 'PayNow',
-    args: [ '100000'],
+    args: [ value ],
     //debouncedAmount ? utils.parseEther(debouncedAmount) : null
     // value: utils.parseEther(amount), 
   })
@@ -54,7 +116,7 @@ export function ETHPayment(){
 
     return(
       
-      <SendETHForm/>
+      <SendEther/>
 
     )
 }

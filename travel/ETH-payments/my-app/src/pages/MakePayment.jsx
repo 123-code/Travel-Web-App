@@ -1,14 +1,17 @@
+import  React,{useState} from 'react';
 import { BigNumber } from 'ethers';
 import { Component } from 'react';
 import { usePrepareSendTransaction, useSendTransaction } from 'wagmi';
 
 
+
 export function SendEther() {
+
   const { config } = usePrepareSendTransaction({
     request: { to: '0xA6ee1E5EA0332c0B4A258808505EEd60C688C931', value: BigNumber.from('10000000000000000') },
   }) 
 
-  const { data, isLoading, isSuccess, sendTransaction, isError } =
+  const { data, isLoading, isSuccess, sendTransaction, isError,error } =
     useSendTransaction(config)
 
   return (
@@ -37,6 +40,7 @@ export function SendEther() {
             <li>Confirm the amount you are paying in your wallet</li>
             <li>Confirm the transaction in your wallet</li>
           </ol>
+        
           <button style={{ 
             backgroundColor: 'black', 
             color: 'white', 
@@ -51,22 +55,25 @@ export function SendEther() {
             transition: 'background-color 0.3s ease-in-out',
             marginTop: '20px'
           }} 
+        
           onClick={() => sendTransaction?.()}
           onMouseEnter={(e) => e.target.style.backgroundColor = 'gray'}
           onMouseLeave={(e) => e.target.style.backgroundColor = 'black'}
+           
           >
+              
             Send Transaction
           </button>
           {isLoading && <div style={{ marginTop: '20px' }}>Check Wallet</div>}
           {isSuccess && <div style={{ marginTop: '20px' }}>Transaction: {JSON.stringify(data)}</div>}
-          {isError && <div style={{ marginTop: '20px' }}>Check Wallet</div>}
+          {error?.message=='User rejected request' && <div style={{ marginTop: '20px' }}>You rejected the transaction</div>}
         </div>
       </div>
     </>
   );
 }
 
-
+ // <SettypeForm/>
 
 export function SendETHForm (){
   const [amount, setAmount] = React.useState('')
@@ -115,8 +122,10 @@ export function SendETHForm (){
 export function ETHPayment(){
 
     return(
-      
+      <>
       <SendEther/>
+      </>
+     
 
     )
 }

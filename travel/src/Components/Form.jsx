@@ -211,7 +211,14 @@ const Form = ({ color }) => {
           </div>
 
           <div className="pickr">
-      <label htmlFor="adults-picker">Número de adultos:</label>
+      <label htmlFor="adults-picker"
+      style={{
+        color: color,
+ 
+   
+      }}>
+        Número de adultos:
+        </label>
       <input
         type="number"
         id="adults-picker"
@@ -219,7 +226,11 @@ const Form = ({ color }) => {
         onChange={handleAdultsChange}
       />
       <br />
-      <label htmlFor="children-picker">Número de niños:</label>
+      <label htmlFor="children-picker" style={{
+                color: color,
+         
+                borderColor: color,
+              }}>Número de niños:</label>
       <input
         type="number"
         id="children-picker"
@@ -239,7 +250,7 @@ const Form = ({ color }) => {
               onChange={handleChange}
               style={{
                 color: color,
-                backgroundColor: color,
+              
                 borderColor: color,
               }}
             />
@@ -250,7 +261,7 @@ const Form = ({ color }) => {
             className="enter"
             type="button"
             onClick={handleSubmit}
-            style={{ backgroundColor: color, color: "white" }}
+            style={{ backgroundColor: color, color: "black" }}
           >
             Enviar
           </button>

@@ -5,7 +5,6 @@ import (
 	"deps/Server/Models"
 	"fmt"
 	"log"
-	"os"
 	"github.com/gin-gonic/gin"
 	"github.com/sendgrid/sendgrid-go"
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
@@ -30,7 +29,7 @@ func CreateMainReserves(c *gin.Context) {
 	plainTextContent := fmt.Sprintf("Name: %s\nEmail: %s\nAge: %d\nNationality: %s", reqbody.Name, reqbody.Email, reqbody.Age, reqbody.Nationality)
 	htmlContent := fmt.Sprintf("<strong>Name:</strong> %s<br><strong>Email:</strong> %s<br><strong>Age:</strong> %d<br><strong>Nationality:</strong> %s", reqbody.Name, reqbody.Email, reqbody.Age, reqbody.Nationality)
 	message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
-	client := sendgrid.NewSendClient(os.Getenv("SENDGRID_API_KEY"))
+	client := sendgrid.NewSendClient("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")
 	response, err := client.Send(message)
 	if err != nil {
 		log.Println("Error sending email:", err)

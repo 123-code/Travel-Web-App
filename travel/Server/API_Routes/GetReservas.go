@@ -9,7 +9,7 @@ import (
 
 func GetReservas(c *gin.Context){
 	var reserves []Models.Reserve
-	DB.DBconn.Find(&reserves);
+	DB.DBconn.Find(&reserves); 
    c.JSON(200,gin.H{
 	   "reserves":reserves,
    })

@@ -58,7 +58,7 @@ const Navbar = () => {
           <button className="btnRegistrar" onClick={()=>{navigate("/auth")}}> Register </button>
         </li>
         <div>
-        <li> <ConnectButton/> </li>
+ 
         </div>
         
       </ul>

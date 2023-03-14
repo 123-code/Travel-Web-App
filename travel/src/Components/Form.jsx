@@ -7,10 +7,15 @@ import countriesList from '../Data/countries';
 // create form component
 const Form = ({ color }) => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    country: "",
-    message: "",
+    FirstName: "",
+    LastName: "",
+    Phone: "",
+    Email: "",
+    Contact:"",
+    Residence:"",
+    Adults: 0,
+    Children: 0,
+    Comments: "",
   });
 
   const countries = [
@@ -60,9 +65,9 @@ const Form = ({ color }) => {
       <input
         type="text"
         required
-        id="name"
-        name="name"
-        value={formData.name}
+        id="FirstName"
+        name="FirstName"
+        value={formData.firstName}
         onChange={handleChange}
         style={{
           color: color,
@@ -81,8 +86,8 @@ const Form = ({ color }) => {
       <input
         type="text"
         required
-        id="apellido"
-        name="apellido"
+        id="LastName"
+        name="LastName"
         value={formData.lastName}
         onChange={handleChange}
         style={{
@@ -123,10 +128,11 @@ const Form = ({ color }) => {
       <div>
         <label style={{ color: color }}>
           <input
+          id  = "Contact"
             type="checkbox"
-            name="contacto"
+            name="Contact"
             value="chat"
-            checked={formData.contacto && formData.contacto.includes("chat")}
+            checked={formData.contact && formData.contact.includes("chat")}
             onChange={(e) =>
               setFormData({
                 ...formData,
@@ -138,8 +144,9 @@ const Form = ({ color }) => {
         </label>
         <label style={{ color: color }}>
           <input
+          id  = "Contact"
             type="checkbox"
-            name="contacto"
+            name="Contact"
             value="llamada"
             checked={formData.contacto && formData.contacto.includes("llamada")}
             onChange={(e) =>
@@ -153,8 +160,9 @@ const Form = ({ color }) => {
         </label>
         <label style={{ color: color }}>
           <input
+          id  = "Contact"
             type="checkbox"
-            name="contacto"
+            name="Contact"
             value="email"
             checked={formData.contacto && formData.contacto.includes("email")}
             onChange={(e) =>
@@ -170,13 +178,15 @@ const Form = ({ color }) => {
     </div>
 
     <div className="residencia">
-      <label htmlFor="country-select" style={{
+      <label htmlFor="Residence" style={{
           color: color
         }} >
       Residencia:</label>
       <select
-        id="country-select"
+        id="Residence"
+        name="Residence"
         value={selectedCountry}
+      
         onChange={handleCountryChange}
       >
         <option value=""style={{
@@ -211,41 +221,43 @@ const Form = ({ color }) => {
           </div>
 
           <div className="pickr">
-      <label htmlFor="adults-picker"
+      <label htmlFor="Adults"
       style={{
-        color: color,
- 
-   
+        color: color,   
       }}>
         Número de adultos:
-        </label>
+      </label>
       <input
         type="number"
-        id="adults-picker"
+        required
+        id="Adults"
+        name="Adults"
         value={adults}
         onChange={handleAdultsChange}
       />
       <br />
-      <label htmlFor="children-picker" style={{
-                color: color,
-         
-                borderColor: color,
-              }}>Número de niños:</label>
+      <label htmlFor="Children" style={{
+        color: color,
+        borderColor: color,
+      }}>Número de niños:</label>
       <input
         type="number"
-        id="children-picker"
+        required
+        id="Children"
+        name="Children"
         value={children}
         onChange={handleChildrenChange}
       />
     </div>
-        
+  
+
 
           <div className="inputBoxMensaje" style={{ borderColor: color }}>
             <input
               type="text"
               required
-              id="message"
-              name="message"
+              id="Comments"
+              name="Comments"
               value={formData.message}
               onChange={handleChange}
               style={{
@@ -272,3 +284,4 @@ const Form = ({ color }) => {
 };
 
 export default Form;
+//  value={selectxedCountry}

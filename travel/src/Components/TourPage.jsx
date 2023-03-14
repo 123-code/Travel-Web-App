@@ -24,9 +24,10 @@ export default function TourPage({text,image}) {
 export function Incluye({text}){
 return(
     <>
-    <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-    <h1 style={{fontSize: 25 ,textAlign: 'left', color:"black"}}>{text}</h1>
-    </div>
+      <h1 style={{color:"black"}}> Includes </h1>
+    <div style={{display: 'flex'}}>
+    <h1 style={{fontSize: 25 , color:"black"}}>{text}</h1>
+    </div>  
     </>
 )
 }
@@ -34,7 +35,8 @@ return(
 export function NoIncluye({text}){
     return(
         <>
-        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+        <h1 style={{color:"black"}}> Not Included </h1>
+        <div style={{display: 'flex'}}>
         <h1 style={{fontSize: 25 ,textAlign: 'left', color:"black"}}>{text}</h1>
         </div>
         </>

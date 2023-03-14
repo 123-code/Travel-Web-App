@@ -8,7 +8,7 @@ const OtavaloS = () => {
     return { __html: text };
   };
   return (
-    <div style={{ paddingTop: '10px' }}>
+    <div style={{ paddingTop: '150px' }}>
       <div className="tour-container">
         <div>
           <TourHeader htext={Data.OtavaloS.main} />

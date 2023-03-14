@@ -37,7 +37,7 @@ export default class App extends React.Component {
         <Route path="/ecuador" element={<EcuadorPage/>} />
         <Route path="/coast" element={<CoastPage/>} />
         <Route path="/amazon" element={<EcuadorPage/>} />
-        <Route path="/auth" element={<Login/>} />
+  
         <Route path="/papallacta" element={<PapallactaMain/>}/>
         <Route path="/otavalo" element={<OtavaloS/>}/>
         <Route path="/cotopaxis" element={<CotopaxiS/>}/>
@@ -60,6 +60,7 @@ export default class App extends React.Component {
 
 /*
  <Router>
+       <Route path="/auth" element={<Login/>} />
         <Routes>
         <Route exact path="/" component={Main} />
        <Route path="/about" component={AboutPage} />

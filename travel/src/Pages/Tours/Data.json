@@ -9,31 +9,12 @@
     },
 
     "OtavaloS":{
-        "ITINERARY": [
-        "ITINERARY <br>",
-        "Departure from La Mariscal 7:15 AM (Reina Victoria and Foch streets corner) <br>",
-        "SAN BLAS SQUARE 7:00 AM <br>",
-        "Quitsato Solar clock. <br>",
-        "Cayambe bizcochos factory (optional Breakfast). <br>",
-        "Visit to the San Pablo Lake viewpoint <br>",
-        "Ponchos Square. <br>",
-        "Lunch. <br>",
-        "Visit to the Cuicocha lagoon. <br>",
-        "Visit to Cotacachi town (Leather Market). <br>",
-        "Return to Quito. <br>"
-        ],
+        "ITINERARY": "ITINERARY <br> Departure from La Mariscal 7:15 AM (Reina Victoria and Foch streets corner) <br> SAN BLAS SQUARE 7:00 AM <br> Quitsato Solar clock. <br> Cayambe bizcochos factory (optional Breakfast). <br> Visit to the San Pablo Lake viewpoint <br> Ponchos Square. <br> Lunch. <br> Visit to the Cuicocha lagoon. <br> Visit to Cotacachi town (Leather Market). <br> Return to Quito. <br>",
         "INCLUDES": [
-         "INCLUDES <br>",
-        "Bilingual guide Spanish / English. <br>",
-        "Authorized tourist transport. <br>",
-        "Menu-type meals (lunch). <br>",
-        "Permits to enter protected areas <br>"
+         "INCLUDES <br>Bilingual guide Spanish / English. <br>Authorized tourist transport. <br> Menu-type meals (lunch). <br> Permits to enter protected areas <br>"
         ],
         "NOT_INCLUDED": [
-            "NOT INCLUDED <br>",
-        "Extra food and drinks. <br>",
-        "Tips. <br>",
-        "Snacks. <br>"
+            "NOT INCLUDED <br>Extra food and drinks. <br>Tips,Snacks. <br>"
         ],
         "NECESSARY_EQUIPMENT": [
         "Comfortable clothes. <br>",
@@ -45,66 +26,8 @@
         },
 
     "Quilotoa":{
-        "ITINERARY": {
-            "1": "Departure from la Mariscal 7:15 am (Juan Leon Mera and Foch streets corner) / SAN BLAS SQUARE 7:30 am.",
-            "2": "Visit to a traditional market.",
-            "3": "Visit to the Tigua gallery",
-            "4": "Visit Toachi Canyon",
-            "5": "Entrance to the Quilotoa Lagoon.",
-            "6": "Walking to the Quilotoa crater and return.",
-            "7": "Lunch.",
-            "8": "Returning to Quito."
-            },
-            "INCLUDES": {
-            "1": "Bilingual guide Spanish / English.",
-            "2": "Authorized tourist transport.",
-            "3": "Menu-type meals (lunch).",
-            "4": "Permits to enter protected areas"
-            },
-            "NOT INCLUDED": {
-            "1": "Extra food and drinks.",
-            "2": "Entrance fee $2 per person",
-            "3": "Kayacks $4",
-            "4": "Horses $10",
-            "5": "Tips.",
-            "6": "Snacks."
-            },
-            "NECESSARY EQUIPMENT": {
-            "1": "COMFORTABLE AND WARM CLOTHES, WINDYPROOF JACKET (OPTIONAL), GLOVES, NECK AND EAR PROTECTION.",
-            "2": "CAMERA.",
-            "3": "SUNSCREEN.",
-            "4": "COMFORTABLE SHOES FOR WALKING IN MOUNTAINOUS AND SANDY TERRAIN."
-            }
-    }, "Mindo":{
-        "ITINERARY": {
-        "1": "Departure from Mariscal 7:15 AM (Reina Victoria and Foch Streets corner, PLAZA FOCH Sector) / SAN BLAS SQUARE 7:00 AM",
-        "2": "Butterfly farm, orchids and waterfalls.",
-        "3": "Zip line.",
-        "4": "Lunch.",
-        "5": "Chocolate factory.",
-        "6": "Returning to Quito"
-        },
-        "INCLUDES": {
-        "1": "Bilingual guide Spanish/English.",
-        "2": "Authorized tourist transport.",
-        "3": "Menu type meals (lunch)."
-        },
-        "NOT INCLUDED": {
-        "1": "Extra food and drinks.",
-        "2": "Entrance fees to the activities.",
-        "3": "Tips.",
-        "4": "Snacks."
-        },
-        "NECESSARY EQUIPMENT": {
-        "1": "CLOTHING.",
-        "2": "SWIMMING CLOTHES",
-        "3": "CAMERA.",
-        "4": "SUN CAPS.",
-        "5": "SUNGLASSES.",
-        "6": "SUNSCREEN",
-        "7": "COMFORTABLE SHOES."
-        }
-        },
+        "ITINERARY":" 1. Departure from la Mariscal 7:15 am (Juan Leon Mera and Foch streets corner) / SAN BLAS SQUARE 7:30 am.<br>2. Visit to a traditional market.<br>3. Visit to the Tigua gallery<br>4. Visit Toachi Canyon<br>5. Entrance to the Quilotoa Lagoon.<br>6. Walking to the Quilotoa crater and return.<br>7. Lunch.<br>8. Returning to Quito.<br>INCLUDES: 1. Bilingual guide Spanish / English.<br>2. Authorized tourist transport.<br>3. Menu-type meals (lunch).<br>4. Permits to enter protected areas<br>NOT INCLUDED: 1. Extra food and drinks.<br>2. Entrance fee $2 per person<br>3. Kayacks $4<br>4. Horses $10<br>5. Tips.<br>6. Snacks.<br>NECESSARY EQUIPMENT: 1. COMFORTABLE AND WARM CLOTHES, WINDYPROOF JACKET (OPTIONAL), GLOVES, NECK AND EAR PROTECTION.<br>2. CAMERA.<br>3. SUNSCREEN.<br>4. COMFORTABLE SHOES FOR WALKING IN MOUNTAINOUS AND SANDY TERRAIN"
+    }, "Mindo":["<br>ITINERARY:<br>1:Departure from Mariscal 7:15 AM (Reina Victoria and Foch Streets corner, PLAZA FOCH Sector) / SAN BLAS SQUARE 7:00 AM <br> 2: Butterfly farm, orchids and waterfalls.<br>3: Zip line.<br>4: Lunch.<br>5: Chocolate factory.<br>6: Returning to Quito<br> <br>INCLUDES:<br>1: Bilingual guide Spanish/English.<br>2: Authorized tourist transport.<br>3: Menu type meals (lunch).<br><br>NOTINCLUDED:<br>1: Extra food and drinks.<br>2: Entrance fees to the activities<br>3: Tips.<br>4: Snacks<br><br>NECESSARY EQUIPMENT:<br>1: CLOTHING.<br>2: SWIMMING CLOTHES<br>3: CAMERA.<br>4: SUN CAPS.<br>5: SUNGLASSES.<br>6: SUNSCREEN<br>7: COMFORTABLE SHOES.<br>"],
         "Cuyabeno":{
             
                 "TourName": "Amazon Jungle Adventure Tour",

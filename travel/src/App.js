@@ -9,6 +9,7 @@ import HighlandsPage from './Pages/HighlandsPage';
 import EcuadorPage from './Pages/AmazonPage';
 import CoastPage from './Pages/CoastPage';
 import  Login from './Components/AuthForm';
+
 import Footer from './Components/Footer';
 import FloatingButton from './Components/FloatingCard';
 import PapallactaMain from './Pages/Tours/Papallacta';
@@ -38,6 +39,8 @@ export default class App extends React.Component {
         <Route path="/coast" element={<CoastPage/>} />
         <Route path="/amazon" element={<EcuadorPage/>} />
   
+        <Route path="/auth" element={<Login/>} />
+
         <Route path="/papallacta" element={<PapallactaMain/>}/>
         <Route path="/otavalo" element={<OtavaloS/>}/>
         <Route path="/cotopaxis" element={<CotopaxiS/>}/>

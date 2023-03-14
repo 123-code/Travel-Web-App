@@ -1,82 +1,108 @@
 .floating-button {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    z-index: 999;
-    transition: all 0.3s ease;
-  }
-  
-  .floating-button:hover {
-    transform: scale(1.1);
-  }
-  
-  .open-button,
-  .close-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 60px;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  .open-button:hover,
-  .close-button:hover {
-    background-color: #0062cc;
-  }
-  
-  .expanded {
-    bottom: 80px;
-    left: 80px;
-  }
-  
-  .cardFlotante {
-    position: absolute;
-    bottom: 80px;
-    left: 10px;
-    width: 300px;
-    height: 400px;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-y: scroll; /* Agregamos scroll vertical */
-    border-radius: 10px;
-  }
-  
-  
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  .card-body {
-    padding: 20px;
-    background-color: #f0f0f0;
-    height: 100%;
-  }
-  
-  .card-header h2 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .close-button:hover {
-    background-color: #dc3545;
-  }
-  
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.open-button,
+.close-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  outline: none;
+  cursor: pointer;
+}
+
+.open-button:hover,
+.close-button:hover {
+  background-color: #0062cc;
+}
+
+.cardFlotante {
+  position: fixed;
+  top: 0;
+  left: 20px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  height: 60px;
+}
+
+.h2FC {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+.close-button {
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #f0f0f0;
+}
+
+
+.cardFlotante.expanded {
+  width: 350px;
+  left: 10px;
+}
+
+.cardFlotante.expanded .card-header {
+  height: 80px;
+}
+
+.cardFlotante.expanded .h2FC {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.cardFlotante.expanded .close-button {
+  top: 20px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

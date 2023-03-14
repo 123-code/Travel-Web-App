@@ -36,7 +36,7 @@ const Form = ({ color }) => {
 
   const handleSubmit = () => {
     axios
-      .post("https://123-code-bug-free-doodle-rpjvpg7rwvg25vq6-5000.preview.app.github.dev/api/sendform", formData)
+      .post("https://mavbaca-backend-production-5202.up.railway.app/api/mainform", formData)
       .then((response) => {
         console.log(response);
       })

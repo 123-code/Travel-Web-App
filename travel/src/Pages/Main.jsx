@@ -20,10 +20,12 @@ return(
 
     <div style={{ width: "33,33%", float: "left" }}>
 <body  className="text">
-<a className="singup">Si requieres mayor información, llena el siguiente formulario</a>
-<Form></Form>
+
 <TopDestinations></TopDestinations>
 <Testimonials></Testimonials>
+
+<h1 className="singup">Si requieres mayor información, llena el siguiente formulario</h1>
+<Form></Form>
 </body>
 
 

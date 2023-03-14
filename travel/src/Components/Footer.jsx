@@ -1,5 +1,7 @@
 import React from 'react';
-import '../Styling/Footer.css'
+import '../Styling/Footer.css';
+import logo from '../Imgs/logoRB.png'
+
 
 const Footer = () => {
   return (
@@ -8,11 +10,10 @@ const Footer = () => {
         <div className="footer__column">
           <h4>Destinos</h4>
           <ul>
-            <li><a href="#">Destino 1</a></li>
-            <li><a href="#">Destino 2</a></li>
-            <li><a href="#">Destino 3</a></li>
-            <li><a href="#">Destino 4</a></li>
-            <li><a href="#">Destino 5</a></li>
+            <li><a href="#">Galápagos</a></li>
+            <li><a href="#">Ecuador</a></li>
+            <li><a href="#">Perú</a></li>
+          
           </ul>
         </div>
         <div className="footer__column">
@@ -43,7 +44,8 @@ const Footer = () => {
       </div>
       <div className="footer__bottom">
         <p>© ReactBuilders 2023</p>
-        <img src="logo.png" alt="ReactBuilders" />
+        <img src={logo} alt="ReactBuilders" />
+
       </div>
     </footer>
   );

@@ -13,17 +13,17 @@ const AmazonPage = () => {
      <div style={{ display: "flex" }}>
      <Destinos  imageSrc = {"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}title = "TELEFERICO + MITAD DEL MUNDO + PAPALLACTA" button="true" link="/papallacta"/>
      <Destinos  imageSrc = {"https://i.ibb.co/8cMhT5j/quilotoa.jpg"}title = "NATURAL AND HIKE QUILOTOA"  button="true" link="/quilotoa"/>
-    <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "COTOPAXI BIKE AND HIKE"  button="true" link="cotopaxih"/>
+    <Destinos  imageSrc = {"https://www.linkpicture.com/q/download_159.jpeg"}title = "COTOPAXI BIKE AND HIKE"  button="true" link="cotopaxih"/>
     </div>
 
     <div style={{ display: "flex" }}>
-    <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "OTAVALO CULTURAL AND SHOPING"  button="true"  link="/otavalo"/>
-    <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = " MINDO ADVENTURE AND SWEET (FRIDAY)"  button="true" link="/mindo"/>
-    <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title =  "CUYABENO DOLPHIN LODGE"  button="true" link="cuyabeno"/>
+    <Destinos  imageSrc = {"https://www.linkpicture.com/q/download-1_108.jpeg"}title = "OTAVALO CULTURAL AND SHOPING"  button="true"  link="/otavalo"/>
+    <Destinos  imageSrc = {"https://www.linkpicture.com/q/images_1152.jpeg"}title = " MINDO ADVENTURE AND SWEET (FRIDAY)"  button="true" link="/mindo"/>
+    <Destinos  imageSrc = {"https://www.linkpicture.com/q/download-2_15.jpeg"}title =  "CUYABENO DOLPHIN LODGE"  button="true" link="cuyabeno"/>
     </div>
 
     <div style={{ display: "flex" }}>
-    <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "COTOPAXI SUMMIT"  button="true" link="/cotopaxis"/>
+    <Destinos  imageSrc = {"https://www.linkpicture.com/q/download-3_51.jpeg"}title = "COTOPAXI SUMMIT"  button="true" link="/cotopaxis"/>
     </div>
      
    
@@ -33,5 +33,8 @@ const AmazonPage = () => {
         
     );
 
-}
+}//cuyabeno: https://www.linkpicture.com/q/download-2_15.jpeg
+// otavalo: https://www.linkpicture.com/q/download-1_108.jpeg
+// mindo:   https://www.linkpicture.com/q/images_1152.jpeg
+
 export default AmazonPage;

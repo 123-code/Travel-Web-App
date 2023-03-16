@@ -1,8 +1,10 @@
 import React from 'react';
 import TourPage,{TourHeader,Incluye,NoIncluye} from '../../Components/TourPage';
 import Data from './Data.json';
+import ReserveButton from '../../Components/ReserveButton';
 
 const PapallactaMain = () => {
+  
     const createMarkup = (text) => {
         return { __html: text };
     };
@@ -18,7 +20,7 @@ const PapallactaMain = () => {
     return (
         <div style={{ paddingTop: '150px' }}>
            <TourPage text={<div dangerouslySetInnerHTML={createMarkup(Data.Quilotoa.ITINERARY)} style={commonStyle} />} image={"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}/>
-
+           <ReserveButton/>
         </div> 
     );
 }

@@ -5,6 +5,7 @@ import ConnectButton from "./ConnectWalletButton";
 import Select from 'react-select';
 import PageDropdown from './NavDropDown';
 import '../Styling/Navbar.css'
+import Button from '@mui/material/Button';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -50,12 +51,12 @@ const Navbar = () => {
       </div>
       <div className="navbar__right">
       <ul style={{ display: 'flex', listStyle: 'none', marginRight: '20px' }}>
-        <li style={{ marginRight: '20px' }}>
-          <button className="loginBtn"> Log In </button>
-        </li>
+ 
 
         <li>
-          <button className="btnRegistrar" onClick={()=>{navigate("/auth")}}> Register </button>
+        <Button variant="contained" size="large" onClick={()=>{navigate("/form")}}>
+          Contact
+        </Button>
         </li>
         <div>
  

@@ -1,8 +1,11 @@
 import React from 'react';
 import TourPage,{TourHeader,Incluye,NoIncluye} from '../../Components/TourPage';
 import Data from './Data.json';
+import {FormPage} from '../FormPage';
+import { useNavigate } from "react-router-dom";
 
-export function Cuyabeno() {
+export function Cuyabeno() { 
+
   const createMarkup = (text) => {
     return { __html: text };
   }; 
@@ -45,3 +48,4 @@ export function Cuyabeno() {
   ); 
 }
 export default Cuyabeno;
+//<button onClick={()=>{navigate("/")}}> Reserve </button>

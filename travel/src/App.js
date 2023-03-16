@@ -9,7 +9,7 @@ import HighlandsPage from './Pages/HighlandsPage';
 import EcuadorPage from './Pages/AmazonPage';
 import CoastPage from './Pages/CoastPage';
 import  Login from './Components/AuthForm';
-
+import FormPage from './Pages/FormPage';
 import Footer from './Components/Footer';
 import FloatingButton from './Components/FloatingCard';
 import PapallactaMain from './Pages/Tours/Papallacta';
@@ -19,6 +19,7 @@ import Mindo from './Pages/Tours/Mindo';
 import Quilotoa from './Pages/Tours/Quilotoa';
 import CotopaxiH from './Pages/Tours/CotopaxiH';
 import Cuyabeno from './Pages/Tours/Cuyabeno';
+
 import './App.css';
 
 
@@ -38,9 +39,8 @@ export default class App extends React.Component {
         <Route path="/ecuador" element={<EcuadorPage/>} />
         <Route path="/coast" element={<CoastPage/>} />
         <Route path="/amazon" element={<EcuadorPage/>} />
-  
-        <Route path="/auth" element={<Login/>} />
-
+        <Route path="/auth" element={<Login/>}/>
+        <Route path="/form" element={<FormPage/>}/>
         <Route path="/papallacta" element={<PapallactaMain/>}/>
         <Route path="/otavalo" element={<OtavaloS/>}/>
         <Route path="/cotopaxis" element={<CotopaxiS/>}/>

@@ -1,4 +1,9 @@
 import React from 'react';
+import {BsFacebook} from 'react-icons/bs';
+import {FaTwitter} from 'react-icons/fa';
+import {FaInstagram} from 'react-icons/fa';
+import {SiEthereum} from 'react-icons/si';
+import { BsPhone } from 'react-icons/bs';
 import '../Styling/Footer.css'
 
 const Footer = () => {
@@ -8,34 +13,29 @@ const Footer = () => {
         <div className="footer__column">
           <h4>Destinos</h4>
           <ul>
-            <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-            <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-            <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-            <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-            <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-          </ul>
-        </div>
-        <div className="footer__column">
-          <h4>Tours</h4>
-          <ul>
-          <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-          <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-          <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
-          <li><a style={{color:'#fff'}} href="#">Destino 1</a></li>
+            <li><a style={{color:'#fff'}} href="#">Otavalo</a></li>
+            <li><a style={{color:'#fff'}} href="#">Papallacta</a></li>
+            <li><a style={{color:'#fff'}} href="#">Mindo</a></li>
+            <li><a style={{color:'#fff'}} href="#">Cuyabeno</a></li>
+            <li><a style={{color:'#fff'}} href="#">Cotopaxi</a></li>
+            <li><a style={{color:'#fff'}} href="#">Quilotoa</a></li>
+            <li><a style={{color:'#fff'}} href="#">Perú</a></li>
+            <li><a style={{color:'#fff'}} href="#">Galápagos</a></li>
           </ul>
         </div>
         <div className="footer__column">
           <h4>Nuestras redes</h4>
           <ul className="social-icons">
-            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i className="fa fa-facebook"></i> <BsFacebook/> </a></li>
+            <li><a href="#"><i className="fa fa-twitter"></i></a><FaTwitter/></li>
+            <li><a href="#"><i className="fa fa-instagram"></i></a><FaInstagram/></li>
+            <li><a href="#"><i className="fa fa-instagram"></i></a><SiEthereum/></li>
           </ul>
         </div>
         <div className="footer__column">
           <h4>Contáctanos</h4>
           <ul>
-          <li><a style={{color:'#fff'}} href="#">Cel:0982379716</a></li>
+          <li><BsPhone/><a style={{color:'#fff'}} href="#">Cel:0982379716</a></li>
           </ul>
         </div>
       </div>

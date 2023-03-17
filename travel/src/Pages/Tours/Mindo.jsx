@@ -1,5 +1,7 @@
 import React from 'react';
 import TourPage,{TourHeader,Incluye,NoIncluye} from '../../Components/TourPage';
+import ReserveButton from '../../Components/ReserveButton';
+import { Paper } from '@mui/material';
 import Data from './Data.json';
 
 const PapallactaMain = () => {
@@ -17,9 +19,12 @@ const PapallactaMain = () => {
     }
     return (
         <div style={{ paddingTop: '150px' }}>
-    
-           <TourPage text={<div dangerouslySetInnerHTML={createMarkup(Data.Mindo)} style={commonStyle} />} image={"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}/>
-        </div> 
+            <h1> Mindo </h1>
+    <Paper elevation={3}>
+    <TourPage text={<div dangerouslySetInnerHTML={createMarkup(Data.Mindo)} style={commonStyle} />} image={"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}/>
+    <ReserveButton style={{itemsAlign:"right"}}/>
+    </Paper>
+    </div> 
     );
 }
  

@@ -9,7 +9,7 @@ import HighlandsPage from './Pages/HighlandsPage';
 import EcuadorPage from './Pages/AmazonPage';
 import CoastPage from './Pages/CoastPage';
 import  Login from './Components/AuthForm';
-
+import Cookies from './Components/CookieAlert';
 import Footer from './Components/Footer';
 import FloatingButton from './Components/FloatingCard';
 import PapallactaMain from './Pages/Tours/Papallacta';
@@ -21,8 +21,10 @@ import './App.css';
 export default class App extends React.Component {
   render(){
     return (
+      
       <Router>
        <div>
+       <Cookies></Cookies>
        <div>
          <Routes>
         <Route exact path="/" element={<MainPage/>} />
@@ -38,10 +40,14 @@ export default class App extends React.Component {
         <Route path="/papallacta" element={<PapallactaMain/>}/>
         </Routes>
         </div>
+        <Cookies></Cookies>
       <div>
+      
        <Navbar/>
       <FloatingButton></FloatingButton>
+     
        <Footer></Footer>
+       
       </div>
       </div>
      </Router>

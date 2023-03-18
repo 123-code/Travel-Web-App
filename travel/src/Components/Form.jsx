@@ -3,7 +3,7 @@ import "../App.css";
 import "../Styling/Form.css";
 import axios from "axios";
 import countriesList from '../Data/countries';
-
+import { useTranslation } from "react-i18next";
 // create form component
 const Form = ({ color }) => {
   const [formData, setFormData] = useState({
@@ -12,6 +12,7 @@ const Form = ({ color }) => {
     country: "",
     message: "",
   });
+  const { t } = useTranslation();
 
   const countries = [
     "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua & Deps", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Rep", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Congo {Democratic Rep}", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland {Republic}", "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea North", "Korea South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar, {Burma}", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russian Federation", "Rwanda", "St Kitts & Nevis", "St Lucia", "Saint Vincent & the Grenadines", "Samoa", "San Marino", "Sao Tome & Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria"
@@ -119,55 +120,56 @@ const Form = ({ color }) => {
     </div>
 
     <div className="checkboxGroup" style={{ borderColor: color }}>
-      <label style={{ color: color }}>Contacto</label>
-      <div>
-        <label style={{ color: color }}>
-          <input
-            type="checkbox"
-            name="contacto"
-            value="chat"
-            checked={formData.contacto && formData.contacto.includes("chat")}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                //contacto: updateContacto(formData.contacto, "chat", e.target.checked),
-              })
-            }
-          />
-          Chat
-        </label>
-        <label style={{ color: color }}>
-          <input
-            type="checkbox"
-            name="contacto"
-            value="llamada"
-            checked={formData.contacto && formData.contacto.includes("llamada")}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                //contacto: updateContacto(formData.contacto, "llamada", e.target.checked),
-              })
-            }
-          />
-          Llamada
-        </label>
-        <label style={{ color: color }}>
-          <input
-            type="checkbox"
-            name="contacto"
-            value="email"
-            checked={formData.contacto && formData.contacto.includes("email")}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                //contacto: updateContacto(formData.contacto, "email", e.target.checked),
-              })
-            }
-          />
-          Email
-        </label>
-      </div>
-    </div>
+  <label style={{ color: color }}>Contacto</label>
+  <div>
+    <label style={{ color: color }}>
+      <input
+        type="radio"
+        name="contacto"
+        value="chat"
+        checked={formData.contacto === "chat"}
+        onChange={(e) =>
+          setFormData({
+            ...formData,
+            contacto: e.target.value,
+          })
+        }
+      />
+      Chat
+    </label>
+    <label style={{ color: color }}>
+      <input
+        type="radio"
+        name="contacto"
+        value="llamada"
+        checked={formData.contacto === "llamada"}
+        onChange={(e) =>
+          setFormData({
+            ...formData,
+            contacto: e.target.value,
+          })
+        }
+      />
+      Llamada
+    </label>
+    <label style={{ color: color }}>
+      <input
+        type="radio"
+        name="contacto"
+        value="email"
+        checked={formData.contacto === "email"}
+        onChange={(e) =>
+          setFormData({
+            ...formData,
+            contacto: e.target.value,
+          })
+        }
+      />
+      Email
+    </label>
+  </div>
+</div>
+
 
     <div className="residencia">
       <label htmlFor="country-select" style={{

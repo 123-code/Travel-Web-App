@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import ConnectButton from "./ConnectWalletButton";
-import Select from 'react-select';
-import PageDropdown from './NavDropDown';
 import '../Styling/Navbar.css'
 
 const Navbar = () => {
-  const navigate = useNavigate();
+
   const [dropdown, setDropdown] = useState(false);
 
   const onMouseEnter = () => {
@@ -79,9 +76,13 @@ const Navbar = () => {
       </div>
       <div className="navbar__right">
       <ul style={{ display: 'flex', listStyle: 'none', marginRight: '20px' }}>
-        <li style={{ marginRight: '20px' }}>
-          <button className="loginBtn"> Contactanos </button>
-        </li>
+      <li style={{ marginRight: '20px' }}>
+  <a href="/Main.jsx#contact-form">
+    <button className="loginBtn"> Contactanos </button>
+  </a>
+</li>
+
+
 
      
         <div>

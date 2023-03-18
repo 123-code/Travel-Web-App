@@ -5,9 +5,9 @@ import Testimonials from '../Components/Testimonials';
 import '../App.css';
 import img from '../Components/imagenprincipal.jpeg'
 import BackgroundImageOverlay from '../Components/BackgroundImageOverlay';
-import FloatingButton from '../Components/FloatingCard';
 
 
+import '../Styling/Main.css'
 
 const MainPage = ()=>{
 return(
@@ -22,10 +22,13 @@ return(
 <body  className="text">
 
 <TopDestinations></TopDestinations>
-<Testimonials></Testimonials>
-
-<h1 className="singup">Si requieres mayor información, llena el siguiente formulario</h1>
-<Form></Form>
+<div className='testimonialsMain'>
+    <Testimonials></Testimonials>
+</div>
+<div id="contact-form" className='formMain' >
+    <h1 className='titleForm'>Solicita Más Información</h1>
+    <Form  ></Form>
+</div>
 </body>
 
 

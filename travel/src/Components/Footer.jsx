@@ -16,21 +16,13 @@ const Footer = () => {
           
           </ul>
         </div>
-        <div className="footer__column">
-          <h4>Tours</h4>
-          <ul>
-            <li><a href="#">Tour 1</a></li>
-            <li><a href="#">Tour 2</a></li>
-            <li><a href="#">Tour 3</a></li>
-            <li><a href="#">Tour 4</a></li>
-          </ul>
-        </div>
+
         <div className="footer__column">
           <h4>Nuestras redes</h4>
           <ul className="social-icons">
-            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+            <li><a href="#">FaceBook<i className="fa fa-facebook"></i></a></li>
+            <li><a href="#">Twitter<i className="fa fa-twitter"></i></a></li>
+            <li><a href="#">Instagram<i className="fa fa-instagram"></i></a></li>
           </ul>
         </div>
         <div className="footer__column">

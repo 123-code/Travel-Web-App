@@ -19,10 +19,7 @@ const SplitPage = () => {
 Boutique, ubicado en el Centro Hístico de Quito. De igual manera cuenta con convenios con diferentes hoteles y cruceros a lo largo del Ecuador. Cada establecimiento y personal está preparado al más alto nivel para darle una experiencia inolvidable.
         </p>
       </div>
-      <div className='colDer' style={{paddingTop: '70px', flex: 1}} >
-        <div className='h2SP'>
-        <h2 >Contáctanos a través de este formulario:</h2>
-        </div>
+      <div style={{paddingTop: '70px', flex: 1}}>
         <Form/>
       </div>
     </div>

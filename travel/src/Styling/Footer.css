@@ -6,11 +6,10 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
   }
   
   .footer__container {
-   
+
     display: flex;
     justify-content: space-between;
     flex-grow: 1;

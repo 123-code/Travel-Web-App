@@ -43,8 +43,7 @@ const Footer = () => {
       </div>
       <div className="footer__bottom" >
         <p>© ReactBuilders 2023</p>
-        <img src={logo} alt="ReactBuilders" />
-
+        <img src="logo.png" alt="ReactBuilders" />
       </div>
     </footer>
   );

@@ -28,10 +28,8 @@ import './App.css';
 export default class App extends React.Component {
   render(){
     return (
-      
       <Router>
        <div>
-       <Cookies></Cookies>
        <div>
          <Routes>
         <Route exact path="/" element={<MainPage/>} />

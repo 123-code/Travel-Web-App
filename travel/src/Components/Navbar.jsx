@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React,{useState} from "react";
 import { Link } from 'react-router-dom';
 import ConnectButton from "./ConnectWalletButton";
 import { useNavigate } from "react-router-dom";
@@ -9,13 +9,6 @@ const Navbar = () => {
 const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
 
-  const onMouseEnter = () => {
-    setDropdown(true);
-  };
-
-  const onMouseLeave = () => {
-    setDropdown(false);
-  };
 
   return (
     <nav className="navbar" style={{  
@@ -36,41 +29,20 @@ const navigate = useNavigate();
         <h3 style={{ marginLeft: '20px' }}>MBVACA Expeditions</h3>
         <ul style={{ display: 'flex', listStyle: 'none', marginLeft: '20px' }}>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/" style={{ color: 'black' }}>Inicio</Link>
+            <Link to="/" style={{ color: 'black' }}>INICIO</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/about" style={{ color: 'black' }}>Nosotros</Link>
+            <Link to="/about" style={{ color: 'black' }}>NOSOTROS</Link>
           </li>
-          <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-          <Link to="/galapagos" style={{ color: 'black' }}>Galápagos</Link>
-          {dropdown && (
-            <ul className="dropdown">
-              <li><Link to="/islas">Islas</Link></li>
-              <li><Link to="/fauna">Fauna</Link></li>
-              <li><Link to="/flora">Flora</Link></li>
-            </ul>
-          )}
-        </li>
-        <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-          <Link to="/amazon" style={{ color: 'black' }}>Ecuador</Link>
-          {dropdown && (
-            <ul className="dropdown">
-              <li><Link to="/quito">Quito</Link></li>
-              <li><Link to="/guayaquil">Guayaquil</Link></li>
-              <li><Link to="/cuenca">Cuenca</Link></li>
-            </ul>
-          )}
-        </li>
-        <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-          <Link to="/peru" style={{ color: 'black' }}>Perú</Link>
-          {dropdown && (
-            <ul className="dropdown">
-              <li><Link to="/lima">Lima</Link></li>
-              <li><Link to="/cusco">Cusco</Link></li>
-              <li><Link to="/arequipa">Arequipa</Link></li>
-            </ul>
-          )}
-        </li>
+          <li style={{ marginRight: '20px' }}>
+            <Link to="/galapagos" style={{ color: 'black' }}>GALÁPAGOS</Link>
+          </li>
+          <li style={{ marginRight: '20px' }}>
+            <Link to="/amazon" style={{ color: 'black' }}>ECUADOR</Link>
+          </li>
+          <li style={{ marginRight: '20px' }}>
+            <Link to="/peru" style={{ color: 'black' }}>PERÚ </Link>
+          </li>
           <li style={{ marginRight: '20px' }}>
       
           </li>

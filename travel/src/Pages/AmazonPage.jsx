@@ -33,12 +33,8 @@ const AmazonPage = () => {
    
         </body>
       
-        
-        
     );
 
-}//cuyabeno: https://www.linkpicture.com/q/download-2_15.jpeg
-// otavalo: https://www.linkpicture.com/q/download-1_108.jpeg
-// mindo:   https://www.linkpicture.com/q/images_1152.jpeg
+}
 
 export default AmazonPage;

@@ -5,6 +5,7 @@ import {FaInstagram} from 'react-icons/fa';
 import {SiEthereum} from 'react-icons/si';
 import { BsPhone } from 'react-icons/bs';
 import '../Styling/Footer.css'
+import logo from '../Imgs/logoRB.png'
 
 const Footer = () => {
   return (
@@ -23,6 +24,7 @@ const Footer = () => {
             <li><a style={{color:'#fff'}} href="#">Galápagos</a></li>
           </ul>
         </div>
+
         <div className="footer__column">
           <h4>Nuestras redes</h4>
           <ul className="social-icons">
@@ -41,7 +43,8 @@ const Footer = () => {
       </div>
       <div className="footer__bottom" >
         <p>© ReactBuilders 2023</p>
-        <img src="logo.png" alt="ReactBuilders" />
+        <img src={logo} alt="ReactBuilders" />
+
       </div>
     </footer>
   );

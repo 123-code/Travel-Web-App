@@ -6,8 +6,7 @@
   transition: all 0.3s ease;
 }
 
-.open-button,
-.close-button {
+.open-button{
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -54,11 +53,13 @@
   margin: 0;
   font-size: 24px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .card-body {
+  margin-top: 50px;
   padding: 20px;
-  background-color: #f0f0f0;
+  margin-bottom: 20px;
   height: 100%;
 }
 
@@ -105,4 +106,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.formFC{
+  margin-bottom: 10px;
 }

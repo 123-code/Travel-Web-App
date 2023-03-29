@@ -14,7 +14,14 @@ Las Islas Galápagos cuentan con una gran variedad de ecosistemas, desde playas 
 El archipiélago es un destino turístico popular por sus actividades de ecoturismo, que incluyen la observación de animales en su hábitat natural, el snorkel y el buceo. También se puede visitar el Centro de Interpretación en la isla de San Cristóbal, donde se puede aprender sobre la historia natural y la conservación de las islas.
 
 Sin embargo, la conservación de las Islas Galápagos es un desafío constante debido a la actividad humana y al turismo descontrolado. Por lo tanto, es importante visitar las islas con conciencia ambiental y seguir las regulaciones establecidas para mantener la riqueza natural del archipiélago para futuras generaciones." />
-        
+        <h2> Flora y fauna </h2>
+        <ul>
+            <p> Pinguino de nazca</p>
+            <p> Great hammerhead</p>
+            <p>Sea turtles</p>
+            <p>Flamingos</p>
+            <p> Iguana Marina </p>
+        </ul>
         <div className="sqr">
         <Square></Square>
     </div>

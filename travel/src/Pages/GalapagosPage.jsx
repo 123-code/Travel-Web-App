@@ -19,21 +19,11 @@ Sin embargo, la conservación de las Islas Galápagos es un desafío constante d
         <Square></Square>
     </div>
     <div className="lst">
-        <h1 className="tt" style={{color:"black"}}> Places To Visit </h1>
+        <h1 className="tt" style={{color:"black"}}> Rates 2023 </h1>
         <div style={{ display: "flex" }}>
-            <Destinos  imageSrc = {"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}title = "TELEFERICO + MITAD DEL MUNDO + PAPALLACTA" button="true" link="/papallacta"/>
-            <Destinos  imageSrc = {"https://i.ibb.co/8cMhT5j/quilotoa.jpg"}title = "NATURAL AND HIKE QUILOTOA"  button="true"/>
-            <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "COTOPAXI BIKE AND HIKE"  button="true"/>
-        </div>
-
-        <div style={{ display: "flex" }}>
-            <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "OTAVALO CULTURAL AND SHOPING"  button="true"/>
-            <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = " MINDO ADVENTURE AND SWEET (FRIDAY)"  button="true"/>
-            <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title =  "CUYABENO DOLPHIN LODGE"  button="true"/>
-        </div>
-
-        <div style={{ display: "flex" }}>
-            <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "COTOPAXI SUMMIT"  button="true"/>
+            <Destinos  imageSrc = {"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}title = "STANDARD RATES" button="true" link="/papallacta"/>
+            <Destinos  imageSrc = {"https://i.ibb.co/8cMhT5j/quilotoa.jpg"}title = "HIGH SEASON RATES"  button="true"/>
+            <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "PROMOTIONAL RATES"  button="true"/>
         </div>
     </div>
 

@@ -20,6 +20,7 @@ import Mindo from './Pages/Tours/Mindo';
 import Quilotoa from './Pages/Tours/Quilotoa';
 import CotopaxiH from './Pages/Tours/CotopaxiH';
 import Cuyabeno from './Pages/Tours/Cuyabeno';
+import Standard from './Pages/Galapagos/Standard';
 
 import './App.css';
 
@@ -51,6 +52,7 @@ export default class App extends React.Component {
         <Route path="/quilotoa" element={<Quilotoa/>}/>
         <Route path="/cotopaxih" element={<CotopaxiH/>}/>
         <Route path="/cuyabeno" element={<Cuyabeno/>}/>
+        <Route path="/standard" element={<Standard/>}/>
         </Routes>
         </div>
         <div>

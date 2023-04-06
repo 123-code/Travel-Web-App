@@ -9,10 +9,10 @@ export  function GalapagosTable({tablerow}) {
             <TableCell>STANDARD RATES</TableCell>
             <TableCell align="right">6-Night Cruise</TableCell>
             <TableCell align="right">retail-rates</TableCell>
-            <TableCell align="right">agency-rates</TableCell>
+          
             <TableCell align="right">4-Night Cruise</TableCell>
             <TableCell align="right">retail-rates</TableCell>
-            <TableCell align="right">agency-rates</TableCell>
+   
           </TableRow>
         </TableHead>
         <TableBody>

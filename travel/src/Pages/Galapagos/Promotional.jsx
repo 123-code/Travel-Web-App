@@ -7,18 +7,18 @@ import CardMedia from '@mui/material/CardMedia';
 import { Paper,Table } from '@mui/material';
 import ReserveButton from '../../Components/ReserveButton'
 
-export default function Standard() {
+export default function Promotional() {
 
    const rows = [
-    CreateData('Balcony Stateroom',5575,3825),
-    CreateData('Master Suite - Double',6950,4775),
-    CreateData('Master Suite - Triple',6395,4395),
-    CreateData('Charter - Maximum 16 pax',89200,61200),
+    CreateData('Balcony Stateroom',5050,3450),
+    CreateData('Master Suite - Double',6325,4325),
+    CreateData('Master Suite - Triple',7895,5395),
+    CreateData('Charter - Maximum 16 pax',80800,55200),
    ]
     return (
         <div style={{ paddingTop: '150px', color:'black',justifyContent: 'center'}}>
             <Paper elevation={3}>
-                <Card>
+                <Card> 
                     <GalapagosTable tablerow={rows}/>
                   </Card>
                   <ReserveButton/>
@@ -30,5 +30,3 @@ export default function Standard() {
 
 
    
-             
- 

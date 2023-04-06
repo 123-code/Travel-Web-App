@@ -21,6 +21,9 @@ import Quilotoa from './Pages/Tours/Quilotoa';
 import CotopaxiH from './Pages/Tours/CotopaxiH';
 import Cuyabeno from './Pages/Tours/Cuyabeno';
 import Standard from './Pages/Galapagos/Standard';
+import Promotional from './Pages/Galapagos/Promotional';
+import High from './Pages/Galapagos/HighSeason';
+//Promotional
 
 import './App.css';
 
@@ -53,6 +56,8 @@ export default class App extends React.Component {
         <Route path="/cotopaxih" element={<CotopaxiH/>}/>
         <Route path="/cuyabeno" element={<Cuyabeno/>}/>
         <Route path="/standard" element={<Standard/>}/>
+        <Route path="/high" element={<High/>}/>
+        <Route path="/promotional" element={<Promotional/>}/>
         </Routes>
         </div>
         <div>

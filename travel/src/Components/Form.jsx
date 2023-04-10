@@ -125,58 +125,80 @@ const Form = ({ color }) => {
     </div>
 
     <div className="checkboxGroup" style={{ borderColor: color }}>
-      <label style={{ color: color }}>Contacto</label>
-      <div>
-        <label style={{ color: color }}>
-          <input
-          id  = "Contact"
-            type="checkbox"
-            name="Contact"
-            value="chat"
-            checked={formData.contact && formData.contact.includes("chat")}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                //contacto: updateContacto(formData.contacto, "chat", e.target.checked),
-              })
-            }
-          />
-          Chat
-        </label>
-        <label style={{ color: color }}>
-          <input
-          id  = "Contact"
-            type="checkbox"
-            name="Contact"
-            value="llamada"
-            checked={formData.contacto && formData.contacto.includes("llamada")}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                //contacto: updateContacto(formData.contacto, "llamada", e.target.checked),
-              })
-            }
-          />
-          Llamada
-        </label>
-        <label style={{ color: color }}>
-          <input
-          id  = "Contact"
-            type="checkbox"
-            name="Contact"
-            value="email"
-            checked={formData.contacto && formData.contacto.includes("email")}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                //contacto: updateContacto(formData.contacto, "email", e.target.checked),
-              })
-            }
-          />
-          Email
-        </label>
-      </div>
-    </div>
+  <label style={{ color: color }}>Contacto</label>
+  <div>
+    <label style={{ color: color }}>
+      <input
+        id="Contact"
+        type="checkbox"
+        name="Contact"
+        value="chat"
+        checked={formData.contact && formData.contact.includes("chat")}
+        onChange={(e) => {
+          if (e.target.checked) {
+            setFormData({
+              ...formData,
+              contacto: ["chat"],
+            });
+          } else {
+            setFormData({
+              ...formData,
+              contacto: [],
+            });
+          }
+        }}
+      />
+      Chat
+    </label>
+    <label style={{ color: color }}>
+      <input
+        id="Contact"
+        type="checkbox"
+        name="Contact"
+        value="llamada"
+        checked={formData.contact && formData.contact.includes("llamada")}
+        onChange={(e) => {
+          if (e.target.checked) {
+            setFormData({
+              ...formData,
+              contacto: ["llamada"],
+            });
+          } else {
+            setFormData({
+              ...formData,
+              contacto: [],
+            });
+          }
+        }}
+      />
+      Llamada
+    </label>
+    <label style={{ color: color }}>
+      <input
+        id="Contact"
+        type="checkbox"
+        name="Contact"
+        value="email"
+        checked={formData.contact && formData.contact.includes("email")}
+        onChange={(e) => {
+          if (e.target.checked) {
+            setFormData({
+              ...formData,
+              contacto: ["email"],
+            });
+          } else {
+            setFormData({
+              ...formData,
+              contacto: [],
+            });
+          }
+        }}
+      />
+      Email
+    </label>
+  </div>
+</div>
+
 
     <div className="residencia">
       <label htmlFor="Residence" style={{

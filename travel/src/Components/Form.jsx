@@ -13,8 +13,8 @@ const Form = ({ color }) => {
     Email: "",
     Contact:"",
     Residence:"",
-    Adults: 0,
-    Children: 0,
+    Adults: "",
+    Children: "",
     Comments: "",
   });
   const { t } = useTranslation();
@@ -28,6 +28,7 @@ const Form = ({ color }) => {
   const handleCountryChange = (event) => {
     setSelectedCountry(event.target.value);
   };
+
 
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
@@ -200,7 +201,7 @@ const Form = ({ color }) => {
 </div>
 
 
-    <div className="residencia">
+<div className="residencia">
       <label htmlFor="Residence" style={{
           color: color
         }} >
@@ -209,7 +210,6 @@ const Form = ({ color }) => {
         id="Residence"
         name="Residence"
         value={selectedCountry}
-      
         onChange={handleCountryChange}
       >
         <option value=""style={{

@@ -23,12 +23,11 @@ const Form = ({ color }) => {
     "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua & Deps", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Rep", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Congo {Democratic Rep}", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland {Republic}", "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea North", "Korea South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar, {Burma}", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russian Federation", "Rwanda", "St Kitts & Nevis", "St Lucia", "Saint Vincent & the Grenadines", "Samoa", "San Marino", "Sao Tome & Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria"
     // Agregar el resto de los países aquí
   ];
-  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("Selecciona un país");
 
   const handleCountryChange = (event) => {
     setSelectedCountry(event.target.value);
   };
-
 
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
@@ -134,12 +133,12 @@ const Form = ({ color }) => {
         type="checkbox"
         name="Contact"
         value="chat"
-        checked={formData.contact && formData.contact.includes("chat")}
+        checked={formData.contact && formData.Contact.includes("chat")}
         onChange={(e) => {
           if (e.target.checked) {
             setFormData({
               ...formData,
-              contacto: ["chat"],
+              contacto: "chat",
             });
           } else {
             setFormData({
@@ -157,12 +156,12 @@ const Form = ({ color }) => {
         type="checkbox"
         name="Contact"
         value="llamada"
-        checked={formData.contact && formData.contact.includes("llamada")}
+        checked={formData.Contact && formData.Contact.includes("llamada")}
         onChange={(e) => {
           if (e.target.checked) {
             setFormData({
               ...formData,
-              contacto: ["llamada"],
+              contacto: "llamada",
             });
           } else {
             setFormData({
@@ -180,7 +179,7 @@ const Form = ({ color }) => {
         type="checkbox"
         name="Contact"
         value="email"
-        checked={formData.contact && formData.contact.includes("email")}
+        checked={formData.Contact && formData.Contact.includes("email")}
         onChange={(e) => {
           if (e.target.checked) {
             setFormData({
@@ -201,7 +200,7 @@ const Form = ({ color }) => {
 </div>
 
 
-<div className="residencia">
+    <div className="residencia">
       <label htmlFor="Residence" style={{
           color: color
         }} >
@@ -209,14 +208,15 @@ const Form = ({ color }) => {
       <select
         id="Residence"
         name="Residence"
-        value={selectedCountry}
-        onChange={handleCountryChange}
+        value={formData.selectedCountry}
+      
+        onChange={handleChange}
       >
         <option value=""style={{
           color: color
         }} >Selecciona un país</option>
         {countries.map((country) => (
-          <option key={country} value={country} >
+          <option key={country} value={country} > 
             {country}
           </option>
         ))}
@@ -251,12 +251,12 @@ const Form = ({ color }) => {
         Número de adultos:
       </label>
       <input
-        type="number"
+        type="text"
         required
         id="Adults"
         name="Adults"
-        value={adults}
-        onChange={handleAdultsChange}
+        value={formData.Adults}
+        onChange={handleChange}
       />
       <br />
       <label htmlFor="Children" style={{
@@ -264,12 +264,12 @@ const Form = ({ color }) => {
         borderColor: color,
       }}>Número de niños:</label>
       <input
-        type="number"
+        type="text"
         required
         id="Children"
         name="Children"
-        value={children}
-        onChange={handleChildrenChange}
+        value={formData.Children}
+        onChange={handleChange}
       />
     </div>
   

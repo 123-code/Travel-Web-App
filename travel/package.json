@@ -9,7 +9,7 @@
     "@emotion/styled": "^11.10.6",
     "@ethersproject/providers": "^5.7.2",
     "@mobiscroll/react-lite": "^4.10.9",
-    "@mui/material": "^5.11.13",
+    "@mui/material": "^5.11.16",
     "@rainbow-me/rainbowkit": "0.4.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

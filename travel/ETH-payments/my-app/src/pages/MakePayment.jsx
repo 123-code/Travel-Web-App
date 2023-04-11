@@ -1,11 +1,14 @@
 import  React,{useState} from 'react';
+import { useSelector } from 'react-redux';
 import { BigNumber } from 'ethers';
-import { Component } from 'react';
 import { usePrepareSendTransaction, useSendTransaction } from 'wagmi';
-
+import Selector from '../Components/SelectorButton';
 
 
 export function SendEther() {
+  const[Tour,SetTour] = useState(null);
+
+  const selectedTour = useSelector((state) => state.selectedTour);
 
   const { config } = usePrepareSendTransaction({
     request: { to: '0xA6ee1E5EA0332c0B4A258808505EEd60C688C931', value: BigNumber.from('10000000000000000') },
@@ -14,9 +17,12 @@ export function SendEther() {
   const { data, isLoading, isSuccess, sendTransaction, isError,error } =
     useSendTransaction(config)
 
+
+
   return (
     <>
       <h1 style={{ fontFamily: 'Futura, sans-serif' }}> Pay With ETH: </h1>
+     
       <div style={{ 
         backgroundColor: '#fff9e6', 
         fontFamily: 'Futura', 
@@ -40,7 +46,7 @@ export function SendEther() {
             <li>Confirm the amount you are paying in your wallet</li>
             <li>Confirm the transaction in your wallet</li>
           </ol>
-        
+        <Selector/>
           <button style={{ 
             backgroundColor: 'black', 
             color: 'white', 

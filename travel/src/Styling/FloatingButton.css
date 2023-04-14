@@ -4,10 +4,11 @@
   left: 10px;
   z-index: 999;
   transition: all 0.3s ease;
+ 
 }
 
 .open-button{
-  background-color: #007bff;
+  background-color: #03244D;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -24,7 +25,7 @@
 
 .open-button:hover,
 .close-button:hover {
-  background-color: #0062cc;
+  background-color: #03244D;
 }
 
 .cardFlotante {
@@ -43,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007bff;
+  background-color: #03244D;
   color: #fff;
   padding: 10px;
   height: 60px;

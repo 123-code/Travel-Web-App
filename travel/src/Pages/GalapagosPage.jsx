@@ -3,7 +3,9 @@ import Destinos from "../Components/Destinos";
 import fotoG from './gpg.jpg'
 import Square from "../Components/Square";
 import SquareGPG from "../Components/SquareGPG";
+import cruceros from '../Components/Cruceros';
 import '../Styling/Ecuador.css'
+import Cruceros from "../Components/Cruceros";
 const GalapagosPage = () => {
     return (
         <>
@@ -19,16 +21,24 @@ Sin embargo, la conservación de las Islas Galápagos es un desafío constante d
         
         <div className="sqr">
         <SquareGPG></SquareGPG>
+        
     </div>
+    <div className="CrucerosGpg">
+
+    <Cruceros></Cruceros>
+
+    </div>
+    {/*
     <div className="lst">
         <h1 className="tt" style={{color:"black"}}> Rates 2023 </h1>
         <div style={{ display: "flex" }}>
-            <Destinos  imageSrc = {"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}title = "STANDARD RATES" button="true" link="/papallacta"/>
+            <Destinos  imageSrc = {"https://i.ibb.co/mX5XkLT/downloadmm.jpg"}title = "STANDARD RATES" button="true" link="/high"/>
             <Destinos  imageSrc = {"https://i.ibb.co/8cMhT5j/quilotoa.jpg"}title = "HIGH SEASON RATES"  button="true"/>
             <Destinos  imageSrc = {"https://i.ibb.co/0hYJZ4y/IMG-20210421-134100.jpg"}title = "PROMOTIONAL RATES"  button="true"/>
         </div>
     </div>
-
+    */}
+        
         </>
     );
 

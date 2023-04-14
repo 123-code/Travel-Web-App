@@ -1,29 +1,35 @@
 import React from 'react';
-import { GalapagosTable,CreateData } from '../../Components/GalapagosTable';
-import Card from '@mui/material/Card';
-import { fontFamily } from '@mui/system';
-import Typography from '@mui/material/Typography';
-import CardMedia from '@mui/material/CardMedia';
-import { Paper,Table } from '@mui/material';
-import ReserveButton from '../../Components/ReserveButton'
+import TablaPromo from '../../Components/TablaPromocionalTreasure';
+import  GalapagosTable from '../../Components/GalapagosTable';
+import TablaHigh from '../../Components/TablaHightreasure';
 
-
+import ReserveButton from '../../Components/ReserveButton';
+import Destinos from '../../Components/Destinos';
+import Treasure from '../../Imgs/Treasure.png';
+import '../../Styling/Rates.css'
 export default function High() {
 
-   const rows = [
-    CreateData('Balcony Stateroom',6395,4425),
-    CreateData('Master Suite - Double',7995,5550),
-    CreateData('Master Suite - Triple',7350,5095),
-    CreateData('Charter - Maximum 16 pax',102320,70800),
-   ]
+   
     return (
-        <div style={{ paddingTop: '150px', color:'black',justifyContent: 'center'}}>
-            <Paper elevation={3}>
-                <Card>
-                    <GalapagosTable tablerow={rows}/>
-                  </Card>
-                  <ReserveButton/>
-            </Paper>
+        <div >
+            <div className='TreasureBanner'>
+                <Destinos imageSrc={(Treasure)} title="Treasure" text="Precios" />
+            </div>    
+            <div className='TablaEstandar'>
+                <GalapagosTable/>
+            </div>
+            <div className='tablaHigh'>
+                <TablaHigh/>
+            </div>   
+            <div className='tablaPromo'>
+                <TablaPromo/>
+            </div>   
+            <div className='Btnrsv'>
+                <ReserveButton/>
+            </div>     
+             
+                  
+       
      
         </div>
     );

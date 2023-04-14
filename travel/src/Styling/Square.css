@@ -71,11 +71,11 @@ body {
   }
 
   .item.selected {
-    background-color: #00BFFF;
+    background-color: #03244D;
     color: white;
   }
   .item.selected:hover {
-    background-color: #00BFFF;
+    background-color: #03244D;
     color: white;
   }
   

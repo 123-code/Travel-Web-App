@@ -45,9 +45,10 @@ const navigate = useNavigate();
           <Link to="/galapagos" style={{ color: 'black' }}>Galápagos</Link>
           {dropdown && (
             <ul className="dropdown">
-              <li><Link to="/islas">Islas</Link></li>
-              <li><Link to="/fauna">Fauna</Link></li>
-              <li><Link to="/flora">Flora</Link></li>
+              <li><Link to="/high">Treasure</Link></li>
+              <li><Link to="/standard">Solaris</Link></li>
+              <li><Link to="/promotional">Archipel I</Link></li>
+              <li><Link to="/aqua">Aqua</Link></li>
             </ul>
           )}
         </li>
@@ -61,16 +62,7 @@ const navigate = useNavigate();
             </ul>
           )}
         </li>
-        <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-          <Link to="/peru" style={{ color: 'black' }}>Perú</Link>
-          {dropdown && (
-            <ul className="dropdown">
-              <li><Link to="/lima">Lima</Link></li>
-              <li><Link to="/cusco">Cusco</Link></li>
-              <li><Link to="/arequipa">Arequipa</Link></li>
-            </ul>
-          )}
-        </li>
+     
           <li style={{ marginRight: '20px' }}>
       
           </li>
@@ -81,9 +73,10 @@ const navigate = useNavigate();
  
 
         <li>
-        <Button variant="contained" size="large" onClick={()=>{navigate("/form")}}>
-          Contact
-        </Button>
+        <Button variant="contained" size="large" onClick={()=>{navigate("/form")}} style={{backgroundColor: "#03244D"}}>
+  Contact
+</Button>
+
         </li>
         <div>
  

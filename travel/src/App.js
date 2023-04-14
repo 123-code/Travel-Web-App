@@ -22,6 +22,7 @@ import CotopaxiH from './Pages/Tours/CotopaxiH';
 import Cuyabeno from './Pages/Tours/Cuyabeno';
 import Standard from './Pages/Galapagos/Standard';
 import Promotional from './Pages/Galapagos/Promotional';
+import Aqua from './Pages/Galapagos/Aqua';
 import High from './Pages/Galapagos/HighSeason';
 //Promotional
 
@@ -58,6 +59,7 @@ export default class App extends React.Component {
         <Route path="/standard" element={<Standard/>}/>
         <Route path="/high" element={<High/>}/>
         <Route path="/promotional" element={<Promotional/>}/>
+        <Route path="/aqua" element={<Aqua/>}/>
         </Routes>
         </div>
         <div>

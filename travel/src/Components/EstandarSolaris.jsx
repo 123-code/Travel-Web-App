@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styling/GalapagosTable.css';
 
-const GalapagosTable = () => {
+const EstandarSolaris = () => {
   return (
     <div className="tabla-container">
       <table>
@@ -13,21 +13,13 @@ const GalapagosTable = () => {
           </tr>
         </thead>
         <tbody>
+         
           <tr>
-            <td>Balcony Stateroom</td>
+            <td>Ocean View Single</td>
             <td>USD 5,575</td>
             <td>USD 3,825</td>
           </tr>
-          <tr>
-            <td>Master Suite - Double</td>
-            <td>USD 6,950</td>
-            <td>USD 4,775</td>
-          </tr>
-          <tr>
-            <td>Master Suite - Triple</td>
-            <td>USD 6,395</td>
-            <td>USD 4,395</td>
-          </tr>
+        
           <tr>
             <td>Charter - Maximum 16 pax</td>
             <td>USD 89,200</td>
@@ -39,4 +31,4 @@ const GalapagosTable = () => {
   );
 }
 
-export default GalapagosTable;
+export default EstandarSolaris;

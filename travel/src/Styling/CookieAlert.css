@@ -3,10 +3,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #00BFFF;;
+    background-color: #03244D;;
     padding: 10px;
     text-align: center;
     z-index: 999;
+    color: white;
   }
   
   .cookie-consent button {

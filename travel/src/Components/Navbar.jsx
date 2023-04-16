@@ -73,9 +73,16 @@ const navigate = useNavigate();
  
 
         <li>
-        <Button variant="contained" size="large" onClick={()=>{navigate("/form")}} style={{backgroundColor: "#03244D"}}>
-  Contact
-</Button>
+        <Button 
+       // apply the custom CSS class
+       className="buttonres"
+      variant="contained" 
+      size="large" 
+      onClick={() => navigate("/form")} // add your onClick function
+      style={{ backgroundColor: "#03244D" }}
+    >
+      Contact
+    </Button>
 
         </li>
         <div>

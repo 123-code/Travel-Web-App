@@ -1,74 +1,83 @@
-.h1TD{
+.h1TD {
   color: black;
- 
   text-align: center;
 }
 
-.containerCards{
-  height: 500px;
-  margin-top: 0px;
-
+.containerCards {
+  height: auto;
+  margin-top: 0;
 }
+
 .cardTD {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto;
+  height: auto;
+  max-width: 250px;
+}
+
+.containerC {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 50px) {
+  .cardTD {
     width: calc(50% - 20px);
-    background-color: white;
-    border-radius: 10px;
-    border-bottom-left-radius: 10px;
-    text-align: center;
-    margin: 10px;
-    display: inline-block;
-   
-    height: 250px;
-    width: 250px;
-    
   }
 
-  .containerC {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   
-  @media (max-width: 768px) {
-    .cardTD {
-      width: 100%;
-    }
-  }
-  
-  
-  img {
-    width: 100%;
-    border-radius: 10px 16px 0 0;
-    border-radius: 10px;
-  }
-  
+}
+
+@media only screen and (max-width: 600px) {
   h2 {
-    padding: 10px;
-    margin: 0;
-    padding-top: 50px;
+    font-size: 1.5rem;
   }
-  
-  button {
-    background-color: #03244D;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    cursor: pointer;
+  .h1TD {
+    font-size: 1rem;
   }
-  
-  .container {
-    width: 100%;
-    text-align: center;
-  }
-   .btnTD{
-    background-color: #03244D;
-  border: 2px solid #03244D; /* color celeste en hexadecimal */
-  color: white; /* color celeste en hexadecimal */
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+h2 {
+  padding: 10px;
+  margin: 0;
+  padding-top: 50px;
+}
+
+button {
+  background-color: #03244D;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.btnTD {
+  background-color: #03244D;
+  border: 2px solid #03244D;
+  color: white;
   padding: 10px 20px;
   cursor: pointer;
   width: 110px;
-   }
+}
 
-   
+@media screen and (max-width: 400px) {
+  .cardTD {
+    max-width: 90%;
+  }
+}

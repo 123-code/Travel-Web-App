@@ -26,8 +26,9 @@ return(
     <Testimonials></Testimonials>
 </div>
 <div id="contact-form" className='formMain' >
-    <h1 className='titleForm'>Solicita Más Información</h1>
-    <Form  ></Form>
+    
+    <h1 className='title'>Solicita Más Información</h1>
+    <Form></Form>
 </div>
 </body>
 

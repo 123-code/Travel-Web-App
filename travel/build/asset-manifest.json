@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74d6c810.css",
+    "main.js": "/static/js/main.e79c1a2a.js",
+    "static/js/787.8a220983.chunk.js": "/static/js/787.8a220983.chunk.js",
+    "static/media/mdm.jpeg": "/static/media/mdm.01d195a8c773c40919a4.jpeg",
+    "static/media/peimg.jpg": "/static/media/peimg.5cb074d5b66825d3ca29.jpg",
+    "static/media/ecimg.jpg": "/static/media/ecimg.18e480a13a5fa4e99820.jpg",
+    "static/media/qtoa.jpg": "/static/media/qtoa.3f4ac0778cabc890c440.jpg",
+    "static/media/otv.jpg": "/static/media/otv.4824737e8b8482b7d21f.jpg",
+    "static/media/mndo.jpg": "/static/media/mndo.dd055b0308830a1b3aa9.jpg",
+    "static/media/nnb.jpg": "/static/media/nnb.e3d5ab2198d48595fc2c.jpg",
+    "static/media/Aqua.png": "/static/media/Aqua.8f3ed49d9751a2cd3fd7.png",
+    "static/media/Solaris.png": "/static/media/Solaris.772e8135dd57c9cee1c5.png",
+    "static/media/ctp.jpg": "/static/media/ctp.17acf7d138bccca50976.jpg",
+    "static/media/Archipel.png": "/static/media/Archipel.d09f12d2efcb621e5ad7.png",
+    "static/media/Treasure.png": "/static/media/Treasure.5f4827f602e4693d5e27.png",
+    "static/media/imagenprincipal.jpeg": "/static/media/imagenprincipal.51ebe26aa4f82a9e2ad8.jpeg",
+    "static/media/gpg.jpg": "/static/media/gpg.b3ae7684802ce51dcb11.jpg",
+    "static/media/chq.jpg": "/static/media/chq.1c2e2503a981f37f0059.jpg",
+    "static/media/tgh.jpeg": "/static/media/tgh.fa4c165a77be91a2003d.jpeg",
+    "static/media/im.png": "/static/media/im.49b62d21af9521e8054a.png",
+    "static/media/fm.jpeg": "/static/media/fm.45e45b2671811e08951a.jpeg",
+    "static/media/logoRB.png": "/static/media/logoRB.06297964522ba32a6086.png",
+    "static/media/rTA.png": "/static/media/rTA.6445552a80c3165883d4.png",
+    "static/media/pn.jpeg": "/static/media/pn.7a99e0597e8197ad0dd0.jpeg",
+    "static/media/tcha.gif": "/static/media/tcha.03a934647c65923109f9.gif",
+    "static/media/kta.webp": "/static/media/kta.93dc93a7ca216afbcea1.webp",
+    "index.html": "/index.html",
+    "main.74d6c810.css.map": "/static/css/main.74d6c810.css.map",
+    "main.e79c1a2a.js.map": "/static/js/main.e79c1a2a.js.map",
+    "787.8a220983.chunk.js.map": "/static/js/787.8a220983.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74d6c810.css",
+    "static/js/main.e79c1a2a.js"
+  ]
+}

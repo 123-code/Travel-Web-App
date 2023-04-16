@@ -38,6 +38,7 @@ export default class App extends React.Component {
        <div>
        <Cookies></Cookies>
        <div>
+        {/*https://travel-web-app-rx55-l9r4jaahe-123-code.vercel.app*/}
          <Routes>
         <Route exact path="/" element={<MainPage/>} />
         <Route path="/about" element={<AboutPage/>} />

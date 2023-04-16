@@ -37,10 +37,14 @@ const Footer = () => {
         <div className="footer__column">
           <h4>Contáctanos</h4>
           <ul>
-          <li><BsPhone/><a style={{color:'#fff'}} href="#">Cel:0982379716</a></li>
+          <li><BsPhone/><a style={{color:'#fff'}} href="#">Cel:+593 0980389837</a></li>
+          <li> Dirección: Republica Del Salvador y Suiza</li>
           </ul>
         </div>
       </div>
+
+
+      
       <div className="footer__bottom" >
         <p>© ReactBuilders 2023</p>
         <img src={logo} alt="ReactBuilders" />

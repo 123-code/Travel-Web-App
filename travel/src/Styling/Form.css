@@ -178,8 +178,8 @@ form {
 
 }
 
-/* For screens smaller than 600px */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 800px) {
   .container {
     margin: 10px;
     margin-top: 80px;
@@ -187,7 +187,8 @@ form {
   }
 
   .cardForm {
-    width: 100%;
+    display: none;
+
   }
 
   .inputBoxName,

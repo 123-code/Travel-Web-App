@@ -19,12 +19,12 @@
 .navbar{
   box-sizing: border-box;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
 }
+
+.navbar li:hover .dropdown {
+  display: block;
+  }
+  
 
 .navbar-logo {
   font-size: 24px;

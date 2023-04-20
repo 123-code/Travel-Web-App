@@ -15,16 +15,12 @@ import Selector from '../Components/SelectorButton';
  
 export function SendEther() { 
 
-const DropdownMenu = ()=>{ 
-
-}
-
 
 
   const[Tour,SetTour] = useState(null);
 
   const selectedTour = useSelector((state) => state.selectedTour);
-
+  console.log("Selected",selectedTour)
   const { config } = usePrepareSendTransaction({
     request: { to: '0xA6ee1E5EA0332c0B4A258808505EEd60C688C931', value: BigNumber.from('10000000000000000') },
   }) 

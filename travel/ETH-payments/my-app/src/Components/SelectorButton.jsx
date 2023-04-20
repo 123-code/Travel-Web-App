@@ -25,16 +25,16 @@ export default function Selector() {
           label="Tour"
           onChange={handleChange}
         >
-          <MenuItem value={10}>Cuyabeno</MenuItem>
-          <MenuItem value={20}>Papallacta</MenuItem>
-          <MenuItem value={30}>Otavalo</MenuItem>
-          <MenuItem value={30}>Mindo</MenuItem>
-          <MenuItem value={30}>Quilotoa</MenuItem>
-          <MenuItem value={30}>Cotopaxi-Hike</MenuItem>
-          <MenuItem value={30}>Cotopaxi-Summit</MenuItem>
-          <MenuItem value={30}>Galápagos-Standard</MenuItem>
-          <MenuItem value={30}>Galápagos-High</MenuItem>
-          <MenuItem value={30}>Galápagos-Promo</MenuItem>
+          <MenuItem value={"Cuyabeno"}>Cuyabeno</MenuItem>
+          <MenuItem value={"Papallacta"}>Papallacta</MenuItem>
+          <MenuItem value={"Otavalo"}>Otavalo</MenuItem>
+          <MenuItem value={"Mindo"}>Mindo</MenuItem>
+          <MenuItem value={"Quilotoa"}>Quilotoa</MenuItem>
+          <MenuItem value={"Cotopaxi-H"}>Cotopaxi-Hike</MenuItem>
+          <MenuItem value={"Cotopaxi-S"}>Cotopaxi-Summit</MenuItem>
+          <MenuItem value={"Galapagos-S"}>Galápagos-Standard</MenuItem>
+          <MenuItem value={"Galapagos-H"}>Galápagos-High</MenuItem>
+          <MenuItem value={"Galapagos-P"}>Galápagos-Promo</MenuItem>
 
         </Select>
       </FormControl>

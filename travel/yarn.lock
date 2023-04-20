@@ -8534,10 +8534,10 @@
   dependencies:
     "ms" "^2.0.0"
 
-"i18next@^22.4.12", "i18next@>= 19.0.0":
-  "integrity" "sha512-2lE+vRXxQ3lGLub1CVbwgO0IfkLHmUSDVOAVdPh22CsxttMXi+35n2qgxh2wZIkKl6t/NMzPfgFPRDiFQOmiCg=="
-  "resolved" "https://registry.npmjs.org/i18next/-/i18next-22.4.12.tgz"
-  "version" "22.4.12"
+"i18next@^22.4.15", "i18next@>= 19.0.0":
+  "integrity" "sha512-yYudtbFrrmWKLEhl6jvKUYyYunj4bTBCe2qIUYAxbXoPusY7YmdwPvOE6fx6UIfWvmlbCWDItr7wIs8KEBZ5Zg=="
+  "resolved" "https://registry.npmjs.org/i18next/-/i18next-22.4.15.tgz"
+  "version" "22.4.15"
   dependencies:
     "@babel/runtime" "^7.20.6"
 

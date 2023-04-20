@@ -13,6 +13,10 @@ import { ETHPayment } from './MakePayment'
 import { infuraProvider } from 'wagmi/providers/infura'
 import{ Provider } from 'react-redux'
 import store from '../Components/ReduxStore'
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+
+
 const { chains, provider } = configureChains(
   [mainnet, polygon, optimism, arbitrum,goerli],
   [
@@ -32,20 +36,19 @@ const wagmiClient = createClient({
 })
 
 
+ 
+
 export default function App({ Component, pageProps }) {
   return (
-    <>
+
     <Provider store={store}>
-    <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-      <RainbowButton/>
-      <ETHPayment/>
-      </RainbowKitProvider>
+      <WagmiConfig client={wagmiClient}>
+        <RainbowKitProvider chains={chains}>
+          <RainbowButton/>
+          <ETHPayment/>
+        </RainbowKitProvider>
       </WagmiConfig>
-     </Provider>
-    </> 
-  
-  
-  
+    </Provider>
+
   )
 }

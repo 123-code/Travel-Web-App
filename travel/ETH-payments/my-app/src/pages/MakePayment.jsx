@@ -1,28 +1,62 @@
-import  React,{useState} from 'react';
+import  React,{useState,useEffect} from 'react';
 import { useSelector } from 'react-redux';
 import { BigNumber } from 'ethers';
 import { usePrepareSendTransaction, useSendTransaction } from 'wagmi';
-//import List from '@mui/material/List';
-/*
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Checkbox from '@mui/material/Checkbox';
-*/
 import Selector from '../Components/SelectorButton';
 
  
 export function SendEther() { 
 
-
-
   const[Tour,SetTour] = useState(null);
+  const[amount,setAmount] = useState(null);
+
+
+  const setSelectedtourAmount = (selected)=>{
+    if(selected === "Cuyabeno"){
+      setAmount("10000000000000000")
+    }
+    if(selected === "Papallacta"){
+      setAmount("20000000000000000")
+    }
+    if(selected === "Otavalo"){
+      setAmount("30000000000000000")
+    }
+    if(selected === "Mindo"){
+      setAmount("40000000000000000")
+    }
+    if(selected === "Quilotoa"){
+      setAmount("50000000000000000")
+    }
+    if(selected === "Cotopaxi-H"){
+      setAmount("60000000000000000")
+    }
+    if(selected=== "Cotopaxi-S"){
+      setAmount("70000000000000000")
+    }
+    if(selected === "Galapagos-S"){
+      setAmount("80000000000000000")
+    }
+    if(selected === "Galapagos-H"){
+      setAmount("90000000000000000")
+    }
+    if(selected === "Galapagos-P"){
+      setAmount("100000000000000000")
+    }
+
+  }
 
   const selectedTour = useSelector((state) => state.selectedTour);
   console.log("Selected",selectedTour)
+  
+
+useEffect(()=>{
+  setSelectedtourAmount(selectedTour)
+  console.log("AMOUNT:",amount);
+},[selectedTour])
+
+
   const { config } = usePrepareSendTransaction({
-    request: { to: '0xA6ee1E5EA0332c0B4A258808505EEd60C688C931', value: BigNumber.from('10000000000000000') },
+    request: { to: '0xA6ee1E5EA0332c0B4A258808505EEd60C688C931', value: BigNumber.from(amount) },
   }) 
 
   const { data, isLoading, isSuccess, sendTransaction, isError,error } =

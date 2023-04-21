@@ -8,7 +8,7 @@ import Selector from '../Components/SelectorButton';
 export function SendEther() { 
 
   const[Tour,SetTour] = useState(null);
-  const[amount,setAmount] = useState(null);
+  const[amount,setAmount] = useState(BigNumber.from(0));
 
 
   const setSelectedtourAmount = (selected)=>{
@@ -170,7 +170,7 @@ export function SendETHForm (){
 }
 
 
-export function ETHPayment(){
+export default function ETHPayment(){
 
     return(
       <>

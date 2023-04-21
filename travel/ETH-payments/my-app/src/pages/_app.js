@@ -8,8 +8,8 @@ import { configureChains, createClient, goerli, WagmiConfig } from 'wagmi';
 import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
-import { RainbowButton } from './ConnectButton';
-import { ETHPayment } from './MakePayment'
+import  RainbowButton  from './ConnectButton';
+import  ETHPayment  from './MakePayment'
 import { infuraProvider } from 'wagmi/providers/infura'
 import{ Provider } from 'react-redux'
 import store from '../Components/ReduxStore'

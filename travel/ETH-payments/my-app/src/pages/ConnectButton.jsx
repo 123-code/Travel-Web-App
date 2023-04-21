@@ -1,5 +1,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-export const RainbowButton = () => {
+const RainbowButton = () => {
   return <ConnectButton />;
 };
+
+export default RainbowButton;

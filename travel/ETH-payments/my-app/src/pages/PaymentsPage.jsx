@@ -1,8 +1,8 @@
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
-import { ETHPayment } from './MakePayment'
+import  ETHPayment  from './MakePayment'
 
-export function App() {
+export default function App() {
  const { isConnected } = useAccount()
 
  if (isConnected) { 

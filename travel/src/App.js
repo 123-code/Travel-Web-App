@@ -24,6 +24,7 @@ import Standard from './Pages/Galapagos/Standard';
 import Promotional from './Pages/Galapagos/Promotional';
 import Aqua from './Pages/Galapagos/Aqua';
 import High from './Pages/Galapagos/HighSeason';
+import ImportantNotes from './Pages/Galapagos/ImportantNotes.tsx';
 //Promotional
 
 import './App.css';
@@ -61,6 +62,7 @@ export default class App extends React.Component {
         <Route path="/high" element={<High/>}/>
         <Route path="/promotional" element={<Promotional/>}/>
         <Route path="/aqua" element={<Aqua/>}/>
+        <Route path="/important" element={<ImportantNotes/>}/>
         </Routes>
         </div>
         <div>

@@ -20,7 +20,7 @@ const AmazonPage = () => {
     <Destinos  imageSrc = {"https://www.linkpicture.com/q/download_159.jpeg"}title = "COTOPAXI BIKE AND HIKE"  button="true" link="cotopaxih"/>
     </div>
 
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex"}}>
     <Destinos  imageSrc = {"https://www.linkpicture.com/q/download-1_108.jpeg"}title = "OTAVALO CULTURAL AND SHOPING"  button="true"  link="/otavalo"/>
     <Destinos  imageSrc = {"https://www.linkpicture.com/q/images_1152.jpeg"}title = " MINDO ADVENTURE AND SWEET (FRIDAY)"  button="true" link="/mindo"/>
     <Destinos  imageSrc = {"https://www.linkpicture.com/q/download-2_15.jpeg"}title =  "CUYABENO DOLPHIN LODGE"  button="true" link="/cuyabeno"/>

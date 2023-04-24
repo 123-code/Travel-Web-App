@@ -6,17 +6,17 @@ const Destinos = ({ imageSrc, text, title, button = false, link }) => {
   const navigation = useNavigate();
   return (
     <div
-      className="destinos-wrapper "
-      style={{
-        marginTop: '10px',
-        backgroundImage: `url(${imageSrc})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        position: 'relative',
-        height: '100%',
-    
-      }}
-    >
+  className="destinos-wrapper "
+  style={{
+    marginTop: '10px',
+    backgroundImage: `url(${imageSrc})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    position: 'relative',
+    height: '500px',
+    width: '500px',
+  }}
+>
       <div
         style={{
           backgroundColor: 'rgba(0,0,0,0.8)',
@@ -61,11 +61,15 @@ const Destinos = ({ imageSrc, text, title, button = false, link }) => {
               navigation(link);
             }}
             style={{
-              backgroundColor: 'white',
-              color: 'black',
-              padding: '10px',
-              borderRadius: '5px',
-              cursor: 'pointer',
+              color: 'white',
+              position: 'relative',
+              zIndex: 1,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '10%',
+              marginTop: '50px'
             }}
           >
             Leer más

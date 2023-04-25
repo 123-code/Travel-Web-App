@@ -6,13 +6,14 @@ import ReserveButton from '../../Components/ReserveButton';
 import Destinos from '../../Components/Destinos';
 import archipel from '../../Imgs/Archipel.png';
 import '../../Styling/Rates.css'
+import { DestinosHeader } from "../../Components/Destinos";
 export default function High() {
 
    
     return (
         <div >
             <div className='TreasureBanner'>
-                <Destinos imageSrc={(archipel)} title="Archipel I" text="Precios" />
+                <DestinosHeader imageSrc={(archipel)} title="Archipel I" text="Precios" />
             </div>    
             <div className='TablaEstandar'>
                 <EstandarArchipel/>

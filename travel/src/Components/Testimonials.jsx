@@ -5,7 +5,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Mi viaje a través de esta agencia fue increíble, los guías fueron muy amables y serviciales en todo momento."
+      text: "My trip was incredible, guides were ."
     },
     {
       id: 2,

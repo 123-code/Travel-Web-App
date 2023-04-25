@@ -34,43 +34,27 @@
 
 @media only screen and (max-width: 600px) {
   h2 {
-    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0;
+    padding-top: 50px;
+  }
+  
+  button {
+    background-color: lightblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
   }
   .h1TD {
     font-size: 1rem;
   }
-}
-
-img {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-}
-
-h2 {
-  padding: 10px;
-  margin: 0;
-  padding-top: 50px;
-}
-
-button {
-  background-color: #03244D;
-  color: white;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-top: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.container {
-  width: 100%;
-  text-align: center;
-}
-
-.btnTD {
-  background-color: #03244D;
-  border: 2px solid #03244D;
-  color: white;
+   .btnTD{
+    background-color: #00BFFF;
+  border: 2px solid #00BFFF; /* color celeste en hexadecimal */
+  color: white; /* color celeste en hexadecimal */
   padding: 10px 20px;
   cursor: pointer;
   width: 110px;
@@ -80,4 +64,5 @@ button {
   .cardTD {
     max-width: 90%;
   }
+}
 }

@@ -1,7 +1,7 @@
 .background-image-overlay {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,18 +25,21 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 90%;
   max-width: 1200px;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 
 .title-container {
-  width: 100%;
-  max-width: 80%;
-  
+  flex: 1 1 100%;
+  max-width: 100%;
 }
 
 .form-container {
-  width: 100%;
+  flex: 1 1 100%;
+  max-width: 100%;
   padding: 1rem 0;
   height: auto;
   max-height: none;
@@ -45,113 +48,58 @@
 
 h1 {
   color: white;
-  width: 100%;
   font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .image-container {
+  flex: 1 1 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 1em 0;
 }
 
 .image-container img {
-  flex: 1;
-  max-width: 50%;
-  max-height: 100%;
-  margin: 0 1em;
+  width: calc(25% - 0.5em);
+  height: auto;
+  margin: 0.5em;
 }
-
-.image-container img:first-child {
-  margin-left: 0;
-}
-
 
 @media only screen and (max-width: 600px) {
-  
   .overlay-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    padding: 2rem 1rem;
   }
   .title-container, .form-container {
-    width: 60%;
-    max-width: 60%;
-    
-
-  }
-  .form-container {
-    display:none
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
   .image-container img {
-    max-width: 100%;
-    margin: 1em 0;
+    width: calc(50% - 0.5em);
+    margin: 1em 0.5em;
   }
 }
-
 
 @media only screen and (min-width: 600px) {
-  .overlay-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .title-container, .form-container {
-    width: 100%;
-    max-width: 60%;
-  
-  }
-  .form-container {
-    max-height: 50%;
-    overflow-y: visible;
-  }
   .image-container img {
-    max-width: 50%;
-    margin: 1em 0;
+    width: calc(25% - 0.5em);
   }
 }
 
-
-@media screen and (max-width: 600px) {
-  .image-container img {
-    max-width: 50%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 10rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
 @media only screen and (min-width: 1200px) {
   .overlay-content {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
   }
   .title-container, .form-container {
-    width: 45%;
-    max-width: 45%;
-
-    
-
-  }
-  .form-container {
-    max-height: none;
-    overflow-y: visible;
+    width: 50%;
+    max-width: 50%;
+    text-align: center;
   }
   .image-container img {
-    max-width: 40%;
-    margin: 0;
+    width: calc(25% - 0.5em);
+    margin: 0.5em;
   }
 }

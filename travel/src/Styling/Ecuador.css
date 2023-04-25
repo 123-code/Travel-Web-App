@@ -1,5 +1,5 @@
 .sqr{
-    margin-top: 0;
+
     margin-bottom: 100px;
   }
 
@@ -13,4 +13,8 @@
 
   .CrucerosGpg{
     margin-bottom: 200px;
+  }
+
+  .infoGeneral{
+    margin-top: 0px;
   }

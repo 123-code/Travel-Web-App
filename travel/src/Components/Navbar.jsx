@@ -54,13 +54,7 @@ const navigate = useNavigate();
         </li>
         <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
           <Link to="/amazon" style={{ color: 'black' }}>Ecuador</Link>
-          {dropdown && (
-            <ul className="dropdown">
-              <li><Link to="/quito">Quito</Link></li>
-              <li><Link to="/guayaquil">Guayaquil</Link></li>
-              <li><Link to="/cuenca">Cuenca</Link></li>
-            </ul>
-          )}
+          
         </li>
      
           <li style={{ marginRight: '20px' }}>

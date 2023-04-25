@@ -23,12 +23,7 @@ const TopDestinations = () => {
         <button className='btnTD' onClick={()=>{navigate("/amazon")}}>Learn more</button>
       </div>
       
-      <div className="cardTD">
-      <h2>Perú</h2>
-        <img src="https://media.istockphoto.com/id/479900992/es/foto/lama-y-machu-picchu.jpg?b=1&s=170667a&w=0&k=20&c=77qI_fVoIh4hBSSOsb27ITPNJwWBPx9zFcXy1rTD0PQ=" alt="Perú" style={{ width: '100%' }} />
-        
-        <button className="btnTD" onClick={()=>{navigate("/peru")}}>Learn more </button>
-      </div>
+     
   
       </div>
       </div>

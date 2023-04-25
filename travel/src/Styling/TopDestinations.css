@@ -20,8 +20,15 @@
 
 .containerC {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
-  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  text-align: center; /* Se agrega esta propiedad */
+  margin: 0 auto; /* Se agrega esta propiedad */
 }
 
 @media screen and (min-width: 50px) {

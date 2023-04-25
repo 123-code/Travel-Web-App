@@ -79,7 +79,7 @@ const Form = ({ color }) => {
       <label htmlFor="name" className="user"style={{
           color: color
         }} >
-        Nombre
+        Name
       </label>
     </div>
 
@@ -125,7 +125,7 @@ const Form = ({ color }) => {
     </div>
 
     <div className="checkboxGroup" style={{ borderColor: color }}>
-  <label style={{ color: color }}>Contacto</label>
+  <label style={{ color: color }}>Contact</label>
   <div>
     <label style={{ color: color }}>
       <input
@@ -204,7 +204,7 @@ const Form = ({ color }) => {
       <label htmlFor="Residence" style={{
           color: color
         }} >
-      Residencia:</label>
+      Residency:</label>
       <select
         id="Residence"
         name="Residence"
@@ -214,7 +214,7 @@ const Form = ({ color }) => {
       >
         <option value=""style={{
           color: color
-        }} >Selecciona un país</option>
+        }} >Select a country</option>
         {countries.map((country) => (
           <option key={country} value={country} > 
             {country}
@@ -248,7 +248,7 @@ const Form = ({ color }) => {
       style={{
         color: color,   
       }}>
-        Número de adultos:
+        Adults:
       </label>
       <input
         type="text"
@@ -262,7 +262,7 @@ const Form = ({ color }) => {
       <label htmlFor="Children" style={{
         color: color,
         borderColor: color,
-      }}>Número de niños:</label>
+      }}>Children:</label>
       <input
         type="text"
         required
@@ -298,7 +298,7 @@ const Form = ({ color }) => {
             onClick={handleSubmit}
             style={{ backgroundColor: color, color: "black" }}
           >
-            Enviar
+            Send
           </button>
         </div>
       </div>

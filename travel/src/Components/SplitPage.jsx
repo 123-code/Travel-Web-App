@@ -21,7 +21,7 @@ Boutique, ubicado en el Centro Hístico de Quito. De igual manera cuenta con con
       </div>
       <div className='colDer' style={{paddingTop: '70px', flex: 1}} >
         <div className='h2SP'>
-        <h2 >Contáctanos a través de este formulario:</h2>
+        <h2 >Contact us through this form:</h2>
         </div>
         <Form/>
       </div>

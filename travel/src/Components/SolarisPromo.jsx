@@ -7,9 +7,9 @@ const SolarisPromo = () => {
       <table>
         <thead>
           <tr>
-            <th className="columna-azul">Precios Promocionales</th>
-            <th className="columna-azul">6 noches</th>
-            <th className="columna-azul">4 noches</th>
+            <th className="columna-azul">Promotional Prices</th>
+            <th className="columna-azul">6 nights</th>
+            <th className="columna-azul">4 nights</th>
           </tr>
         </thead>
         <tbody>

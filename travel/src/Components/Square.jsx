@@ -10,46 +10,46 @@ import mdm from '../Imgs/mdm.jpeg'
 
 const data = [
   {
-    id: 1,
-    title: "Ciudad Antigua de Quito + Mitad del Mundo",
-    text: "La magia del casco antiguo se disfrutará a través de un paseo por el casco antiguo de Quito. Visitaremos la Plaza Grande que le brinda el ambiente de Quito.",
-    image: chq 
+  id: 1,
+  title: "Old Town Quito + Middle of the World",
+  text: "You will enjoy the magic of the old town through a walk around Quito's historic center. We will visit the Plaza Grande, which provides the atmosphere of Quito.",
+  image: chq
   },
   {
-    id: 2,
-    title: "Mindo: La belleza de cloudforest",
-    text: "El bosque nublado te esperará para que disfrutes de lo mejor de la naturaleza. Podrás disfrutar del bosque atravesándolo en una Tarabita, caminando hasta una cascada y divirtiéndote en el Zipline. Podemos finalizar con un delicioso recorrido de chocolate en una de las fincas locales. Depende de las opciones que prefieras.",
-    image: mndo
+  id: 2,
+  title: "Mindo: The Beauty of Cloudforest",
+  text: "The cloud forest awaits you to enjoy the best of nature. You can enjoy the forest by crossing it on a Tarabita, walking to a waterfall, and having fun on the Zipline. We can end with a delicious chocolate tour at one of the local farms. It depends on the options you prefer.",
+  image: mndo
   },
   {
-    id: 3,
-    title: "Quilotoa Mágica: Cultura y Naturaleza",
-    text: "El maravilloso paisaje de las tierras altas le permitirá admirar nuestra cultura y naturaleza. Pasamos por un centro cultural donde podrán experimentar el arte de la zona del Cotopaxi y ustedes mismos harán sus pinturas y allí tendremos una grata sorpresa para ustedes. Pasamos por el Cañón de Toachi para tener fotografías únicas. Visita a la Laguna del Quilotoa y entrada a la orilla.",
-    image: qtoa
+  id: 3,
+  title: "Magical Quilotoa: Culture and Nature",
+  text: "The wonderful highlands landscape will allow you to admire our culture and nature. We will pass through a cultural center where you can experience the art of the Cotopaxi area, make your own paintings, and there we will have a pleasant surprise for you. We pass through the Toachi Canyon to have unique photographs. Visit to the Quilotoa Lagoon and entrance to the shore.",
+  image: qtoa
   },
   {
-    id: 4,
-    title: "Mercado de Otavalo + Cuicocha",
-    text: "Uno de los mercados más grandes y coloridos del norte de Ecuador te recibe este día. En el camino visitará una plantación de rosas para conocer las hermosas especies que tenemos. Luego visite la verdadera línea de Ecuador. Aprenderá más sobre nuestras tradiciones y nuestros grupos étnicos. Visitarás el mercado principal pero también un taller. Además visitará la hermosa Laguna de Cuicocha y visitará el pueblo de Cotacachi si le gusta ver productos de cuero.",
-    image: otv
+  id: 4,
+  title: "Otavalo Market + Cuicocha",
+  text: "One of the largest and most colorful markets in northern Ecuador welcomes you this day. On the way, you will visit a rose plantation to learn about the beautiful species we have. Then visit the real Equator line. You will learn more about our traditions and ethnic groups. You will visit the main market but also a workshop. You will also visit the beautiful Cuicocha Lagoon and the town of Cotacachi if you like to see leather products.",
+  image: otv
   },
   {
-    id: 5,
-    title: "Nono en Bicicleta",
-    text: "Los maravillosos alrededores de Nono te permitirán tener una gran experiencia en bicicletas disfrutando del paisaje de la naturaleza. Luego podremos tener la visita de una cascada donde recargarán sus baterías.",
-    image: nnb
+  id: 5,
+  title: "Nono by Bicycle",
+  text: "The wonderful surroundings of Nono will allow you to have a great experience on bicycles, enjoying the natural landscape. Then we can visit a waterfall where you can recharge your batteries.",
+  image: nnb
   },
   {
-    id: 6,
-    title: "Cotopaxi",
-    text: "Conducimos nuevamente hacia el sur y nos internaremos en el Parque Nacional Cotopaxi. Subimos al primer refugio y caminaremos hasta el segundo refugio del Parque Nacional Cotopaxi. Estaremos a 15800 pies. Cotopaxi también te permite ver las montañas que se encuentran en los alrededores formando parte de la Ruta de los Volcanes. También se verá la laguna de Limpiopungo y podrá moverse alrededor de la laguna, lo que le llevará alrededor de 45 minutos observando las hermosas aves de la zona.",
-    image: ctp
+  id: 6,
+  title: "Cotopaxi",
+  text: "We drive again to the south and enter Cotopaxi National Park. We climb to the first refuge and walk to the second refuge of Cotopaxi National Park. We will be at 15800 feet. Cotopaxi also allows you to see the mountains that surround it, forming part of the Route of the Volcanoes. You will also see the Limpiopungo lagoon and can move around the lagoon, which will take you around 45 minutes, observing the beautiful birds of the area.",
+  image: ctp
   },
   {
-    id: 7,
-    title: "Teleferico + Mitad del Mundo + Papallacta",
-    text: "Descubre uno de los miradores naturales, donde podrás disfrutar de una vista a la ciudad a 4000m, en el Teleférico, luego nos vamos a uno de los iconos de Ecuador, la famosa Mitad del Mundo, Museo del Intiñan y ciudad mitad del mundo, que mejor luego visitar las termas de Papallacta conocidas por alto grado medicinal y de relajación.",
-    image: mdm
+  id: 7,
+  title: "Teleferico + Middle of the World + Papallacta",
+  text: "Discover one of the natural viewpoints, where you can enjoy a view of the city at 4000m, on the Teleférico. Then we go to one of Ecuador's icons, the famous Middle of the World, Museum of Intiñan, and the middle of the world city. What could be better than visiting the Papallacta hot springs, known for their high medicinal and relaxation qualities?",
+  image: mdm
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ const Square = () => {
         <div
           style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
         >
-          <button className="btnSq">Quiero Saber más</button>
+          <button className="btnSq">Read More</button>
         </div>
       </div>
     </div>

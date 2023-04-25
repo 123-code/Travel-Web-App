@@ -7,8 +7,8 @@ const AquaEstandar = () => {
       <table>
         <thead>
           <tr>
-            <th className="columna-azul">Precios Estándar</th>
-            <th className="columna-azul">7 noches</th>
+            <th className="columna-azul">Standard Prices</th>
+            <th className="columna-azul">7 nights</th>
           
           </tr>
         </thead>

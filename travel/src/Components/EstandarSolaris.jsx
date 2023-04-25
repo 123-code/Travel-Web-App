@@ -7,9 +7,9 @@ const EstandarSolaris = () => {
       <table>
         <thead>
           <tr>
-            <th className="columna-azul">Precios Estándar</th>
-            <th className="columna-azul">6 noches</th>
-            <th className="columna-azul">4 noches</th>
+            <th className="columna-azul">Standard Prices</th>
+            <th className="columna-azul">6 nights</th>
+            <th className="columna-azul">4 nights</th>
           </tr>
         </thead>
         <tbody>

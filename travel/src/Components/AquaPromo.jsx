@@ -7,8 +7,8 @@ const AquaHigh = () => {
       <table>
         <thead>
           <tr>
-            <th className="columna-azul">Precios Promocionales</th>
-            <th className="columna-azul">7 noches</th>
+            <th className="columna-azul">Promotional Prices</th>
+            <th className="columna-azul">7 nights</th>
           
           </tr>
         </thead>

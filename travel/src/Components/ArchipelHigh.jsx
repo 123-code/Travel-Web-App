@@ -7,10 +7,10 @@ const ArchipelHigh = () => {
       <table>
         <thead>
           <tr>
-            <th className="columna-azul">Precios Estándar</th>
-            <th className="columna-azul">7 noches</th>
-            <th className="columna-azul">4 noches</th>
-            <th className="columna-azul">3 noches</th>
+            <th className="columna-azul">Standard Prices</th>
+            <th className="columna-azul">7 nights</th>
+            <th className="columna-azul">4 nights</th>
+            <th className="columna-azul">3 nights</th>
           </tr>
         </thead>
         <tbody>

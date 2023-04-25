@@ -72,7 +72,7 @@ const Destinos = ({ imageSrc, text, title, button = false, link }) => {
               marginTop: '50px'
             }}
           >
-            Leer más
+            Read More
           </button>
         ) : null}
       </div>
@@ -149,7 +149,7 @@ export function DestinosHeader({ imageSrc, text, title, button = false, link }){
               cursor: 'pointer',
             }}
           >
-            Leer más
+            Read More
           </button>
         ) : null}
       </div>

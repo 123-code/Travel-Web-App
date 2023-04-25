@@ -27,7 +27,7 @@ return(
 </div>
 <div id="contact-form" className='formMain' >
     
-    <h1 className='title'>Solicita Más Información</h1>
+    <h1 className='title'>More information</h1>
     <Form></Form>
 </div>
 </body>

@@ -36,10 +36,10 @@ const navigate = useNavigate();
         <h3 style={{ marginLeft: '20px' }}>MBVACA Expeditions</h3>
         <ul style={{ display: 'flex', listStyle: 'none', marginLeft: '20px' }}>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/" style={{ color: 'black' }}>Inicio</Link>
+            <Link to="/" style={{ color: 'black' }}>Home</Link>
           </li>
           <li style={{ marginRight: '20px' }}>
-            <Link to="/about" style={{ color: 'black' }}>Nosotros</Link>
+            <Link to="/about" style={{ color: 'black' }}>About us </Link>
           </li>
           <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
           <Link to="/galapagos" style={{ color: 'black' }}>Galápagos</Link>

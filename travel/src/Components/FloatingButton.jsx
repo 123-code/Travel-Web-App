@@ -23,7 +23,7 @@ function FloatingButton() {
       )}
       {isCardOpen && (
         <FloatingCard onClose={handleCardClose}>
-          <h2 className="card-title">Contacto</h2>
+          <h2 className="card-title">Contact</h2>
           <Form />
         </FloatingCard>
       )}

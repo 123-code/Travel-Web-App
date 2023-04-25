@@ -8,7 +8,7 @@ const PeruPage = () => {
     return (
         <>
      
-        <Destinos imageSrc={(peruImg)} title="Perú" text="Perú es un país fascinante ubicado en la costa del Pacífico de Sudamérica, conocido por su rica historia y cultura, así como por su impresionante paisaje natural. La ciudad de Machu Picchu, situada en los Andes, es una de las atracciones turísticas más famosas del mundo y atrae a millones de visitantes cada año. Pero Perú no es solo Machu Picchu: el país también tiene una deliciosa cocina, playas impresionantes y ciudades coloniales encantadoras. Además, la gente es cálida y amistosa, lo que hace que visitar Perú sea una experiencia inolvidable. Desde la cordillera de los Andes hasta la selva amazónica, Perú ofrece una amplia gama de aventuras y experiencias para cualquier tipo de viajero."/>
+        <Destinos imageSrc={(peruImg)} title="Perú" text="Peru is a fascinating country located on the Pacific coast of South America, known for its rich history and culture, as well as its stunning natural landscape. The city of Machu Picchu, located in the Andes, is one of the most famous tourist attractions in the world and attracts millions of visitors every year. But Peru is not just Machu Picchu: the country also has delicious cuisine, stunning beaches, and charming colonial cities. In addition, the people are warm and friendly, which makes visiting Peru an unforgettable experience. From the Andes mountain range to the Amazon rainforest, Peru offers a wide range of adventures and experiences for any type of traveler."/>
         <div className="sqr">
         <Square></Square>
     </div>

@@ -12,7 +12,7 @@ const Footer = () => {
     <footer style={{ backgroundColor: '#333', color: '#fff' }}>
       <div className="footer__container" >
         <div className="footer__column">
-          <h4>Destinos</h4>
+          <h4>Destintions</h4>
           <ul>
             <li><a style={{color:'#fff'}} href="#">Otavalo</a></li>
             <li><a style={{color:'#fff'}} href="#">Papallacta</a></li>
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
 
         <div className="footer__column">
-          <h4>Nuestras redes</h4>
+          <h4>Social Media</h4>
           <ul className="social-icons">
             <li><a href="#"><i className="fa fa-facebook"></i> <BsFacebook/> </a></li>
             <li><a href="#"><i className="fa fa-twitter"></i></a><FaTwitter/></li>
@@ -37,8 +37,8 @@ const Footer = () => {
         <div className="footer__column">
           <h4>Contáctanos</h4>
           <ul>
-          <li><BsPhone/><a style={{color:'#fff'}} href="#">Cel:+593 0980389837</a></li>
-          <li> Dirección: Republica Del Salvador y Suiza</li>
+          <li><BsPhone/><a style={{color:'#fff'}} href="#">contact:+593 0980389837</a></li>
+          <li> Address: Republica Del Salvador y Suiza</li>
           </ul>
         </div>
       </div>

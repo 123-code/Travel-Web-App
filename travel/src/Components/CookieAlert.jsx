@@ -14,7 +14,7 @@ function CookieAlert() {
 
   return (
     <div className="cookie-consent">
-      <p>Este sitio utiliza cookies para mejorar tu experiencia de usuario.</p>
+      <p>This site uses cookies to enhance your user experience.</p>
       <button onClick={handleAccept}>Aceptar</button>
     </div>
   );

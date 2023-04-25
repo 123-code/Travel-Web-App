@@ -7,7 +7,7 @@ export default function ReserveButton() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Button variant="contained" style={{ backgroundColor: '#03244D' }} onClick={() => { navigate('/form') }}>
-        Reservar este tour
+        Reserve this tour 
       </Button>
     </div>
   );

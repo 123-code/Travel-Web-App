@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer__column">
-          <h4>Contáctanos</h4>
+          <h4>Contact us</h4>
           <ul>
           <li><BsPhone/><a style={{color:'#fff'}} href="#">contact:+593 0980389837</a></li>
           <li> Address: Republica Del Salvador y Suiza</li>

@@ -19,8 +19,8 @@ const Testimonials = () => {
 
   return (
     <div className="containerTesti">
-      <h1 className="title">Estás en buenas manos</h1>
-      <h2 className="subtitle">Testimonios</h2>
+      <h1 className="title">you're in good hands</h1>
+      <h2 className="subtitle">Testimonials</h2>
       <div className="testimonials-container">
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="testimonial-card">

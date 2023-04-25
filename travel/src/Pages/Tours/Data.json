@@ -1,11 +1,11 @@
 
 {
     "Papallacta": {
-        "main": "Descubre uno de los miradores naturales, donde podrás disfrutar de una vista a la ciudad a 4000m, en elTeleférico, luego nos vamos a uno de los iconos de Ecuador, la famosa Mitad del Mundo, Museo delIntiñan y ciudad mitad del mundo, que mejor luego visitar las termas de Papallacta conocidas por altogrado medicinal y de relajación.",
-        "Itinerario": "ITINERARIO <br> Recogemos Tribuna de los Shirys 8:00 a.m <br> Plaza Foch 8:15 a.m <br> Plaza San Blas 8:30 a.m. <br> Llegada al Teleférico, Gongola hasta Cruz Loma, 3947msnm.Caminata 45min Columpio. <br> Retorno al Parqueadero. <br> Viaje a la Mitad del Mundo <br> Almuerzo. <br>  Visita IntiñanVisita  <br> Ciudad Mitad del Mundo.  <br> Retorno a Quito. (Dejar y recoger turistas). <br>  Salida a PapallactaTermas 3 horas. <br>  Retorno a Quito.",
-        "Incluye": "Incluye <br> Guía Certificado Bilingüe <br> Transporte <br> Almuerzo.",
-        "NoIncluye": "Entradas <br> Teleférico Mitad del Mundo <br> Papallacta",
-        "EQUIPONECESARIO": "Ropa cómoda y zapatos cómodos.<br> Cámara fotográfica <br>  Gorras de sol.<br> Protector solar<br> Traje de Baño"
+        "main":"Discover one of the natural viewpoints, where you can enjoy a view of the city at 4000m, in the Cable Car, then we go to one of the icons of Ecuador, the famous Middle of the World, Museum delIntiñan and city half of the world, which better then visit the hot springs of Papallacta known for high medicinal and relaxation degree.",
+        "Itinerario": "ITINERARIO <br> Pick-up Tribuna de los Shirys 8:00 a.m <br> Foch Plaza 8:15 a.m <br> San Blas Plaza  8:30 a.m. <br> Arrival to Teleférico, Gongola to  Cruz Loma, 3947msnm .45 minute walk <br> Return to parking lot. <br> Trip to Mitad Del Mundo <br> Lunch  <br>  Visit Intiñan <br> Ciudad Mitad del Mundo.  <br> Return to Quito.<br> pick-up for Papallacta <br>  Return to Quito.",
+        "Incluye": "Incluye <br> certified bilingual guide<br> Transport <br> lunch.",
+        "NoIncluye": "tickets s <br> Teleférico Mitad del Mundo <br> Papallacta",
+        "EQUIPONECESARIO": "comfortable clothes.<br> photo camera <br>  caps .<br> solar protection <br> swimming suit"
     },
 
     "OtavaloS":{
@@ -143,37 +143,19 @@
                     },
                     "CotopaxiH":{
                         "itinerary": [
-                        "Salida desde la Mariscal 7:15 AM (Reina Victoria y Foch esquina, Sector PLAZA Foch) / PLAZA DE SAN BLA 7:30 AM.",
-                        "Ingreso al Parque Nacional Cotopaxi 3200 m (10498.69 pies)",
-                        "Explicación parte baja del Parque Nacional flora y fauna endémica.",
-                        "Depende el clima fotos parte baja a 3600m (11811.02 pies). (Las personas que tienen la actividad de Caballos, su guía estará esperando por ustedes en este sector 3 horas).",
-                        "Arribo Parqueadero 4600m (15091.86 pies).",
-                        "Explicación sobre la caminata hasta el Refugio José Rivas 4.864m (15748.03 pies).",
-                        "Retorno Parqueadero.",
+                        "Departure from the Mariscal 7:15 AM (Reina Victoria and Foch corner, Sector PLAZA Foch) / PLAZA DE SAN BLA 7:30 AM.", 
+                        "Entrance to Cotopaxi National Park 3200 m (10498.69 ft)", 
+                        "Explanation of the lower part of the National Park endemic flora and fauna.",
+                         "It depends on the weather photos lower part at 3600m (11811.02 ft). (People who have the activity of Horses, your guide will be waiting for you in this sector 3 hours).",
+                         "Arribo Parqueadero 4600m (15091.86 ft).", "Explanation about the hike to the José Rivas Refuge 4,864m (15748.03 ft).", "Return Parking.",
                         "Explicación para las personas que tomaran la opción de descenso en bicicleta 45 m aprox.",
-                        "Fotografías laguna de Limpiopungo hasta cargar las bicicletas.",
-                        "Salida del Parque Nacional hasta el mismo restaurante de la mañana para el almuerzo.",
-                        "Retorno a Quito (Si tiene el programa 2 días con Quilotoa transfer a la hostería Machachi)"
+                        "Photographs lagoon of Limpiopungo until loading the bicycles.", 
+                        "Departure from the National Park to the same morning restaurant for lunch.",
+                         "Return to Quito (If you have the program 2 days with Quilotoa transfer to the Machachi inn)"
                         ],
-                        "includes": {
-                        "guide": "Guía bilingüe español inglés.",
-                        "transportation": "Transporte turístico autorizado.",
-                        "meals": "Comidas tipo menú (Almuerzo).",
-                        "bicycle": "Bicicleta y casco",
-                        "permits": "Permisos para ingresar en las áreas protegidas"
-                        },
-                        "not_included": {
-                        "extra_food_drinks": "Comidas y bebidas extras.",
-                        "tips": "Propinas.",
-                        "snacks": "Snacks.",
-                        "tax": "IVA"
-                        },
-                        "necessary_equipment": [
-                        "Ropa cómoda y de abrigo, rompevientos (opcional), guantes, protector de cuello y orejas.",
-                        "Cámara fotográfica.",
-                        "Protector solar",
-                        "Zapatos cómodos para caminar en terreno montañoso y arena."
-                        ]
+                        "includes": { "guide": "Bilingual guide Spanish English.", "transportation": "Authorized tourist transport.", "meals": "Meals type menu (Lunch).", "bicycle": "Bicycle and helmet", "permits": "Permits to enter protected areas" },
+                        "not_included": { "extra_food_drinks": "Extra food and drinks.", "tips": "Tips.", "snacks": "Snacks.", "tax": "VAT" },
+                        "necessary_equipment": [ "Comfortable and warm clothing, windbreaker (optional), gloves, neck and ear protector.", "Camera.", "Sunscreen", "Comfortable shoes for walking in mountainous terrain and sand." ]
                         }
         }
 

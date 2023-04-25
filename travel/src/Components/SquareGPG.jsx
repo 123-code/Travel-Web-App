@@ -14,37 +14,36 @@ import fm from '../Imgs/fm.jpeg'
 import im from '../Imgs/im.png'
 const data = [
   {
-    id: 1,
-    title: "Pinguino de Nazca",
-    text: "El pingüino de las Galápagos es una especie única en el mundo, ya que es el único pingüino que vive en el hemisferio norte. Es el pingüino más pequeño y raro, adaptado a la vida en los trópicos. Su plumaje es de color negro y blanco, lo que le permite camuflarse en el agua y evitar ser detectado por sus depredadores. Su hábitat natural son las islas Galápagos, donde se alimenta de peces pequeños y crustáceos. Sin embargo, su población está en peligro debido a la pesca excesiva y la contaminación de sus aguas.",
-    image: pn 
+  id: 1,
+  title: "Nazca Penguin",
+  text: "The Galapagos penguin is a unique species in the world, as it is the only penguin that lives in the northern hemisphere. It is the smallest and rarest penguin, adapted to life in the tropics. Its plumage is black and white, which allows it to blend in with the water and avoid being detected by predators. Its natural habitat is the Galapagos Islands, where it feeds on small fish and crustaceans. However, its population is in danger due to overfishing and pollution of its waters.",
+  image: pn
   },
   {
-    id: 2,
-    title: "Tiburón Cabeza de martillo (Great Hammerhead)",
-    text: "El tiburón cabeza de martillo, también conocido como great hammerhead, es una especie de tiburón que se puede encontrar en las aguas de Galápagos. Es conocido por su cabeza distintiva en forma de T y por ser uno de los tiburones más grandes del mundo, llegando a medir hasta 6 metros de longitud. Aunque son depredadores voraces, rara vez atacan a los humanos. En Galápagos, estos tiburones son una atracción popular para los buceadores, quienes pueden observarlos en su hábitat natural.",
-    image: tgh
+  id: 2,
+  title: "Great Hammerhead Shark",
+  text: "The great hammerhead shark is a species of shark that can be found in the waters of Galapagos. It is known for its distinctive T-shaped head and for being one of the largest sharks in the world, measuring up to 6 meters in length. Although they are voracious predators, they rarely attack humans. In Galapagos, these sharks are a popular attraction for divers, who can observe them in their natural habitat.",
+  image: tgh
   },
   {
-    id: 3,
-    title: "Tortugas Marinas",
-    text: "Las tortugas marinas de Galápagos son uno de los iconos más emblemáticos de este archipiélago. Son famosas por su tamaño y longevidad, algunas pueden vivir hasta 100 años. Además, son animales marinos fascinantes, ya que realizan migraciones a largas distancias y son fundamentales para mantener el equilibrio de los ecosistemas marinos. En Galápagos existen varias especies de tortugas marinas, incluyendo la tortuga verde y la tortuga de Carey. Lamentablemente, estas especies están en peligro debido a la caza ilegal, la pesca accidental y la degradación de su hábitat natural.",
-    image: st
+  id: 3,
+  title: "Sea Turtles",
+  text: "Galapagos sea turtles are one of the most iconic symbols of this archipelago. They are famous for their size and longevity, some can live up to 100 years. In addition, they are fascinating marine animals, as they perform migrations over long distances and are fundamental to maintaining the balance of marine ecosystems. In Galapagos there are several species of sea turtles, including the green turtle and the hawksbill turtle. Unfortunately, these species are endangered due to illegal hunting, accidental fishing, and degradation of their natural habitat.",
+  image: st
   },
   {
-    id: 4,
-    title: "Flamingos",
-    text: "Los flamencos de Galápagos son una de las especies más emblemáticas de las islas. Se pueden encontrar en las lagunas costeras y salinas del archipiélago. Su distintivo color rosa se debe a la presencia de pigmentos en su alimento, que incluye pequeños crustáceos y algas. A pesar de ser una especie abundante en el mundo, en Galápagos es considerada una especie en peligro de extinción. Los flamencos de Galápagos son monógamos y se reproducen en colonias. Las parejas construyen nidos de barro en los bordes de las lagunas y ponen un solo huevo. Los polluelos son alimentados con una secreción rica en lípidos que produce la glándula de la garganta de los padres. Su comportamiento social y su belleza los convierten en uno de los atractivos más populares para los turistas que visitan las islas.",
-    image: fm
+  id: 4,
+  title: "Flamingos",
+  text: "Galapagos flamingos are one of the most emblematic species of the islands. They can be found in the coastal lagoons and salt flats of the archipelago. Their distinctive pink color is due to the presence of pigments in their food, which includes small crustaceans and algae. Despite being an abundant species in the world, in Galapagos they are considered an endangered species. Galapagos flamingos are monogamous and reproduce in colonies. The couples build mud nests on the edges of the lagoons and lay a single egg. The chicks are fed with a lipid-rich secretion produced by the parents' throat gland. Their social behavior and beauty make them one of the most popular attractions for tourists visiting the islands.",
+  image: fm
   },
   {
-    id: 5,
-    title: "Iguana Marina",
-    text: "La iguana marina de Galápagos es una especie endémica que solo se encuentra en estas islas. Son animales increíbles, capaces de bucear a profundidades de hasta 30 metros en busca de su alimento. Tienen una apariencia única y distintiva, con su piel escamosa y sus características crestas y espinas en la cabeza y la espalda. Además, son animales sociables que pueden encontrarse tomando el sol en grandes grupos en las rocas de la costa. La iguana marina es un ejemplo más de la increíble biodiversidad que se puede encontrar en las Islas Galápagos.",
-    image: im
+  id: 5,
+  title: "Marine Iguana",
+  text: "The Galapagos marine iguana is an endemic species that is only found on these islands. They are amazing animals, capable of diving to depths of up to 30 meters in search of their food. They have a unique and distinctive appearance, with their scaly skin and characteristic crests and spines on the head and back. In addition, they are sociable animals that can be found sunbathing in large groups on the rocks of the coast. The marine iguana is another example of the incredible biodiversity that can be found in the Galapagos Islands.",
+  image: im
   }
-];
-
+  ];
 const Square = () => {
   const [selectedItem, setSelectedItem] = useState(data[0]);
 
@@ -74,7 +73,7 @@ const Square = () => {
         <div
           style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
         >
-          <button className="btnSq">Quiero Saber más</button>
+       
         </div>
       </div>
     </div>

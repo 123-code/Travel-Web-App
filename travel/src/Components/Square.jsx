@@ -88,7 +88,7 @@ const Square = () => {
         <div
           style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
         >
-          <button className="btnSq">Read More</button>
+         
         </div>
       </div>
     </div>

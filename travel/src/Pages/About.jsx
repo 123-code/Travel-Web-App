@@ -5,9 +5,6 @@ import SplitPage from "../Components/SplitPage";
 
 const AboutPage = () => {
     return (
-
-
-
 <>
 <div>
         <SplitPage></SplitPage>

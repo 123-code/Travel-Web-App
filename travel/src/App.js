@@ -24,7 +24,7 @@ import Standard from './Pages/Galapagos/Standard';
 import Promotional from './Pages/Galapagos/Promotional';
 import Aqua from './Pages/Galapagos/Aqua';
 import High from './Pages/Galapagos/HighSeason';
-import ImportantNotes from './Pages/Galapagos/ImportantNotes.tsx';
+import ImportantNotes from './Pages/Galapagos/ImportantNotes';
 //Promotional
 
 import './App.css';

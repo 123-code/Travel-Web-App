@@ -1,6 +1,6 @@
 import React from 'react';
 import CoinbaseButton from '../Components/CoinbaseButton';
-import CheckoutButton from '../Components/PayWithETH.tsx';
+import CheckoutButton from '../Components/PayWithETH';
 import Form from '../Components/Form';
 
 const FormPage = () => {

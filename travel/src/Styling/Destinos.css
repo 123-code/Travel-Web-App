@@ -1,0 +1,24 @@
+.destinos-wrapper {
+    background-color: #f7f7f7;
+    margin-bottom: 100px;
+    overflow-y: hidden;
+  }
+  
+  .imgDestinos {
+    margin-left: 20px;
+    max-width: 50%;
+    align-content: center;
+  }
+  
+  .titleDestinos{
+   text-align: center;
+   margin-top: 20px;
+  margin-bottom: 30px;
+  }
+
+  
+  .containerP {
+    margin: 0 20%;
+  }
+  
+

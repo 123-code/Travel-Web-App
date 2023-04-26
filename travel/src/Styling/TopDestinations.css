@@ -1,0 +1,75 @@
+.h1TD {
+  color: black;
+  text-align: center;
+}
+
+.containerCards {
+  height: auto;
+  margin-top: 0;
+}
+
+.cardTD {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto;
+  height: auto;
+  max-width: 250px;
+}
+
+.containerC {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  text-align: center; /* Se agrega esta propiedad */
+  margin: 0 auto; /* Se agrega esta propiedad */
+}
+
+@media screen and (min-width: 50px) {
+  .cardTD {
+    width: calc(50% - 20px);
+  }
+
+  
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    padding: 10px;
+    margin: 0;
+    padding-top: 50px;
+  }
+  
+  button {
+    background-color: lightblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .h1TD {
+    font-size: 1rem;
+  }
+   .btnTD{
+    background-color: #00BFFF;
+  border: 2px solid #00BFFF; /* color celeste en hexadecimal */
+  color: white; /* color celeste en hexadecimal */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 110px;
+}
+
+@media screen and (max-width: 400px) {
+  .cardTD {
+    max-width: 90%;
+  }
+}
+}

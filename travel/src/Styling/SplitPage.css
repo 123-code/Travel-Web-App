@@ -1,0 +1,48 @@
+
+  .h1S{
+    color: black;
+    padding-top: 60px;
+    text-align: center;
+
+  }
+ 
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 0.5px;
+    border-radius: 15px;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .wrapperAbout {
+    background-color: #f7f7f7;
+    margin-top: 100px;
+    margin-bottom: 500px;
+  }
+  .parrafoF{
+    margin-bottom: 200px;
+  }
+
+  .cont{
+    margin-bottom: 100px;
+  }
+
+  .h2SP{
+    text-align: center;
+    text-justify: auto;
+    margin-bottom: 60px;
+  }
+  
+  .colDer{
+    margin-bottom: 100px;
+  }
+  
+  

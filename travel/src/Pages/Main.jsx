@@ -1,10 +1,13 @@
-import React from 'react';
-import MainImage from '../Components/MainImage';    
+import React from 'react';  
 import Form from '../Components/Form';
 import TopDestinations from '../Components/TopDestinations';
 import Testimonials from '../Components/Testimonials';
 import '../App.css';
+import img from '../Components/imagenprincipal.jpeg'
+import BackgroundImageOverlay from '../Components/BackgroundImageOverlay';
 
+
+import '../Styling/Main.css'
 
 const MainPage = ()=>{
 return(
@@ -13,12 +16,20 @@ return(
     <div>
         
     </div>
-    <MainImage></MainImage>
+    <BackgroundImageOverlay imageUrl={(img)}></BackgroundImageOverlay>
+
     <div style={{ width: "33,33%", float: "left" }}>
 <body  className="text">
-<Form/>
+
 <TopDestinations></TopDestinations>
-<Testimonials></Testimonials>
+<div className='testimonialsMain'>
+    <Testimonials></Testimonials>
+</div>
+<div id="contact-form" className='formMain' >
+    
+    <h1 className='title'>More information</h1>
+    <Form></Form>
+</div>
 </body>
 
 
@@ -27,7 +38,7 @@ return(
     
     </body>
    
- 
+
     </>
 ) 
 }

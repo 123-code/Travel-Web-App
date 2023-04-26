@@ -1,61 +1,85 @@
-import React from 'react';
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-/*
- <Route exact path="/" element={<MainPage/>} />
-        <Route path="/about" element={<AboutPage/>} />
-        <Route path="/peru" element={<PeruPage/>} />
-        <Route path="/galapagos" element={<GalapagosPage/>} />
-        <Route path="/highlands" element={<HighlandsPage/>} />
-        <Route path="/amazon" element={<AmazonPage/>} />
-        <Route path="/coast" element={<CoastPage/>} />
-*/
+import ConnectButton from "./ConnectWalletButton";
+import { useNavigate } from "react-router-dom";
+import '../Styling/Navbar.css'
+import Button from '@mui/material/Button';
 
 const Navbar = () => {
+const navigate = useNavigate();
+  const [dropdown, setDropdown] = useState(false);
+
+  const onMouseEnter = () => {
+    setDropdown(true);
+  };
+
+  const onMouseLeave = () => {
+    setDropdown(false);
+  };
+
   return (
-    <nav style={{ 
+    <nav className="navbar" style={{  
       display: 'flex', 
       justifyContent: 'space-between', 
-      backgroundColor: '#ADD8E6', 
+      alignItems: 'center',
+      backgroundColor: 'white', 
+      color: 'black',
       position: 'fixed', 
       top: '0', 
       width: '100%', 
-      zIndex: '1' 
+      height: 'auto',
+      zIndex: '1',
+      fontSize: '1.5vw', 
+      padding: '1vw' 
     }}>
-      <ul style={{ display: 'flex', listStyle: 'none' }}>
-      <h1 style={{ marginRight: '20px' }}> MABVBACA </h1>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/" style={{ color: 'white' }}>INICIO</Link>
+      <div className="navbar__left" style={{ display: 'flex', alignItems: 'center' }}>
+        <h3 style={{ marginLeft: '20px' }}>MBVACA Expeditions</h3>
+        <ul style={{ display: 'flex', listStyle: 'none', marginLeft: '20px' }}>
+          <li style={{ marginRight: '20px' }}>
+            <Link to="/" style={{ color: 'black' }}>Home</Link>
+          </li>
+          <li style={{ marginRight: '20px' }}>
+            <Link to="/about" style={{ color: 'black' }}>About us </Link>
+          </li>
+          <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+          <Link to="/galapagos" style={{ color: 'black' }}>Galápagos</Link>
+          {dropdown && (
+            <ul className="dropdown">
+              <li><Link to="/high">Treasure</Link></li>
+              <li><Link to="/standard">Solaris</Link></li>
+              <li><Link to="/promotional">Archipel I</Link></li>
+              <li><Link to="/aqua">Aqua</Link></li>
+            </ul>
+          )}
         </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/about" style={{ color: 'white' }}>NOSOTROS</Link>
+        <li style={{ marginRight: '20px' }} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+          <Link to="/amazon" style={{ color: 'black' }}>Ecuador</Link>
+          
         </li>
-       
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/galapagos " style={{ color: 'white' }}>GALAPAGOS</Link>
-        </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/ecuador" style={{ color: 'white' }}>ECUADOR</Link>
-        </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/peru" style={{ color: 'white' }}>PERU</Link>
-        </li>
-        <li>
-        <button> Log In </button>
-        </li>
+     
+          <li style={{ marginRight: '20px' }}>
+      
+          </li>
+        </ul>
+      </div>
+      <div className="navbar__right">
+      <ul style={{ display: 'flex', listStyle: 'none', marginRight: '20px' }}>
+ 
 
         <li>
-        <button> Register </button>
+        <Button variant="contained" size="large" onClick={()=>{navigate("/form")}} style={{backgroundColor: "#03244D"}}>
+  Contact
+</Button>
+
         </li>
+        <div>
+ 
+        </div>
+        
       </ul>
+      </div>
     </nav>
   );
 };
-export default Navbar;
-/*
- <li style={{ marginRight: '20px' }}>
-          <Link to="/contact" style={{ color: 'white' }}>Contact</Link>
-        </li>
-        <li style={{ marginRight: '20px' }}>
-          <Link to="/coast" style={{ color: 'white' }}>Coast</Link>
-        </li>
-*/
+
+export default Navbar

@@ -1,11 +1,11 @@
 import React from "react";
-import "./Testimonials.css";
+import "../Styling/Testimonials.css";
 
 const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Mi viaje a través de esta agencia fue increíble, los guías fueron muy amables y serviciales en todo momento."
+      text: "My trip was incredible, guides were ."
     },
     {
       id: 2,
@@ -18,9 +18,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="container">
-      <h1 className="title">Estás en buenas manos</h1>
-      <h2 className="subtitle">Testimonios</h2>
+    <div className="containerTesti">
+      <h1 className="title">you're in good hands</h1>
+      <h2 className="subtitle">Testimonials</h2>
       <div className="testimonials-container">
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="testimonial-card">

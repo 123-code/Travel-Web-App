@@ -13,7 +13,7 @@ import (
 func init(){
 	DB.DBconnect()
 }
- 
+  
 type reserve struct {
 	ID    string `json:"id"`
 	Name  string `json:"name"`
@@ -44,7 +44,10 @@ func main() {
 	router.GET("/reserves", GetReserves);
 	router.POST("/reservar",APIS.CreateReserves);
 	router.GET("/reservas",APIS.GetReservas);
-	router.POST("api/sendform",APIS.CreateMainReserves);
+	router.POST("/api/sendform",APIS.CreateMainReserves);
+	router.POST("/register",APIS.RegisterUser);
+	router.POST("/login",APIS.LoginPost);
+	router.POST("/api/main",APIS.SaveMainForm);
 	router.Run("localhost:5000");
 
 	//fmt.println("Server Running port 5000");

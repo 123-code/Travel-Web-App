@@ -54,8 +54,8 @@ const data = [
   {
     id: 8,
     title: "Cuyabeno Dolphin Lodge",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "https://via.placeholder.com/300x200?text=Imagen+3"
+    text: "The Cuyabeno Wildlife Reserve is the second largest reserve of the 56 national parks and protected areas in Ecuador. It is located in the Putumayo Canton in the Sucumbíos Province and in the Aguarico Canton in the Orellana Province.",
+    image: "https://neotropicalecuador.com/wp-content/uploads/2020/12/cuyabeno.jpg"
   }
 ];
 

@@ -4,6 +4,7 @@ import ConnectButton from "./ConnectWalletButton";
 import { useNavigate } from "react-router-dom";
 import '../Styling/Navbar.css'
 import Button from '@mui/material/Button';
+import photo from "./PHOTO-2023-04-27-14-08-53.jpg"
 
 const Navbar = () => {
 const navigate = useNavigate();
@@ -33,7 +34,7 @@ const navigate = useNavigate();
       padding: '1vw' 
     }}>
       <div className="navbar__left" style={{ display: 'flex', alignItems: 'center' }}>
-        <h3 style={{ marginLeft: '20px' }}>MBVACA Expeditions</h3>
+        <h3 style={{ marginLeft: '20px' }}><img src={photo} style={{ width: "20%", height: "5%" }}/></h3>
         <ul style={{ display: 'flex', listStyle: 'none', marginLeft: '20px' }}>
           <li style={{ marginRight: '20px' }}>
             <Link to="/" style={{ color: 'black' }}>Home</Link>

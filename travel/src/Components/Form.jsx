@@ -124,7 +124,25 @@ const Form = ({ color }) => {
       </label>
     </div>
 
-    <div className="checkboxGroup" style={{ borderColor: color }}>
+    <div className="inputBoxEmail" style={{ borderColor: color }}>
+  <input
+    type="email"
+    required
+    id="email"
+    name="email"
+    value={formData.email}
+    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+    style={{
+      color: color,
+      borderColor: color,
+    }}
+  />
+  <span className="user" style={{ color: color }}>
+    Email
+  </span>
+</div>
+
+<div className="checkboxGroup" style={{ borderColor: color }}>
   <label style={{ color: color }}>Contact</label>
   <div>
     <label style={{ color: color }}>
@@ -133,17 +151,17 @@ const Form = ({ color }) => {
         type="checkbox"
         name="Contact"
         value="chat"
-        checked={formData.contact && formData.Contact.includes("chat")}
+        checked={formData.contact && formData.contact.includes("chat")}
         onChange={(e) => {
           if (e.target.checked) {
             setFormData({
               ...formData,
-              contacto: "chat",
+              contact: "chat",
             });
           } else {
             setFormData({
               ...formData,
-              contacto: [],
+              contact: "",
             });
           }
         }}
@@ -156,22 +174,22 @@ const Form = ({ color }) => {
         type="checkbox"
         name="Contact"
         value="llamada"
-        checked={formData.Contact && formData.Contact.includes("llamada")}
+        checked={formData.contact && formData.contact.includes("llamada")}
         onChange={(e) => {
           if (e.target.checked) {
             setFormData({
               ...formData,
-              contacto: "llamada",
+              contact: "llamada",
             });
           } else {
             setFormData({
               ...formData,
-              contacto: [],
+              contact: "",
             });
           }
         }}
       />
-    phone call 
+      Phone call
     </label>
     <label style={{ color: color }}>
       <input
@@ -179,17 +197,17 @@ const Form = ({ color }) => {
         type="checkbox"
         name="Contact"
         value="email"
-        checked={formData.Contact && formData.Contact.includes("email")}
+        checked={formData.contact && formData.contact.includes("email")}
         onChange={(e) => {
           if (e.target.checked) {
             setFormData({
               ...formData,
-              contacto: ["email"],
+              contact: "email",
             });
           } else {
             setFormData({
               ...formData,
-              contacto: [],
+              contact: "",
             });
           }
         }}
@@ -198,6 +216,7 @@ const Form = ({ color }) => {
     </label>
   </div>
 </div>
+
 
 
     <div className="residencia">
@@ -251,26 +270,32 @@ const Form = ({ color }) => {
         Adults:
       </label>
       <input
-        type="text"
-        required
-        id="Adults"
-        name="Adults"
-        value={formData.Adults}
-        onChange={handleChange}
-      />
+  type="number"
+  name="adults"
+  value={formData.adults}
+  onChange={(e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: parseInt(e.target.value)
+    });
+  }}
+/>
       <br />
       <label htmlFor="Children" style={{
         color: color,
         borderColor: color,
       }}>Children:</label>
       <input
-        type="text"
-        required
-        id="Children"
-        name="Children"
-        value={formData.Children}
-        onChange={handleChange}
-      />
+  type="number"
+  name="children"
+  value={formData.children}
+  onChange={(e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: parseInt(e.target.value)
+    });
+  }}
+/>
     </div>
   
 

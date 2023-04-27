@@ -2,6 +2,7 @@ import React from 'react';
 import CoinbaseButton from '../Components/CoinbaseButton';
 import CheckoutButton from '../Components/PayWithETH';
 import Form from '../Components/Form';
+import PayPalButton from './PayPalBTN';
 
 const FormPage = () => {
     return (
@@ -11,8 +12,22 @@ const FormPage = () => {
         <Form />
 
         <div>
+           <body>
+           <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+           <div id="paypal-button-container"></div>
+            </body>
+
+            
+            
         <CoinbaseButton/>
         <CheckoutButton />
+        <div>
+      <script
+        src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"
+        async
+      ></script>
+      <div id="paypal-button-container"></div>
+    </div>
         </div>
         
 

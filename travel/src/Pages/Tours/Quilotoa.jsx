@@ -24,7 +24,7 @@ const PapallactaMain = () => {
     return (
         
         <div style={{ paddingTop: '150px' }}>
-            <h1> Quilotoa </h1>
+            <h1 style={{ color: 'black' }} > Quilotoa </h1>
             <Paper elevation={3}>
                 <div  style={{ display: 'flex', justifyContent: 'center',paddingTop: '150px' }}>
                 <Card sx={{ maxWidth: 550}} variant="outlined">

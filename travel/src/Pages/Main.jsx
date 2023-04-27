@@ -19,18 +19,17 @@ return(
     <BackgroundImageOverlay imageUrl={(img)}></BackgroundImageOverlay>
 
     <div style={{ width: "33,33%", float: "left" }}>
-<body  className="text">
-
-<TopDestinations></TopDestinations>
-<div className='testimonialsMain'>
-    <Testimonials></Testimonials>
-</div>
-<div id="contact-form" className='formMain' >
-    
-    <h1 className='title'>More information</h1>
-    <Form></Form>
-</div>
+    <body className="text" style={{ backgroundColor:  '#d3d3d3'}}>
+  <TopDestinations></TopDestinations>
+  <div className='testimonialsMain'>
+      <Testimonials></Testimonials>
+  </div>
+  <div id="contact-form" className='formMain' >
+      <h1 className='title'>More information</h1>
+      <Form></Form>
+  </div>
 </body>
+
 
 
 </div>

@@ -42,7 +42,7 @@ const Form = ({ color }) => {
 
   const handleSubmit = () => {
     axios
-      .post("https://mavbaca-backend-production-5202.up.railway.app/api/mainform", formData)
+      .post("https://mute-play-production.up.railway.app/api/mainform", formData)
       .then((response) => {
         console.log(response);
       })

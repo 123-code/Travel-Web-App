@@ -30,9 +30,46 @@
       flex-wrap: wrap;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
       .cardTD {
-        width: 100%;
+        width: 10%;
+      }
+      .cardC {
+        width: calc(10% - 20px);
+        background-color: white;
+        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        text-align: center;
+        margin: 10px;
+        display: inline-block;
+        background: rgba(0,0,0,0);
+        height: 120px;
+        width: 120px;
+        font-size: small;
+        
+      }
+      .button {
+        background-color: #03244D;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    
+      .h1TD{
+          color: black;
+          font-size: small;
+         
+          text-align: center;
+        }
+      
+    }
+
+    @media (max-width: 800px) {
+      img {
+        width: 20%;
       }
     }
     

@@ -33,7 +33,7 @@ const navigate = useNavigate();
       padding: '1vw' 
     }}>
       <div className="navbar__left" style={{ display: 'flex', alignItems: 'center' }}>
-        <h3 style={{ marginLeft: '20px' }}>MBVACA Expeditions</h3>
+        <h3 style={{ marginLeft: '20px' }}>MA Expeditions</h3>
         <ul style={{ display: 'flex', listStyle: 'none', marginLeft: '20px' }}>
           <li style={{ marginRight: '20px' }}>
             <Link to="/" style={{ color: 'black' }}>Home</Link>

@@ -6,10 +6,10 @@ const SplitPage = () => {
   return (
     <div className='wrapperAbout' style={{ display: 'flex', height: '100vh', backgroundColor: '#f7f7f7' }}>
       <div className='cont' style={{ flex: 1.5}}>
-        <h1 className='h1S' style={{ margin: '2rem 1rem', textAlign: 'justify' }}>Nosotros</h1>
+        <h1 className='h1S' style={{ margin: '2rem 1rem', textAlign: 'justify' }}>About us</h1>
         <img src='https://i.ibb.co/DrSJWVr/thumbnail-de7286cd-129b-47f0-8e03-5c89cf93e493-1-1.png' alt="Imagen" style={{ width: '100%', height: 'auto' ,  margin: '2rem 1rem',}} />
         <p style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
-        Mabvaca Expeditions is a company dedicated to creating experiences in each destination since 2017. With more than 6 years of experiences, we have created unforgettable memories for different families.
+        Ma Expeditions is a company dedicated to creating experiences in each destination since 2017. With more than 6 years of experiences, we have created unforgettable memories for different families.
         </p>
         <p style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
         Our vision as a company is to give an unforgettable experience to each of our passengers. The friendliness of our people and the magic of each destination. They will create unforgettable memories that will mark their lives forever.

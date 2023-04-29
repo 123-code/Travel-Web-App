@@ -46,7 +46,7 @@ function BackgroundImageOverlay(props) {
               <img className='imgPremios' src={img3} alt="imagen 3" />
             </div>
           </div>
-          <div className="form-container">
+          <div className="form-containermain">
             <Form color="white" />
           </div>
         </div>

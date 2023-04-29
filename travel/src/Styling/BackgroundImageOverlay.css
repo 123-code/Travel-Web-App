@@ -46,6 +46,15 @@
   overflow-y: visible;
 }
 
+.form-containermain {
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding: 1rem 0;
+  height: auto;
+  max-height: none;
+  overflow-y: visible;
+}
+
 h1 {
   color: white;
   font-size: 2rem;
@@ -101,5 +110,14 @@ h1 {
   .image-container img {
     width: calc(25% - 0.5em);
     margin: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-containermain {
+    max-width: 190%;
+    margin-left: -40%;
+    max-height: 34%;
+  
   }
 }

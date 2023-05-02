@@ -16,7 +16,7 @@ return(
     <div>
         
     </div>
-    <BackgroundImageOverlay imageUrl={(img)}></BackgroundImageOverlay>
+    <BackgroundImageOverlay className="BIOMain" imageUrl={(img)}></BackgroundImageOverlay>
 
     <div style={{ width: "33,33%", float: "left" }}>
     <body className="text" style={{ backgroundColor:  '#d3d3d3'}}>

@@ -4,6 +4,7 @@ import EstandarSolaris from '../../Components/EstandarSolaris';
 import TablaHigh from '../../Components/SolarisHigh';
 import ReserveButton from '../../Components/ReserveButton';
 import Destinos from '../../Components/Destinos';
+import { DestinosHeader } from "../../Components/Destinos";
 import Solaris from '../../Imgs/Solaris.png';
 import '../../Styling/Rates.css'
 export default function High() {
@@ -12,7 +13,7 @@ export default function High() {
     return (
         <div >
             <div className='TreasureBanner'>
-                <Destinos imageSrc={(Solaris)} title="Solaris" text="Precios" />
+                <DestinosHeader imageSrc={(Solaris)} title="Solaris" text="Precios" />
             </div>    
             <div className='TablaEstandar'>
                 <EstandarSolaris/>

@@ -16,7 +16,7 @@ const Cruceros = () => {
       <div className='containerC'>
       <div className="cardC">
       <h2>Treasure</h2>
-        <img src={treasure} alt="Treasure" style={{ width: '100%' }} />
+        <img className='imgCrucero' src={treasure} alt="Treasure" style={{ width: '100%' }} />
         
         <button className='btnTD' onClick={()=>{navigate("/high")}}>Read more</button>
       </div>

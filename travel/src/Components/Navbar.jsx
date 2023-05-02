@@ -6,11 +6,14 @@ import "../Styling/Navbar.css";
 import Button from "@mui/material/Button";
 import photo from "./PHOTO-2023-04-27-14-08-53.jpg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useMediaQuery } from "@mui/material";
+
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const isSmallScreen = useMediaQuery("(max-width:700px)");
 
   const onMouseEnter = () => {
     setDropdown(true);
@@ -41,18 +44,18 @@ const Navbar = () => {
       <div
         className="navIcon"
         onClick={() => setIsOpen(!isOpen)}
-        style={{ display: "flex", alignItems: "center" }}
+        style={{ display: "flex", alignItems: "left " }}
       >
-
-      </div>
-
-      <div>
-      <img
+        <img
             src={photo}
             className="navbar-logo"
             alt="logo"
 
           />
+      </div>
+
+      <div>
+      
   
       </div>
       
@@ -64,7 +67,7 @@ const Navbar = () => {
          
         </h3>
         <ul
-          style={{ display: "flex", listStyle: "none", marginLeft: "20px" }}
+          style={{ display: "flex", listStyle: "none", marginLeft: "0px" }}
         >
           <li style={{ marginRight: "20px" }}>
             <Link to="/" style={{ color: "black" }}>
@@ -84,22 +87,22 @@ const Navbar = () => {
             <Link to="/galapagos" style={{ color: "black" }}>
               Galápagos
             </Link>
-            {dropdown && (
-              <ul className="dropdown">
-                <li>
-                  <Link to="/high">Treasure</Link>
-                </li>
-                <li>
-                  <Link to="/standard">Solaris</Link>
-                </li>
-                <li>
-                  <Link to="/promotional">Archipel I</Link>
-                </li>
-                <li>
-                  <Link to="/aqua">Aqua</Link>
-                </li>
-              </ul>
-            )}
+            {dropdown && !isSmallScreen && (
+  <ul className="dropdown">
+    <li>
+      <Link to="/high">Treasure</Link>
+    </li>
+    <li>
+      <Link to="/standard">Solaris</Link>
+    </li>
+    <li>
+      <Link to="/promotional">Archipel I</Link>
+    </li>
+    <li>
+      <Link to="/aqua">Aqua</Link>
+    </li>
+  </ul>
+)}
           </li>
           <li
             style={{ marginRight: "20px" }}

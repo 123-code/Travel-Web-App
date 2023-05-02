@@ -7,7 +7,7 @@ const SplitPage = () => {
     <div className='wrapperAbout' style={{ display: 'flex', height: '100vh', backgroundColor: '#f7f7f7' }}>
       <div className='cont' style={{ flex: 1.5}}>
         <h1 className='h1S' style={{ margin: '2rem 1rem', textAlign: 'justify' }}>About us</h1>
-        <img src='https://i.ibb.co/DrSJWVr/thumbnail-de7286cd-129b-47f0-8e03-5c89cf93e493-1-1.png' alt="Imagen" style={{ width: '100%', height: 'auto' ,  margin: '2rem 1rem',}} />
+        <img className='imgSP' src='https://i.ibb.co/DrSJWVr/thumbnail-de7286cd-129b-47f0-8e03-5c89cf93e493-1-1.png' alt="Imagen" style={{ width: '100%', height: 'auto' ,  margin: '2rem 1rem',}} />
         <p style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
         Ma Expeditions is a company dedicated to creating experiences in each destination since 2017. With more than 6 years of experiences, we have created unforgettable memories for different families.
         </p>

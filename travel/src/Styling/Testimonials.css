@@ -115,10 +115,12 @@
   color: #333;
 }
 .testimonial-text::before {
-  display:none
+  display:none;
+  font-size: 1rem;
 }
 .testimonial-text::after {
-  display:none
+  display:none;
+  font-size: 1rem;
 }
 }
 

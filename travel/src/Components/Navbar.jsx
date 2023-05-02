@@ -35,7 +35,7 @@ const Navbar = () => {
         height: "auto",
         zIndex: "1",
         fontSize: "1.5vw",
-        padding: "0.7vw",
+        padding: "0.2vw",
       }}
     >
       <div
@@ -45,12 +45,15 @@ const Navbar = () => {
       >
 
       </div>
+
       <div>
       <img
             src={photo}
-            style={{ width: "10%", height: "9%" }}
+            className="navbar-logo"
             alt="logo"
+
           />
+  
       </div>
       
       <div

@@ -115,9 +115,10 @@ h1 {
 
 @media only screen and (max-width: 800px) {
   .form-containermain {
-    max-width: 190%;
-    margin-left: -40%;
-    max-height: 34%;
+    display: none;
   
+  }
+  .form1{
+    display: none;
   }
 }

@@ -35,7 +35,7 @@ const Navbar = () => {
         height: "auto",
         zIndex: "1",
         fontSize: "1.5vw",
-        padding: "1vw",
+        padding: "0.7vw",
       }}
     >
       <div
@@ -43,21 +43,19 @@ const Navbar = () => {
         onClick={() => setIsOpen(!isOpen)}
         style={{ display: "flex", alignItems: "center" }}
       >
-        <i className={isOpen ? "fas fa-times" : "fas fa-bars"}>
-          <GiHamburgerMenu />
-        </i>
+
       </div>
       <div>
       <img
             src={photo}
-            style={{ width: "10%", height: "10%" }}
+            style={{ width: "10%", height: "9%" }}
             alt="logo"
           />
       </div>
       
       <div
         className="navbar__left"
-        style={{ display: isOpen ? "flex" : "none", alignItems: "center" }}
+        
       >
         <h3 style={{ marginLeft: "20px" }}>
          
@@ -132,23 +130,6 @@ const Navbar = () => {
         
       </ul>
       </div>
-      <style jsx>{`
-        @media (min-width: 768px) {
-          .navMenu {
-            display: flex !important;
-          }
-          .navIcon {
-            display: none !important;
-          }
-        }
-        @media (max-width: 768px) {
-          .navbar__left h3 {
-            margin: 0;
-            width: 50%;
-          }
-       
-        }
-      `}</style>
     </nav>
   );
 };

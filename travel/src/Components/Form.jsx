@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import "../Styling/Form.css";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 import countriesList from '../Data/countries';
 import { useTranslation } from "react-i18next";
 // create form component
@@ -40,15 +41,21 @@ const Form = ({ color }) => {
     setChildren(parseInt(event.target.value));
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = () => {
     axios
       .post("https://mute-play-production.up.railway.app/api/mainform", formData)
       .then((response) => {
+       
         console.log(response);
+
       })
+     
       .catch((error) => {
         console.error(error);
       });
+      navigate("/thankyou");
   };
 
   const handleChange = (event) => {

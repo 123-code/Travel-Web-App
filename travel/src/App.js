@@ -25,6 +25,7 @@ import Promotional from './Pages/Galapagos/Promotional';
 import Aqua from './Pages/Galapagos/Aqua';
 import High from './Pages/Galapagos/HighSeason';
 import ImportantNotes from './Pages/Galapagos/ImportantNotes';
+import ThankYouPage from './Pages/FormsentPage';
 //Promotional
 
 import './App.css';
@@ -63,6 +64,7 @@ export default class App extends React.Component {
         <Route path="/promotional" element={<Promotional/>}/>
         <Route path="/aqua" element={<Aqua/>}/>
         <Route path="/important" element={<ImportantNotes/>}/>
+        <Route path="/thankyou" element={<ThankYouPage/>}/>
         </Routes>
         </div>
         <div>

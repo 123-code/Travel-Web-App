@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import ConnectButton from "./ConnectWalletButton";
 import { useNavigate } from "react-router-dom";
@@ -50,6 +51,7 @@ const Navbar = () => {
             src={photo}
             className="navbar-logo"
             alt="logo"
+        
 
           />
       </div>

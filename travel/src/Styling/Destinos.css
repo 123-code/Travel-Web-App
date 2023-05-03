@@ -1,25 +1,39 @@
 .destinos-wrapper {
-    background-color: #f7f7f7;
-    margin-bottom: 100px;
-    overflow-y: hidden;
-  }
-  
-  .imgDestinos {
-    margin-left: 20px;
-    max-width: 50%;
-    align-content: center;
-  }
-  
-  .titleDestinos{
-   text-align: center;
-   margin-top: 20px;
+  background-color: #f7f7f7;
+  margin-bottom: 100px;
+  overflow-y: hidden;
+}
+
+.imgDestinos {
+  margin-left: 20px;
+  max-width: 50%;
+  align-content: center;
+}
+
+.titleDestinos{
+  text-align: center;
+  margin-top: 20px;
   margin-bottom: 30px;
-  }
+}
 
-  
-  .containerP {
-    margin: 0 20%;
+.containerP {
+  margin: 0 20%;
+}
+
+.imgSpacing {
+  margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+  .imgDestinos {
+    margin-left: 0;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
   
-  
-
+  .imgSpacing {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -5,7 +5,7 @@ import ConnectButton from "./ConnectWalletButton";
 import { useNavigate } from "react-router-dom";
 import "../Styling/Navbar.css";
 import Button from "@mui/material/Button";
-import photo from "./PHOTO-2023-04-27-14-08-53.jpg";
+import photo from "./SALogo.jpeg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useMediaQuery } from "@mui/material";
 

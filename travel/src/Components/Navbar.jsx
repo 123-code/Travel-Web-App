@@ -5,7 +5,7 @@ import ConnectButton from "./ConnectWalletButton";
 import { useNavigate } from "react-router-dom";
 import "../Styling/Navbar.css";
 import Button from "@mui/material/Button";
-import photo from "./SALogo.jpeg";
+import photo from "./LogoSA.jpeg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useMediaQuery } from "@mui/material";
 
@@ -48,12 +48,11 @@ const Navbar = () => {
         style={{ display: "flex", alignItems: "left " }}
       >
         <img
-            src={photo}
-            className="navbar-logo"
-            alt="logo"
-        
-
-          />
+  src={photo}
+  className="navbar-logo"
+  alt="logo"
+  style={{ borderRadius: '10%' }}
+/>
       </div>
 
       <div>

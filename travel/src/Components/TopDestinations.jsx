@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const TopDestinations = () => {
   const navigate = useNavigate();
@@ -21,7 +21,8 @@ const TopDestinations = () => {
   const containerCStyle = {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    flexWrap: 'wrap' // Added flex-wrap for responsive layout
   };
 
   const cardTDStyle = {
@@ -37,7 +38,8 @@ const TopDestinations = () => {
     width: '100%',
     height: 'auto',
     borderRadius: '10px',
-    marginBottom: '10px'
+    marginBottom: '10px',
+    objectFit: 'cover' // Added object-fit to handle image aspect ratio
   };
 
   const btnTDStyle = {
@@ -53,35 +55,55 @@ const TopDestinations = () => {
     backgroundColor: '#33cc11'
   };
 
+  // Media queries for responsive design
+  const mediaQueries = {
+    '@media (max-width: 768px)': {
+      containerCStyle: {
+        flexDirection: 'column'
+      },
+      cardTDStyle: {
+        width: '100%'
+      },
+      btnTDStyle: {
+        marginTop: '10px', // Added margin-top to separate the button from the image
+        width: 'fit-content' // Adjusted button width to fit its content
+      }
+    }
+  };
+
   return (
     <div style={containerStyle}>
       <h1 style={h1Style}>Our Destinations</h1>
 
-      <div style={containerCStyle}>
-        <div style={cardTDStyle}>
+      <div style={{ ...containerCStyle, ...mediaQueries['@media (max-width: 768px)'].containerCStyle }}>
+        <div style={{ ...cardTDStyle, ...mediaQueries['@media (max-width: 768px)'].cardTDStyle }}>
           <h2>Galapagos</h2>
           <img
             src="https://media.istockphoto.com/id/674781548/es/foto/le%C3%B3n-marino-de-gal%C3%A1pagos-en-la-isla-de-playa-de-espanola.jpg?b=1&s=170667a&w=0&k=20&c=kGRQfcAsWk54wNck2Sun43UPt1QlOZZU4VlmLDNzn2I="
             alt="Galapagos"
-            style={destImgStyle}
+            style={{ ...destImgStyle, ...mediaQueries['@media (max-width: 768px)'].destImgStyle }}
           />
           <button
-            style={btnTDStyle}
-            onClick={() => { navigate("/galapagos") }}
+            style={{ ...btnTDStyle, ...mediaQueries['@media (max-width: 768px)'].btnTDStyle }}
+            onClick={() => {
+              navigate('/galapagos');
+            }}
           >
             Learn more
           </button>
         </div>
-        <div style={cardTDStyle}>
+        <div style={{ ...cardTDStyle, ...mediaQueries['@media (max-width: 768px)'].cardTDStyle }}>
           <h2>Ecuador</h2>
           <img
             src="https://www.tripsandtours.tur.ar/uploads/1/0/9/1/10910083/cuenca-3_1_orig.jpg"
             alt="Ecuador"
-            style={destImgStyle}
+            style={{ ...destImgStyle, ...mediaQueries['@media (max-width: 768px)'].destImgStyle }}
           />
           <button
-            style={btnTDStyle}
-            onClick={() => { navigate("/amazon") }}
+            style={{ ...btnTDStyle, ...mediaQueries['@media (max-width: 768px)'].btnTDStyle }}
+            onClick={() => {
+              navigate('/amazon');
+            }}
           >
             Learn more
           </button>

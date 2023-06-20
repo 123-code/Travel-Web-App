@@ -1,8 +1,11 @@
 import React from 'react';
 import Form from './Form';
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 import '../Styling/SplitPage.css'
 
 const SplitPage = () => {
+  const navigate = useNavigate();
   return (
     <div className='wrapperAbout' style={{ display: 'flex', height: '100vh', backgroundColor: '#f7f7f7' }}>
       <div className='cont' style={{ flex: 1.5}}>
@@ -17,12 +20,21 @@ const SplitPage = () => {
         <p classname='parrafoF' style={{ margin: '2rem 1rem', textAlign: 'justify' }}>
         Currently Mabvaca Expeditions has Adamas House Hotel Boutique, located in Quito. It also has agreements with different hotels and cruises throughout Ecuador. Each establishment and staff is prepared at the highest level to give you an unforgettable experience.
         </p>
+        <Button
+  variant="contained"
+  size="large"
+  onClick={() => {
+    navigate("/form");
+  }}
+  style={{ backgroundColor: "#03244D", display: "block" }}
+ 
+>
+  Contact
+</Button>
       </div>
+     
       <div className='colDer' style={{paddingTop: '70px', flex: 1}} >
-        <div className='h2SP'>
-        <h2 >Contact us through this form:</h2>
-        </div>
-        <Form/>
+       
       </div>
     </div>
   );

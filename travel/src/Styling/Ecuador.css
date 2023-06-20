@@ -1,24 +1,37 @@
-.sqr{
+.infoGeneral {
+  text-align: center;
+  margin: 20px;
+}
 
-    margin-bottom: 100px;
-  }
+.sqr {
+  text-align: center;
+  margin: 20px;
+}
 
-  .tt{
-    text-align: center;
-  }
+.lst {
+  text-align: center;
+  margin: 20px;
+}
 
-  .infoGeneral{
-    margin-top: 100px;
-  }
+.tt {
+  color: black;
+}
 
-  .CrucerosGpg{
-    margin-bottom: 200px;
-  }
+.destinos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .infoGeneral{
-    margin-top: 0px;
-  }
+.destinos-container > * {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+}
 
-  .imgSpacing {
-    margin-right: 20px;
-  }
+.read-more-button {
+  height: 40px;
+  background: #03244D;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}

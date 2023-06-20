@@ -20,7 +20,7 @@ const FormPage = () => {
             
             
         <CoinbaseButton/>
-        <CheckoutButton />
+    
         <div>
       <script
         src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"

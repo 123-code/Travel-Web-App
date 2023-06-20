@@ -91,6 +91,21 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 800px) {
+    .contact-button {
+      display: none !important;
+    }
+  }
+
+  .btnRegistrar{
+    background-color: #03244D;
+    border: 2px solid #03244D;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 70px;
+  }
   .navbar-menu {
     display: none;
     position: absolute;

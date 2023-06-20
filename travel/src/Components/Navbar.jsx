@@ -126,7 +126,15 @@ const Navbar = () => {
  
 
         <li>
-        <Button variant="contained" size="large" onClick={()=>{navigate("/form")}} style={{backgroundColor: "#03244D"}}>
+        <Button
+  variant="contained"
+  size="large"
+  onClick={() => {
+    navigate("/form");
+  }}
+  style={{ backgroundColor: "#03244D", display: "block" }}
+  className="contact-button"
+>
   Contact
 </Button>
 

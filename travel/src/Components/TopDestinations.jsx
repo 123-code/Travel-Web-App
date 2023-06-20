@@ -62,7 +62,7 @@ const TopDestinations = () => {
         flexDirection: 'column'
       },
       cardTDStyle: {
-        width: '60%'
+        width: '50%'
       },
       btnTDStyle: {
         marginTop: '10px', // Added margin-top to separate the button from the image

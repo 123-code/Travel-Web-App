@@ -10,13 +10,28 @@
   width: 110px;
 }
 
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin-left: 0px;
+  font-size: 1.5rem; /* Adjust the font size value as needed */
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: #FFFFFF; /* Adjust the link color as needed */
+}
+
+.navbar-list a:hover {
+  color: #FF0000; /* Adjust the link hover color as needed */
+}
+
+
 
 .navbar {
-
   display: flex;
-
-  
-}
+  background-color: #d3d3d3 !important
+}; 
 
 .navbar li:hover .dropdown {
   display: block;
@@ -129,6 +144,24 @@
 
     .navbar {
       position: relative;
+    }
+
+
+
+    .navbar-list {
+      display: flex;
+      list-style: none;
+      margin-left: 0px;
+      font-size: 0.9rem; /* Adjust the font size value as needed */
+    }
+    
+    .navbar-list a {
+      text-decoration: none;
+      color: #FFFFFF; /* Adjust the link color as needed */
+    }
+    
+    .navbar-list a:hover {
+      color: #FF0000; /* Adjust the link hover color as needed */
     }
     
     .navbar-toggler {

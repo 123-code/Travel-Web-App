@@ -22,7 +22,7 @@ const TopDestinations = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    flexWrap: 'wrap' // Added flex-wrap for responsive layout
+    flexWrap: 'wrap' 
   };
 
   const cardTDStyle = {
@@ -62,7 +62,7 @@ const TopDestinations = () => {
         flexDirection: 'column'
       },
       cardTDStyle: {
-        width: '100%'
+        width: '60%'
       },
       btnTDStyle: {
         marginTop: '10px', // Added margin-top to separate the button from the image

@@ -68,16 +68,16 @@ const Navbar = () => {
          
         </h3>
         <ul
-          style={{ display: "flex", listStyle: "none", marginLeft: "0px" }}
+            className="navbar-list" 
         >
-          <li style={{ marginRight: "20px" }}>
+          <li style={{ marginRight: "20px",marginLeft:"10px" }}>
             <Link to="/" style={{ color: "black" }}>
               Home
             </Link>
           </li>
           <li style={{ marginRight: "20px" }}>
             <Link to="/about" style={{ color: "black" }}>
-              About us{" "}
+              About{" "}
             </Link>
           </li>
           <li
@@ -85,7 +85,7 @@ const Navbar = () => {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link to="/galapagos" style={{ color: "black" }}>
+            <Link to="/galapagos" style={{ color: "black"}}>
               Galápagos
             </Link>
             {dropdown && !isSmallScreen && (

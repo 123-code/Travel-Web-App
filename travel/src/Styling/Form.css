@@ -30,6 +30,7 @@ form {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: white !important;
 }
 
 
@@ -163,11 +164,12 @@ form {
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  font-size: 18px;
+  font-size: 48px;
   cursor: pointer;
   transition: all 0.3s ease-out;
+  background-color: #007bff; /* Set the background color to a nice blue */
+  color: white; /* Set the text color to white for better visibility */
 }
-
 .enter:hover {
   background-color: #2ecc71;
 }
@@ -211,7 +213,7 @@ form {
   }
 
   .enter {
-    font-size: 8px;
+    font-size: 9px;
   }
 }
 

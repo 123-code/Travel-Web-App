@@ -1,52 +1,65 @@
-.loginBtn{
-  background-color: transparent;
-  border: 2px solid #03244D;
-  color: #03244D;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 110px;
-}
+
+
 
 .btnRegistrar {
   background-color: #03244D;
   border: 2px solid #03244D;
   color: white;
-  padding: 10px 20px;
+  padding: 14px 20px;
   cursor: pointer;
   width: 110px;
 }
 
-.navbar{
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin-left: 0px;
+  font-size: 1.5rem; /* Adjust the font size value as needed */
 }
+
+.navbar-list a {
+  text-decoration: none;
+  color: black !important; /* Adjust the link color as needed */
+}
+
+.navbar-list a:hover {
+  color: #FF0000; /* Adjust the link hover color as needed */
+}
+
+  
+
+.navbar {
+  display: flex;
+  background-color: #E2E2E2 !important
+}; 
 
 .navbar li:hover .dropdown {
   display: block;
   }
   
 
-.navbar-logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+  .navbar-logo {
+    max-height: 80px;
+    width: 80px;
+    object-fit: contain;
+  }
+  
 
 .navbar-menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
 .navbar-menu li {
   flex: 1 1 auto;
   text-align: center;
+  margin-left: 0;
 }
 
 .navbar-menu li a {
-  display: block;
+  display: flex;
   padding: 10px;
   text-align: center;
 }
@@ -78,6 +91,21 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 800px) {
+    .contact-button {
+      display: none !important;
+    }
+  }
+
+  .btnRegistrar{
+    background-color: #03244D;
+    border: 2px solid #03244D;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 70px;
+  }
   .navbar-menu {
     display: none;
     position: absolute;
@@ -132,6 +160,24 @@
     .navbar {
       position: relative;
     }
+
+
+
+    .navbar-list {
+      display: flex;
+      list-style: none;
+      margin-left: 0px;
+      font-size: 0.9rem; /* Adjust the font size value as needed */
+    }
+    
+    .navbar-list a {
+      text-decoration: none;
+      color: #FFFFFF; /* Adjust the link color as needed */
+    }
+    
+    .navbar-list a:hover {
+      color: #FF0000; /* Adjust the link hover color as needed */
+    }
     
     .navbar-toggler {
       display: block;
@@ -163,5 +209,6 @@
       font-size: 0.8rem;
     }
 
+    
   
 }

@@ -12,13 +12,13 @@ import '../Styling/Main.css'
 const MainPage = ()=>{
 return(
     <>
-    <body className='main'>
+    <body className='main' style={{ backgroundColor:  '#d3d3d3'}}>
     <div>
         
     </div>
-    <BackgroundImageOverlay imageUrl={(img)}></BackgroundImageOverlay>
+    <BackgroundImageOverlay className="BIOMain" imageUrl={(img)}></BackgroundImageOverlay>
 
-    <div style={{ width: "33,33%", float: "left" }}>
+    <div style={{ width: "33,33%", float: "left",backgroundColor:  '#d3d3d3' }}>
     <body className="text" style={{ backgroundColor:  '#d3d3d3'}}>
   <TopDestinations></TopDestinations>
   <div className='testimonialsMain'>

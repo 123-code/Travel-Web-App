@@ -3,7 +3,6 @@ import TablaPromo from '../../Components/AquaPromo';
 import Estandar from '../../Components/aquaEstandar';
 import TablaHigh from '../../Components/AquaHigh';
 import ReserveButton from '../../Components/ReserveButton';
-
 import Aqua from '../../Imgs/Aqua.png';
 import '../../Styling/Rates.css';
 import { DestinosHeader } from "../../Components/Destinos";

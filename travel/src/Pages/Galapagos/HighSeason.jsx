@@ -2,7 +2,7 @@ import React from 'react';
 import TablaPromo from '../../Components/TablaPromocionalTreasure';
 import  GalapagosTable from '../../Components/GalapagosTable';
 import TablaHigh from '../../Components/TablaHightreasure';
-
+import { DestinosHeader } from "../../Components/Destinos";
 import ReserveButton from '../../Components/ReserveButton';
 import Destinos from '../../Components/Destinos';
 import Treasure from '../../Imgs/Treasure.png';
@@ -13,7 +13,7 @@ export default function High() {
     return (
         <div >
             <div className='TreasureBanner'>
-                <Destinos imageSrc={(Treasure)} title="Treasure" text="Precios" />
+                <DestinosHeader imageSrc={(Treasure)} title="Treasure" text="Precios" />
             </div>    
             <div className='TablaEstandar'>
                 <GalapagosTable/>

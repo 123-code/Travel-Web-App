@@ -1,51 +1,72 @@
-.h1TD {
-  color: black;
-  text-align: center;
-}
-
-.containerCards {
-  height: auto;
-  margin-top: 0;
-}
-
+/* Cambiamos la propiedad max-width de .cardTD a width */
 .cardTD {
-  width: 100%;
-  background-color: white;
+  width: 250px;
+  background-color: transparent;
   border-radius: 10px;
   text-align: center;
-  margin: 10px auto;
+  margin: 5px;
   height: auto;
-  max-width: 250px;
 }
 
+/* Cambiamos la propiedad height de .destimg a auto */
+.destimg {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+/* Agregamos una propiedad de ancho máximo para .containerC */
 .containerC {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 70%;
+  width: 100%;
+  max-width: 800px;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-  text-align: center; /* Se agrega esta propiedad */
-  margin: 0 auto; /* Se agrega esta propiedad */
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 50px) {
+/* Agregamos un media query para estilos en pantallas más pequeñas */
+@media only screen and (max-width: 800px) {
+  /* Cambiamos la propiedad width de .cardTD a 80% */
   .cardTD {
-    width: calc(50% - 20px);
+    width: 80%;
+    max-width: none;
   }
 
-  
+  /* Cambiamos la propiedad width de .destimg a 100% */
+  .destimg {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Agregamos una propiedad display de bloque para los botones */
+  button {
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Agregamos una propiedad flex-wrap para .containerC */
+  .containerC {
+    flex-wrap: wrap;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   h2 {
     padding: 10px;
     margin: 0;
     padding-top: 50px;
+    font-size: 1.0rem;
   }
-  
+   
   button {
     background-color: lightblue;
     color: white;
@@ -54,22 +75,36 @@
     margin-top: 10px;
     border: none;
     cursor: pointer;
+    max-width: 150px;
   }
+  
   .h1TD {
     font-size: 1rem;
   }
-   .btnTD{
+  
+  .btnTD {
     background-color: #00BFFF;
-  border: 2px solid #00BFFF; /* color celeste en hexadecimal */
-  color: white; /* color celeste en hexadecimal */
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 110px;
-}
-
-@media screen and (max-width: 400px) {
-  .cardTD {
-    max-width: 90%;
+    border: 2px solid #00BFFF;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.5rem;
+    cursor: pointer;
+    width: 80px !important;
+    height: 40px !important;
+    margin: 0 auto;
+    max-width: 150px;
   }
-}
+
+  .destimg{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+
+  .containerC {
+    flex-wrap: wrap;
+  }
 }

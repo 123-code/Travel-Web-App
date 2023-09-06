@@ -5,6 +5,10 @@
 
 .titleForm{
     color: black;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     text-align: center;
+}
+
+.title{
+    margin-bottom: 100px;
 }

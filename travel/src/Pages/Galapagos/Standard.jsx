@@ -7,6 +7,7 @@ import Destinos from '../../Components/Destinos';
 import { DestinosHeader } from "../../Components/Destinos";
 import Solaris from '../../Imgs/Solaris.png';
 import '../../Styling/Rates.css'
+import { DestinosHeader } from "../../Components/Destinos";
 export default function High() {
 
    
